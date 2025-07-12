@@ -52,89 +52,86 @@ local InfoB = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local MainFrame = Instance.new("Frame")
 local ImageLabel_4 = Instance.new("ImageLabel")
-local Rscroll = Instance.new("ScrollingFrame")
+local Lscroll = Instance.new("ScrollingFrame")
 local UICorner_15 = Instance.new("UICorner")
-local AkillB = Instance.new("TextLabel")
+local Abuy = Instance.new("TextLabel")
 local UICorner_16 = Instance.new("UICorner")
 local balerina_3 = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
 local RollButton_3 = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local Areward = Instance.new("TextLabel")
+local Aswing = Instance.new("TextLabel")
 local UICorner_19 = Instance.new("UICorner")
 local balerina_4 = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
 local RollButton_4 = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local Acrown = Instance.new("TextLabel")
+local Asell = Instance.new("TextLabel")
 local UICorner_22 = Instance.new("UICorner")
 local balerina_5 = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
 local RollButton_5 = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
-local Afire = Instance.new("TextLabel")
+local Aclass = Instance.new("TextLabel")
 local UICorner_25 = Instance.new("UICorner")
 local balerina_6 = Instance.new("Frame")
 local UICorner_26 = Instance.new("UICorner")
 local RollButton_6 = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
-local Abura = Instance.new("TextLabel")
+local Asaber = Instance.new("TextLabel")
 local UICorner_28 = Instance.new("UICorner")
 local balerina_7 = Instance.new("Frame")
 local UICorner_29 = Instance.new("UICorner")
 local RollButton_7 = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
-local Lscroll = Instance.new("ScrollingFrame")
-local UICorner_31 = Instance.new("UICorner")
-local Abuy = Instance.new("TextLabel")
-local UICorner_32 = Instance.new("UICorner")
-local balerina_8 = Instance.new("Frame")
-local UICorner_33 = Instance.new("UICorner")
-local RollButton_8 = Instance.new("TextButton")
-local UICorner_34 = Instance.new("UICorner")
-local Aswing = Instance.new("TextLabel")
-local UICorner_35 = Instance.new("UICorner")
-local balerina_9 = Instance.new("Frame")
-local UICorner_36 = Instance.new("UICorner")
-local RollButton_9 = Instance.new("TextButton")
-local UICorner_37 = Instance.new("UICorner")
-local Asell = Instance.new("TextLabel")
-local UICorner_38 = Instance.new("UICorner")
-local balerina_10 = Instance.new("Frame")
-local UICorner_39 = Instance.new("UICorner")
-local RollButton_10 = Instance.new("TextButton")
-local UICorner_40 = Instance.new("UICorner")
-local Aclass = Instance.new("TextLabel")
-local UICorner_41 = Instance.new("UICorner")
-local balerina_11 = Instance.new("Frame")
-local UICorner_42 = Instance.new("UICorner")
-local RollButton_11 = Instance.new("TextButton")
-local UICorner_43 = Instance.new("UICorner")
-local Asaber = Instance.new("TextLabel")
-local UICorner_44 = Instance.new("UICorner")
-local balerina_12 = Instance.new("Frame")
-local UICorner_45 = Instance.new("UICorner")
-local RollButton_12 = Instance.new("TextButton")
-local UICorner_46 = Instance.new("UICorner")
 local Adamage = Instance.new("TextLabel")
-local UICorner_47 = Instance.new("UICorner")
-local balerina_13 = Instance.new("Frame")
-local UICorner_48 = Instance.new("UICorner")
-local RollButton_13 = Instance.new("TextButton")
-local UICorner_49 = Instance.new("UICorner")
+local UICorner_31 = Instance.new("UICorner")
+local balerina_8 = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local RollButton_8 = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
 local Apetr = Instance.new("TextLabel")
-local UICorner_50 = Instance.new("UICorner")
+local UICorner_34 = Instance.new("UICorner")
+local balerina_9 = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local RollButton_9 = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local AkillB = Instance.new("TextLabel")
+local UICorner_37 = Instance.new("UICorner")
+local balerina_10 = Instance.new("Frame")
+local UICorner_38 = Instance.new("UICorner")
+local RollButton_10 = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local Areward = Instance.new("TextLabel")
+local UICorner_40 = Instance.new("UICorner")
+local balerina_11 = Instance.new("Frame")
+local UICorner_41 = Instance.new("UICorner")
+local RollButton_11 = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local Acrown = Instance.new("TextLabel")
+local UICorner_43 = Instance.new("UICorner")
+local balerina_12 = Instance.new("Frame")
+local UICorner_44 = Instance.new("UICorner")
+local RollButton_12 = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local Afire = Instance.new("TextLabel")
+local UICorner_46 = Instance.new("UICorner")
+local balerina_13 = Instance.new("Frame")
+local UICorner_47 = Instance.new("UICorner")
+local RollButton_13 = Instance.new("TextButton")
+local UICorner_48 = Instance.new("UICorner")
+local Abura = Instance.new("TextLabel")
+local UICorner_49 = Instance.new("UICorner")
 local balerina_14 = Instance.new("Frame")
-local UICorner_51 = Instance.new("UICorner")
+local UICorner_50 = Instance.new("UICorner")
 local RollButton_14 = Instance.new("TextButton")
-local UICorner_52 = Instance.new("UICorner")
+local UICorner_51 = Instance.new("UICorner")
 local ElemFrame = Instance.new("Frame")
 local ImageLabel_5 = Instance.new("ImageLabel")
 local TextLabel_9 = Instance.new("TextLabel")
-local UICorner_53 = Instance.new("UICorner")
+local UICorner_52 = Instance.new("UICorner")
 local Abutton = Instance.new("ImageButton")
-local UICorner_54 = Instance.new("UICorner")
-local Holy = Instance.new("ImageButton")
+local UICorner_53 = Instance.new("UICorner")
 local SlidingFrame = Instance.new("TextLabel")
 local SlidingFrame1 = Instance.new("TextLabel")
 local SlidingFrame2 = Instance.new("TextLabel")
@@ -538,37 +535,37 @@ ImageLabel_4.Size = UDim2.new(0, 212, 0, 179)
 ImageLabel_4.Image = "rbxassetid://107097205978898"
 ImageLabel_4.ImageTransparency = 0.660
 
-Rscroll.Name = "Rscroll"
-Rscroll.Parent = MainFrame
-Rscroll.Active = true
-Rscroll.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Rscroll.BackgroundTransparency = 0.050
-Rscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Rscroll.BorderSizePixel = 0
-Rscroll.Position = UDim2.new(0.551020384, 0, 0.0296610165, 0)
-Rscroll.Size = UDim2.new(0, 190, 0, 222)
-Rscroll.ScrollBarThickness = 0
+Lscroll.Name = "Lscroll"
+Lscroll.Parent = MainFrame
+Lscroll.Active = true
+Lscroll.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Lscroll.BackgroundTransparency = 0.050
+Lscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lscroll.BorderSizePixel = 0
+Lscroll.Position = UDim2.new(0.0385487638, 0, 0.0254237279, 0)
+Lscroll.Size = UDim2.new(0, 411, 0, 222)
+Lscroll.ScrollBarThickness = 0
 
-UICorner_15.Parent = Rscroll
+UICorner_15.Parent = Lscroll
 
-AkillB.Name = "AkillB"
-AkillB.Parent = Rscroll
-AkillB.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-AkillB.BackgroundTransparency = 0.500
-AkillB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AkillB.BorderSizePixel = 0
-AkillB.Position = UDim2.new(0.0926314518, 0, 0.0132417418, 0)
-AkillB.Size = UDim2.new(0, 160, 0, 50)
-AkillB.Font = Enum.Font.SourceSans
-AkillB.Text = "          AutoKillBoss"
-AkillB.TextColor3 = Color3.fromRGB(255, 255, 255)
-AkillB.TextSize = 14.000
-AkillB.TextXAlignment = Enum.TextXAlignment.Left
+Abuy.Name = "Abuy"
+Abuy.Parent = Lscroll
+Abuy.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Abuy.BackgroundTransparency = 0.500
+Abuy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Abuy.BorderSizePixel = 0
+Abuy.Position = UDim2.new(0.0402298868, 0, 0.0171661377, 0)
+Abuy.Size = UDim2.new(0, 160, 0, 50)
+Abuy.Font = Enum.Font.SourceSans
+Abuy.Text = "       AutoBuyDna"
+Abuy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Abuy.TextSize = 14.000
+Abuy.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_16.Parent = AkillB
+UICorner_16.Parent = Abuy
 
 balerina_3.Name = "balerina"
-balerina_3.Parent = AkillB
+balerina_3.Parent = Abuy
 balerina_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 balerina_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 balerina_3.BorderSizePixel = 0
@@ -583,34 +580,34 @@ RollButton_3.Parent = balerina_3
 RollButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_3.BorderSizePixel = 0
-RollButton_3.Position = UDim2.new(0.109999999, 0, -0, 0)
+RollButton_3.Position = UDim2.new(0.109999999, 0, 0, 0)
 RollButton_3.Size = UDim2.new(0, 18, 0, 18)
 RollButton_3.Font = Enum.Font.SourceSans
 RollButton_3.Text = ""
 RollButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_3.TextSize = 13.000
+RollButton_3.TextSize = 14.000
 
 UICorner_18.CornerRadius = UDim.new(1, 2)
 UICorner_18.Parent = RollButton_3
 
-Areward.Name = "Areward"
-Areward.Parent = Rscroll
-Areward.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Areward.BackgroundTransparency = 0.500
-Areward.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Areward.BorderSizePixel = 0
-Areward.Position = UDim2.new(0.0930000022, 0, 0.141000003, 0)
-Areward.Size = UDim2.new(0, 160, 0, 50)
-Areward.Font = Enum.Font.SourceSans
-Areward.Text = "          AutoRewards"
-Areward.TextColor3 = Color3.fromRGB(255, 255, 255)
-Areward.TextSize = 14.000
-Areward.TextXAlignment = Enum.TextXAlignment.Left
+Aswing.Name = "Aswing"
+Aswing.Parent = Lscroll
+Aswing.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Aswing.BackgroundTransparency = 0.500
+Aswing.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aswing.BorderSizePixel = 0
+Aswing.Position = UDim2.new(0.0399999991, 0, 0.140000001, 0)
+Aswing.Size = UDim2.new(0, 160, 0, 50)
+Aswing.Font = Enum.Font.SourceSans
+Aswing.Text = "      AutoSwing"
+Aswing.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aswing.TextSize = 14.000
+Aswing.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_19.Parent = Areward
+UICorner_19.Parent = Aswing
 
 balerina_4.Name = "balerina"
-balerina_4.Parent = Areward
+balerina_4.Parent = Aswing
 balerina_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 balerina_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 balerina_4.BorderSizePixel = 0
@@ -635,24 +632,24 @@ RollButton_4.TextSize = 14.000
 UICorner_21.CornerRadius = UDim.new(1, 2)
 UICorner_21.Parent = RollButton_4
 
-Acrown.Name = "Acrown"
-Acrown.Parent = Rscroll
-Acrown.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Acrown.BackgroundTransparency = 0.500
-Acrown.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Acrown.BorderSizePixel = 0
-Acrown.Position = UDim2.new(0.0926314518, 0, 0.266631246, 0)
-Acrown.Size = UDim2.new(0, 160, 0, 50)
-Acrown.Font = Enum.Font.SourceSans
-Acrown.Text = "        AutoCrown"
-Acrown.TextColor3 = Color3.fromRGB(255, 255, 255)
-Acrown.TextSize = 14.000
-Acrown.TextXAlignment = Enum.TextXAlignment.Left
+Asell.Name = "Asell"
+Asell.Parent = Lscroll
+Asell.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Asell.BackgroundTransparency = 0.500
+Asell.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Asell.BorderSizePixel = 0
+Asell.Position = UDim2.new(0.0399999507, 0, 0.261621684, 0)
+Asell.Size = UDim2.new(0, 160, 0, 50)
+Asell.Font = Enum.Font.SourceSans
+Asell.Text = "        AutoSell"
+Asell.TextColor3 = Color3.fromRGB(255, 255, 255)
+Asell.TextSize = 14.000
+Asell.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_22.Parent = Acrown
+UICorner_22.Parent = Asell
 
 balerina_5.Name = "balerina"
-balerina_5.Parent = Acrown
+balerina_5.Parent = Asell
 balerina_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 balerina_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 balerina_5.BorderSizePixel = 0
@@ -677,24 +674,24 @@ RollButton_5.TextSize = 14.000
 UICorner_24.CornerRadius = UDim.new(1, 2)
 UICorner_24.Parent = RollButton_5
 
-Afire.Name = "Afire"
-Afire.Parent = Rscroll
-Afire.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Afire.BackgroundTransparency = 0.500
-Afire.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Afire.BorderSizePixel = 0
-Afire.Position = UDim2.new(0.0926314518, 0, 0.404729486, 0)
-Afire.Size = UDim2.new(0, 160, 0, 50)
-Afire.Font = Enum.Font.SourceSans
-Afire.Text = "        AutoFireFarm"
-Afire.TextColor3 = Color3.fromRGB(255, 255, 255)
-Afire.TextSize = 14.000
-Afire.TextXAlignment = Enum.TextXAlignment.Left
+Aclass.Name = "Aclass"
+Aclass.Parent = Lscroll
+Aclass.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Aclass.BackgroundTransparency = 0.500
+Aclass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aclass.BorderSizePixel = 0
+Aclass.Position = UDim2.new(0.0399999507, 0, 0.389574081, 0)
+Aclass.Size = UDim2.new(0, 160, 0, 50)
+Aclass.Font = Enum.Font.SourceSans
+Aclass.Text = "        AutoBuyClass"
+Aclass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aclass.TextSize = 14.000
+Aclass.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_25.Parent = Afire
+UICorner_25.Parent = Aclass
 
 balerina_6.Name = "balerina"
-balerina_6.Parent = Afire
+balerina_6.Parent = Aclass
 balerina_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 balerina_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 balerina_6.BorderSizePixel = 0
@@ -719,24 +716,24 @@ RollButton_6.TextSize = 14.000
 UICorner_27.CornerRadius = UDim.new(1, 2)
 UICorner_27.Parent = RollButton_6
 
-Abura.Name = "Abura"
-Abura.Parent = Rscroll
-Abura.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Abura.BackgroundTransparency = 0.500
-Abura.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Abura.BorderSizePixel = 0
-Abura.Position = UDim2.new(0.0930000022, 0, 0.540000021, 0)
-Abura.Size = UDim2.new(0, 160, 0, 50)
-Abura.Font = Enum.Font.SourceSans
-Abura.Text = "        AutoBuyAura"
-Abura.TextColor3 = Color3.fromRGB(255, 255, 255)
-Abura.TextSize = 14.000
-Abura.TextXAlignment = Enum.TextXAlignment.Left
+Asaber.Name = "Asaber"
+Asaber.Parent = Lscroll
+Asaber.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Asaber.BackgroundTransparency = 0.500
+Asaber.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Asaber.BorderSizePixel = 0
+Asaber.Position = UDim2.new(0.0399999507, 0, 0.527572215, 0)
+Asaber.Size = UDim2.new(0, 160, 0, 50)
+Asaber.Font = Enum.Font.SourceSans
+Asaber.Text = "       AutoBuySaber"
+Asaber.TextColor3 = Color3.fromRGB(255, 255, 255)
+Asaber.TextSize = 14.000
+Asaber.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_28.Parent = Abura
+UICorner_28.Parent = Asaber
 
 balerina_7.Name = "balerina"
-balerina_7.Parent = Abura
+balerina_7.Parent = Asaber
 balerina_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 balerina_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 balerina_7.BorderSizePixel = 0
@@ -761,229 +758,6 @@ RollButton_7.TextSize = 14.000
 UICorner_30.CornerRadius = UDim.new(1, 2)
 UICorner_30.Parent = RollButton_7
 
-Lscroll.Name = "Lscroll"
-Lscroll.Parent = MainFrame
-Lscroll.Active = true
-Lscroll.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Lscroll.BackgroundTransparency = 0.050
-Lscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Lscroll.BorderSizePixel = 0
-Lscroll.Position = UDim2.new(0.0385487527, 0, 0.0254237279, 0)
-Lscroll.Size = UDim2.new(0, 174, 0, 222)
-Lscroll.ScrollBarThickness = 0
-
-UICorner_31.Parent = Lscroll
-
-Abuy.Name = "Abuy"
-Abuy.Parent = Lscroll
-Abuy.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Abuy.BackgroundTransparency = 0.500
-Abuy.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Abuy.BorderSizePixel = 0
-Abuy.Position = UDim2.new(0.0402298868, 0, 0.0171661377, 0)
-Abuy.Size = UDim2.new(0, 160, 0, 50)
-Abuy.Font = Enum.Font.SourceSans
-Abuy.Text = "       AutoBuyDna"
-Abuy.TextColor3 = Color3.fromRGB(255, 255, 255)
-Abuy.TextSize = 14.000
-Abuy.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_32.Parent = Abuy
-
-balerina_8.Name = "balerina"
-balerina_8.Parent = Abuy
-balerina_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-balerina_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-balerina_8.BorderSizePixel = 0
-balerina_8.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
-balerina_8.Size = UDim2.new(0, 54, 0, 18)
-
-UICorner_33.CornerRadius = UDim.new(1, 0)
-UICorner_33.Parent = balerina_8
-
-RollButton_8.Name = "RollButton"
-RollButton_8.Parent = balerina_8
-RollButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_8.BorderSizePixel = 0
-RollButton_8.Position = UDim2.new(0.109999999, 0, 0, 0)
-RollButton_8.Size = UDim2.new(0, 18, 0, 18)
-RollButton_8.Font = Enum.Font.SourceSans
-RollButton_8.Text = ""
-RollButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_8.TextSize = 14.000
-
-UICorner_34.CornerRadius = UDim.new(1, 2)
-UICorner_34.Parent = RollButton_8
-
-Aswing.Name = "Aswing"
-Aswing.Parent = Lscroll
-Aswing.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Aswing.BackgroundTransparency = 0.500
-Aswing.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Aswing.BorderSizePixel = 0
-Aswing.Position = UDim2.new(0.0399999991, 0, 0.140000001, 0)
-Aswing.Size = UDim2.new(0, 160, 0, 50)
-Aswing.Font = Enum.Font.SourceSans
-Aswing.Text = "      AutoSwing"
-Aswing.TextColor3 = Color3.fromRGB(255, 255, 255)
-Aswing.TextSize = 14.000
-Aswing.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_35.Parent = Aswing
-
-balerina_9.Name = "balerina"
-balerina_9.Parent = Aswing
-balerina_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-balerina_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-balerina_9.BorderSizePixel = 0
-balerina_9.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
-balerina_9.Size = UDim2.new(0, 54, 0, 18)
-
-UICorner_36.CornerRadius = UDim.new(1, 0)
-UICorner_36.Parent = balerina_9
-
-RollButton_9.Name = "RollButton"
-RollButton_9.Parent = balerina_9
-RollButton_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_9.BorderSizePixel = 0
-RollButton_9.Position = UDim2.new(0.109999999, 0, 0, 0)
-RollButton_9.Size = UDim2.new(0, 18, 0, 18)
-RollButton_9.Font = Enum.Font.SourceSans
-RollButton_9.Text = ""
-RollButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_9.TextSize = 14.000
-
-UICorner_37.CornerRadius = UDim.new(1, 2)
-UICorner_37.Parent = RollButton_9
-
-Asell.Name = "Asell"
-Asell.Parent = Lscroll
-Asell.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Asell.BackgroundTransparency = 0.500
-Asell.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Asell.BorderSizePixel = 0
-Asell.Position = UDim2.new(0.0399999507, 0, 0.261621684, 0)
-Asell.Size = UDim2.new(0, 160, 0, 50)
-Asell.Font = Enum.Font.SourceSans
-Asell.Text = "        AutoSell"
-Asell.TextColor3 = Color3.fromRGB(255, 255, 255)
-Asell.TextSize = 14.000
-Asell.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_38.Parent = Asell
-
-balerina_10.Name = "balerina"
-balerina_10.Parent = Asell
-balerina_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-balerina_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-balerina_10.BorderSizePixel = 0
-balerina_10.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
-balerina_10.Size = UDim2.new(0, 54, 0, 18)
-
-UICorner_39.CornerRadius = UDim.new(1, 0)
-UICorner_39.Parent = balerina_10
-
-RollButton_10.Name = "RollButton"
-RollButton_10.Parent = balerina_10
-RollButton_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_10.BorderSizePixel = 0
-RollButton_10.Position = UDim2.new(0.109999999, 0, 0, 0)
-RollButton_10.Size = UDim2.new(0, 18, 0, 18)
-RollButton_10.Font = Enum.Font.SourceSans
-RollButton_10.Text = ""
-RollButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_10.TextSize = 14.000
-
-UICorner_40.CornerRadius = UDim.new(1, 2)
-UICorner_40.Parent = RollButton_10
-
-Aclass.Name = "Aclass"
-Aclass.Parent = Lscroll
-Aclass.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Aclass.BackgroundTransparency = 0.500
-Aclass.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Aclass.BorderSizePixel = 0
-Aclass.Position = UDim2.new(0.0399999507, 0, 0.389574081, 0)
-Aclass.Size = UDim2.new(0, 160, 0, 50)
-Aclass.Font = Enum.Font.SourceSans
-Aclass.Text = "        AutoBuyClass"
-Aclass.TextColor3 = Color3.fromRGB(255, 255, 255)
-Aclass.TextSize = 14.000
-Aclass.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_41.Parent = Aclass
-
-balerina_11.Name = "balerina"
-balerina_11.Parent = Aclass
-balerina_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-balerina_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-balerina_11.BorderSizePixel = 0
-balerina_11.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
-balerina_11.Size = UDim2.new(0, 54, 0, 18)
-
-UICorner_42.CornerRadius = UDim.new(1, 0)
-UICorner_42.Parent = balerina_11
-
-RollButton_11.Name = "RollButton"
-RollButton_11.Parent = balerina_11
-RollButton_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_11.BorderSizePixel = 0
-RollButton_11.Position = UDim2.new(0.109999999, 0, 0, 0)
-RollButton_11.Size = UDim2.new(0, 18, 0, 18)
-RollButton_11.Font = Enum.Font.SourceSans
-RollButton_11.Text = ""
-RollButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_11.TextSize = 14.000
-
-UICorner_43.CornerRadius = UDim.new(1, 2)
-UICorner_43.Parent = RollButton_11
-
-Asaber.Name = "Asaber"
-Asaber.Parent = Lscroll
-Asaber.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Asaber.BackgroundTransparency = 0.500
-Asaber.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Asaber.BorderSizePixel = 0
-Asaber.Position = UDim2.new(0.0399999507, 0, 0.527572215, 0)
-Asaber.Size = UDim2.new(0, 160, 0, 50)
-Asaber.Font = Enum.Font.SourceSans
-Asaber.Text = "       AutoBuySaber"
-Asaber.TextColor3 = Color3.fromRGB(255, 255, 255)
-Asaber.TextSize = 14.000
-Asaber.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_44.Parent = Asaber
-
-balerina_12.Name = "balerina"
-balerina_12.Parent = Asaber
-balerina_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-balerina_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-balerina_12.BorderSizePixel = 0
-balerina_12.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
-balerina_12.Size = UDim2.new(0, 54, 0, 18)
-
-UICorner_45.CornerRadius = UDim.new(1, 0)
-UICorner_45.Parent = balerina_12
-
-RollButton_12.Name = "RollButton"
-RollButton_12.Parent = balerina_12
-RollButton_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_12.BorderSizePixel = 0
-RollButton_12.Position = UDim2.new(0.109999999, 0, 0, 0)
-RollButton_12.Size = UDim2.new(0, 18, 0, 18)
-RollButton_12.Font = Enum.Font.SourceSans
-RollButton_12.Text = ""
-RollButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_12.TextSize = 14.000
-
-UICorner_46.CornerRadius = UDim.new(1, 2)
-UICorner_46.Parent = RollButton_12
-
 Adamage.Name = "Adamage"
 Adamage.Parent = Lscroll
 Adamage.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -998,33 +772,33 @@ Adamage.TextColor3 = Color3.fromRGB(255, 255, 255)
 Adamage.TextSize = 14.000
 Adamage.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_47.Parent = Adamage
+UICorner_31.Parent = Adamage
 
-balerina_13.Name = "balerina"
-balerina_13.Parent = Adamage
-balerina_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-balerina_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-balerina_13.BorderSizePixel = 0
-balerina_13.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
-balerina_13.Size = UDim2.new(0, 54, 0, 18)
+balerina_8.Name = "balerina"
+balerina_8.Parent = Adamage
+balerina_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_8.BorderSizePixel = 0
+balerina_8.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_8.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_48.CornerRadius = UDim.new(1, 0)
-UICorner_48.Parent = balerina_13
+UICorner_32.CornerRadius = UDim.new(1, 0)
+UICorner_32.Parent = balerina_8
 
-RollButton_13.Name = "RollButton"
-RollButton_13.Parent = balerina_13
-RollButton_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_13.BorderSizePixel = 0
-RollButton_13.Position = UDim2.new(0.109999999, 0, 0, 0)
-RollButton_13.Size = UDim2.new(0, 18, 0, 18)
-RollButton_13.Font = Enum.Font.SourceSans
-RollButton_13.Text = ""
-RollButton_13.TextColor3 = Color3.fromRGB(0, 0, 0)
-RollButton_13.TextSize = 14.000
+RollButton_8.Name = "RollButton"
+RollButton_8.Parent = balerina_8
+RollButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_8.BorderSizePixel = 0
+RollButton_8.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_8.Size = UDim2.new(0, 18, 0, 18)
+RollButton_8.Font = Enum.Font.SourceSans
+RollButton_8.Text = ""
+RollButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_8.TextSize = 14.000
 
-UICorner_49.CornerRadius = UDim.new(1, 2)
-UICorner_49.Parent = RollButton_13
+UICorner_33.CornerRadius = UDim.new(1, 2)
+UICorner_33.Parent = RollButton_8
 
 Apetr.Name = "Apetr"
 Apetr.Parent = Lscroll
@@ -1040,18 +814,228 @@ Apetr.TextColor3 = Color3.fromRGB(255, 255, 255)
 Apetr.TextSize = 14.000
 Apetr.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_50.Parent = Apetr
+UICorner_34.Parent = Apetr
+
+balerina_9.Name = "balerina"
+balerina_9.Parent = Apetr
+balerina_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_9.BorderSizePixel = 0
+balerina_9.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_9.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_35.CornerRadius = UDim.new(1, 0)
+UICorner_35.Parent = balerina_9
+
+RollButton_9.Name = "RollButton"
+RollButton_9.Parent = balerina_9
+RollButton_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_9.BorderSizePixel = 0
+RollButton_9.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_9.Size = UDim2.new(0, 18, 0, 18)
+RollButton_9.Font = Enum.Font.SourceSans
+RollButton_9.Text = ""
+RollButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_9.TextSize = 14.000
+
+UICorner_36.CornerRadius = UDim.new(1, 2)
+UICorner_36.Parent = RollButton_9
+
+AkillB.Name = "AkillB"
+AkillB.Parent = Lscroll
+AkillB.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AkillB.BackgroundTransparency = 0.500
+AkillB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AkillB.BorderSizePixel = 0
+AkillB.Position = UDim2.new(0.584999979, 0, 0.0170000009, 0)
+AkillB.Size = UDim2.new(0, 160, 0, 50)
+AkillB.Font = Enum.Font.SourceSans
+AkillB.Text = "          AutoKillBoss"
+AkillB.TextColor3 = Color3.fromRGB(255, 255, 255)
+AkillB.TextSize = 14.000
+AkillB.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_37.Parent = AkillB
+
+balerina_10.Name = "balerina"
+balerina_10.Parent = AkillB
+balerina_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_10.BorderSizePixel = 0
+balerina_10.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_10.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_38.CornerRadius = UDim.new(1, 0)
+UICorner_38.Parent = balerina_10
+
+RollButton_10.Name = "RollButton"
+RollButton_10.Parent = balerina_10
+RollButton_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_10.BorderSizePixel = 0
+RollButton_10.Position = UDim2.new(0.109999999, 0, -0, 0)
+RollButton_10.Size = UDim2.new(0, 18, 0, 18)
+RollButton_10.Font = Enum.Font.SourceSans
+RollButton_10.Text = ""
+RollButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_10.TextSize = 13.000
+
+UICorner_39.CornerRadius = UDim.new(1, 2)
+UICorner_39.Parent = RollButton_10
+
+Areward.Name = "Areward"
+Areward.Parent = Lscroll
+Areward.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Areward.BackgroundTransparency = 0.500
+Areward.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Areward.BorderSizePixel = 0
+Areward.Position = UDim2.new(0.583999991, 0, 0.140000001, 0)
+Areward.Size = UDim2.new(0, 160, 0, 50)
+Areward.Font = Enum.Font.SourceSans
+Areward.Text = "          AutoRewards"
+Areward.TextColor3 = Color3.fromRGB(255, 255, 255)
+Areward.TextSize = 14.000
+Areward.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_40.Parent = Areward
+
+balerina_11.Name = "balerina"
+balerina_11.Parent = Areward
+balerina_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_11.BorderSizePixel = 0
+balerina_11.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_11.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_41.CornerRadius = UDim.new(1, 0)
+UICorner_41.Parent = balerina_11
+
+RollButton_11.Name = "RollButton"
+RollButton_11.Parent = balerina_11
+RollButton_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_11.BorderSizePixel = 0
+RollButton_11.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_11.Size = UDim2.new(0, 18, 0, 18)
+RollButton_11.Font = Enum.Font.SourceSans
+RollButton_11.Text = ""
+RollButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_11.TextSize = 14.000
+
+UICorner_42.CornerRadius = UDim.new(1, 2)
+UICorner_42.Parent = RollButton_11
+
+Acrown.Name = "Acrown"
+Acrown.Parent = Lscroll
+Acrown.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Acrown.BackgroundTransparency = 0.500
+Acrown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Acrown.BorderSizePixel = 0
+Acrown.Position = UDim2.new(0.583999991, 0, 0.261999995, 0)
+Acrown.Size = UDim2.new(0, 160, 0, 50)
+Acrown.Font = Enum.Font.SourceSans
+Acrown.Text = "        AutoCrown"
+Acrown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Acrown.TextSize = 14.000
+Acrown.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_43.Parent = Acrown
+
+balerina_12.Name = "balerina"
+balerina_12.Parent = Acrown
+balerina_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_12.BorderSizePixel = 0
+balerina_12.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_12.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_44.CornerRadius = UDim.new(1, 0)
+UICorner_44.Parent = balerina_12
+
+RollButton_12.Name = "RollButton"
+RollButton_12.Parent = balerina_12
+RollButton_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_12.BorderSizePixel = 0
+RollButton_12.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_12.Size = UDim2.new(0, 18, 0, 18)
+RollButton_12.Font = Enum.Font.SourceSans
+RollButton_12.Text = ""
+RollButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_12.TextSize = 14.000
+
+UICorner_45.CornerRadius = UDim.new(1, 2)
+UICorner_45.Parent = RollButton_12
+
+Afire.Name = "Afire"
+Afire.Parent = Lscroll
+Afire.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Afire.BackgroundTransparency = 0.500
+Afire.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Afire.BorderSizePixel = 0
+Afire.Position = UDim2.new(0.583999991, 0, 0.389999986, 0)
+Afire.Size = UDim2.new(0, 160, 0, 50)
+Afire.Font = Enum.Font.SourceSans
+Afire.Text = "        AutoFireFarm"
+Afire.TextColor3 = Color3.fromRGB(255, 255, 255)
+Afire.TextSize = 14.000
+Afire.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_46.Parent = Afire
+
+balerina_13.Name = "balerina"
+balerina_13.Parent = Afire
+balerina_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_13.BorderSizePixel = 0
+balerina_13.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_13.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_47.CornerRadius = UDim.new(1, 0)
+UICorner_47.Parent = balerina_13
+
+RollButton_13.Name = "RollButton"
+RollButton_13.Parent = balerina_13
+RollButton_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_13.BorderSizePixel = 0
+RollButton_13.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_13.Size = UDim2.new(0, 18, 0, 18)
+RollButton_13.Font = Enum.Font.SourceSans
+RollButton_13.Text = ""
+RollButton_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_13.TextSize = 14.000
+
+UICorner_48.CornerRadius = UDim.new(1, 2)
+UICorner_48.Parent = RollButton_13
+
+Abura.Name = "Abura"
+Abura.Parent = Lscroll
+Abura.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Abura.BackgroundTransparency = 0.500
+Abura.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Abura.BorderSizePixel = 0
+Abura.Position = UDim2.new(0.582000017, 0, 0.527999997, 0)
+Abura.Size = UDim2.new(0, 160, 0, 50)
+Abura.Font = Enum.Font.SourceSans
+Abura.Text = "        AutoBuyAura"
+Abura.TextColor3 = Color3.fromRGB(255, 255, 255)
+Abura.TextSize = 14.000
+Abura.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_49.Parent = Abura
 
 balerina_14.Name = "balerina"
-balerina_14.Parent = Apetr
+balerina_14.Parent = Abura
 balerina_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 balerina_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
 balerina_14.BorderSizePixel = 0
 balerina_14.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_14.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_51.CornerRadius = UDim.new(1, 0)
-UICorner_51.Parent = balerina_14
+UICorner_50.CornerRadius = UDim.new(1, 0)
+UICorner_50.Parent = balerina_14
 
 RollButton_14.Name = "RollButton"
 RollButton_14.Parent = balerina_14
@@ -1065,8 +1049,8 @@ RollButton_14.Text = ""
 RollButton_14.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_14.TextSize = 14.000
 
-UICorner_52.CornerRadius = UDim.new(1, 2)
-UICorner_52.Parent = RollButton_14
+UICorner_51.CornerRadius = UDim.new(1, 2)
+UICorner_51.Parent = RollButton_14
 
 ElemFrame.Name = "ElemFrame"
 ElemFrame.Parent = Hold
@@ -1099,7 +1083,7 @@ TextLabel_9.Text = "COMMING SOON!"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 
-UICorner_53.Parent = TextLabel_9
+UICorner_52.Parent = TextLabel_9
 
 Abutton.Name = "Abutton"
 Abutton.Parent = ScreenGui
@@ -1111,16 +1095,7 @@ Abutton.Size = UDim2.new(0, 35, 0, 28)
 Abutton.Visible = false
 Abutton.Image = "rbxassetid://90028088616811"
 
-UICorner_54.Parent = Abutton
-
-Holy.Name = "Holy"
-Holy.Parent = ScreenGui
-Holy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Holy.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Holy.BorderSizePixel = 0
-Holy.Position = UDim2.new(-0.0148148146, 0, -0.0945082232, 0)
-Holy.Size = UDim2.new(0, 1507, 0, 898)
-Holy.Image = "rbxassetid://132834478786155"
+UICorner_53.Parent = Abutton
 
 SlidingFrame.Name = "SlidingFrame"
 SlidingFrame.Parent = ScreenGui
@@ -1223,7 +1198,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function DQUTGE_fake_script() -- ScreenGui.LocalScript 
+local function VYKFI_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1359,8 +1334,8 @@ local function DQUTGE_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(DQUTGE_fake_script)()
-local function MMFXR_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(VYKFI_fake_script)()
+local function DHZMNF_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1657,8 +1632,8 @@ local function MMFXR_fake_script() -- ScreenGui.LocalScript
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
-	local Rscroll = MainFrame:WaitForChild("Rscroll")
-	local Acrown = Rscroll:WaitForChild("Acrown")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Acrown = Lscroll:WaitForChild("Acrown")
 	local Balerina = Acrown:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
@@ -1680,8 +1655,8 @@ local function MMFXR_fake_script() -- ScreenGui.LocalScript
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
-	local Rscroll = MainFrame:WaitForChild("Rscroll")
-	local AkillB = Rscroll:WaitForChild("AkillB")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local AkillB = Lscroll:WaitForChild("AkillB")
 	local Balerina = AkillB:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
@@ -1706,8 +1681,8 @@ local function MMFXR_fake_script() -- ScreenGui.LocalScript
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
-	local Rscroll = MainFrame:WaitForChild("Rscroll")
-	local Areward = Rscroll:WaitForChild("Areward")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Areward = Lscroll:WaitForChild("Areward")
 	local Balerina = Areward:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
@@ -1833,8 +1808,8 @@ local function MMFXR_fake_script() -- ScreenGui.LocalScript
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
-	local Rscroll = MainFrame:WaitForChild("Rscroll")
-	local Afire = Rscroll:WaitForChild("Afire")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Afire = Lscroll:WaitForChild("Afire")
 	local Balerina = Afire:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
@@ -1857,8 +1832,8 @@ local function MMFXR_fake_script() -- ScreenGui.LocalScript
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
-	local Rscroll = MainFrame:WaitForChild("Rscroll")
-	local Abura = Rscroll:WaitForChild("Abura")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Abura = Lscroll:WaitForChild("Abura")
 	local Balerina = Abura:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
@@ -1943,8 +1918,8 @@ local function MMFXR_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(MMFXR_fake_script)()
-local function YVMYAH_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(DHZMNF_fake_script)()
+local function NYMUJ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2021,36 +1996,6 @@ local function YVMYAH_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
-	local TweenService = game:GetService("TweenService")
-	local player = game.Players.LocalPlayer
-	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	local holyFrame = gui:WaitForChild("Holy")
-	
-	-- Tween info: 4 seconds duration
-	local tweenInfo = TweenInfo.new(4)
-	
-	-- Fade out background of the frame
-	local backgroundGoal = {BackgroundTransparency = 1}
-	local backgroundTween = TweenService:Create(holyFrame, tweenInfo, backgroundGoal)
-	backgroundTween:Play()
-	
-	-- Fade out all child text/image elements inside the frame
-	for _, child in ipairs(holyFrame:GetDescendants()) do
-		if child:IsA("TextLabel") then
-			TweenService:Create(child, tweenInfo, {TextTransparency = 1}):Play()
-		elseif child:IsA("ImageLabel") then
-			TweenService:Create(child, tweenInfo, {ImageTransparency = 1}):Play()
-		elseif child:IsA("TextButton") then
-			TweenService:Create(child, tweenInfo, {
-				TextTransparency = 1,
-				BackgroundTransparency = 1
-			}):Play()
-		end
-	end
-	
-	-- Optionally hide the frame after fade out
-	task.wait(4)
-	holyFrame.Visible = false
 	
 end
-coroutine.wrap(YVMYAH_fake_script)()
+coroutine.wrap(NYMUJ_fake_script)()
