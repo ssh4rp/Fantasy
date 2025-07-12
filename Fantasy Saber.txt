@@ -1,0 +1,1990 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local SlidingFrame = Instance.new("TextLabel")
+local SlidingFrame1 = Instance.new("TextLabel")
+local SlidingFrame2 = Instance.new("TextLabel")
+local SlidingFrame3 = Instance.new("TextLabel")
+local SlidingFrame5 = Instance.new("TextLabel")
+local SlidingFrame6 = Instance.new("TextLabel")
+local SlidingFrame4 = Instance.new("TextLabel")
+local Hold = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local EggFrame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Dorime = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Acraft = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local balerina = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local RollButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Aequiq = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local balerina_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local RollButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Tarea = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local lineup = Instance.new("Frame")
+local lineup_2 = Instance.new("Frame")
+local InfoFrame = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local SideFrame = Instance.new("Frame")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local MainB = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local ElemB = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local lineup_3 = Instance.new("Frame")
+local EggB = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local InfoB = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Rscroll = Instance.new("ScrollingFrame")
+local UICorner_15 = Instance.new("UICorner")
+local AkillB = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local balerina_3 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local RollButton_3 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Areward = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local balerina_4 = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local RollButton_4 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Acrown = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local balerina_5 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local RollButton_5 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Afire = Instance.new("TextLabel")
+local UICorner_25 = Instance.new("UICorner")
+local balerina_6 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local RollButton_6 = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Abura = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local balerina_7 = Instance.new("Frame")
+local UICorner_29 = Instance.new("UICorner")
+local RollButton_7 = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local Lscroll = Instance.new("ScrollingFrame")
+local UICorner_31 = Instance.new("UICorner")
+local Abuy = Instance.new("TextLabel")
+local UICorner_32 = Instance.new("UICorner")
+local balerina_8 = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local RollButton_8 = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local Aswing = Instance.new("TextLabel")
+local UICorner_35 = Instance.new("UICorner")
+local balerina_9 = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local RollButton_9 = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local Asell = Instance.new("TextLabel")
+local UICorner_38 = Instance.new("UICorner")
+local balerina_10 = Instance.new("Frame")
+local UICorner_39 = Instance.new("UICorner")
+local RollButton_10 = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local Aclass = Instance.new("TextLabel")
+local UICorner_41 = Instance.new("UICorner")
+local balerina_11 = Instance.new("Frame")
+local UICorner_42 = Instance.new("UICorner")
+local RollButton_11 = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local Asaber = Instance.new("TextLabel")
+local UICorner_44 = Instance.new("UICorner")
+local balerina_12 = Instance.new("Frame")
+local UICorner_45 = Instance.new("UICorner")
+local RollButton_12 = Instance.new("TextButton")
+local UICorner_46 = Instance.new("UICorner")
+local Adamage = Instance.new("TextLabel")
+local UICorner_47 = Instance.new("UICorner")
+local balerina_13 = Instance.new("Frame")
+local UICorner_48 = Instance.new("UICorner")
+local RollButton_13 = Instance.new("TextButton")
+local UICorner_49 = Instance.new("UICorner")
+local Apetr = Instance.new("TextLabel")
+local UICorner_50 = Instance.new("UICorner")
+local balerina_14 = Instance.new("Frame")
+local UICorner_51 = Instance.new("UICorner")
+local RollButton_14 = Instance.new("TextButton")
+local UICorner_52 = Instance.new("UICorner")
+local ElemFrame = Instance.new("Frame")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local UICorner_53 = Instance.new("UICorner")
+local Abutton = Instance.new("ImageButton")
+local UICorner_54 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SlidingFrame.Name = "SlidingFrame"
+SlidingFrame.Parent = ScreenGui
+SlidingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame.BackgroundTransparency = 1.000
+SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame.BorderSizePixel = 0
+SlidingFrame.Position = UDim2.new(0.0541259982, 0, 0.387755096, 0)
+SlidingFrame.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame.Visible = false
+SlidingFrame.Font = Enum.Font.Unknown
+SlidingFrame.Text = "F"
+SlidingFrame.TextColor3 = Color3.fromRGB(38, 150, 184)
+SlidingFrame.TextSize = 100.000
+SlidingFrame.TextWrapped = true
+
+SlidingFrame1.Name = "SlidingFrame1"
+SlidingFrame1.Parent = ScreenGui
+SlidingFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame1.BackgroundTransparency = 1.000
+SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame1.BorderSizePixel = 0
+SlidingFrame1.Position = UDim2.new(0.173913047, 0, 0.387755096, 0)
+SlidingFrame1.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame1.Visible = false
+SlidingFrame1.Font = Enum.Font.Unknown
+SlidingFrame1.Text = "A"
+SlidingFrame1.TextColor3 = Color3.fromRGB(24, 74, 212)
+SlidingFrame1.TextSize = 100.000
+SlidingFrame1.TextWrapped = true
+
+SlidingFrame2.Name = "SlidingFrame2"
+SlidingFrame2.Parent = ScreenGui
+SlidingFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame2.BackgroundTransparency = 1.000
+SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame2.BorderSizePixel = 0
+SlidingFrame2.Position = UDim2.new(0.264418811, 0, 0.387755096, 0)
+SlidingFrame2.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame2.Visible = false
+SlidingFrame2.Font = Enum.Font.Unknown
+SlidingFrame2.Text = "N"
+SlidingFrame2.TextColor3 = Color3.fromRGB(184, 184, 184)
+SlidingFrame2.TextSize = 100.000
+SlidingFrame2.TextWrapped = true
+
+SlidingFrame3.Name = "SlidingFrame3"
+SlidingFrame3.Parent = ScreenGui
+SlidingFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame3.BackgroundTransparency = 1.000
+SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame3.BorderSizePixel = 0
+SlidingFrame3.Position = UDim2.new(0.348713398, 0, 0.387755096, 0)
+SlidingFrame3.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame3.Visible = false
+SlidingFrame3.Font = Enum.Font.Unknown
+SlidingFrame3.Text = "T"
+SlidingFrame3.TextColor3 = Color3.fromRGB(38, 150, 184)
+SlidingFrame3.TextSize = 100.000
+SlidingFrame3.TextWrapped = true
+
+SlidingFrame5.Name = "SlidingFrame5"
+SlidingFrame5.Parent = ScreenGui
+SlidingFrame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame5.BackgroundTransparency = 1.000
+SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame5.BorderSizePixel = 0
+SlidingFrame5.Position = UDim2.new(0.588287473, 0, 0.387755096, 0)
+SlidingFrame5.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame5.Visible = false
+SlidingFrame5.Font = Enum.Font.Unknown
+SlidingFrame5.Text = "S"
+SlidingFrame5.TextColor3 = Color3.fromRGB(184, 184, 184)
+SlidingFrame5.TextSize = 100.000
+SlidingFrame5.TextWrapped = true
+
+SlidingFrame6.Name = "SlidingFrame6"
+SlidingFrame6.Parent = ScreenGui
+SlidingFrame6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame6.BackgroundTransparency = 1.000
+SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame6.BorderSizePixel = 0
+SlidingFrame6.Position = UDim2.new(0.6903283, 0, 0.387755096, 0)
+SlidingFrame6.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame6.Visible = false
+SlidingFrame6.Font = Enum.Font.Unknown
+SlidingFrame6.LineHeight = 0.000
+SlidingFrame6.Text = "Y"
+SlidingFrame6.TextColor3 = Color3.fromRGB(38, 150, 184)
+SlidingFrame6.TextSize = 100.000
+SlidingFrame6.TextWrapped = true
+
+SlidingFrame4.Name = "SlidingFrame4"
+SlidingFrame4.Parent = ScreenGui
+SlidingFrame4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame4.BackgroundTransparency = 1.000
+SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame4.BorderSizePixel = 0
+SlidingFrame4.Position = UDim2.new(0.447204977, 0, 0.387755096, 0)
+SlidingFrame4.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame4.Visible = false
+SlidingFrame4.Font = Enum.Font.Unknown
+SlidingFrame4.Text = "A"
+SlidingFrame4.TextColor3 = Color3.fromRGB(24, 74, 212)
+SlidingFrame4.TextSize = 100.000
+SlidingFrame4.TextWrapped = true
+
+Hold.Name = "Hold"
+Hold.Parent = ScreenGui
+Hold.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Hold.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hold.BorderSizePixel = 0
+Hold.Position = UDim2.new(0.279503107, 0, 0.294642895, 0)
+Hold.Size = UDim2.new(0, 498, 0, 286)
+
+Frame.Parent = Hold
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.0386055931, 0, -0.00207220763, 0)
+Frame.Size = UDim2.new(0, 518, 0, 53)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.342142999, 0, 0.227904692, 0)
+TextLabel.Size = UDim2.new(0, 163, 0, 30)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = " FANTASY HUB -  Saber Simulator ⚔️!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0344581008, 0, 0.227904692, 0)
+TextLabel_2.Size = UDim2.new(0, 52, 0, 30)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "V.Free"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+EggFrame.Name = "EggFrame"
+EggFrame.Parent = Hold
+EggFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EggFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EggFrame.BorderSizePixel = 0
+EggFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
+EggFrame.Size = UDim2.new(0, 434, 0, 236)
+
+ImageLabel.Parent = EggFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.232505783, 0, 0.137096778, 0)
+ImageLabel.Size = UDim2.new(0, 212, 0, 179)
+ImageLabel.Image = "rbxassetid://107097205978898"
+ImageLabel.ImageTransparency = 0.660
+
+Dorime.Name = "Dorime"
+Dorime.Parent = EggFrame
+Dorime.Active = true
+Dorime.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Dorime.BackgroundTransparency = 1.000
+Dorime.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dorime.BorderSizePixel = 0
+Dorime.Position = UDim2.new(0.0207373276, 0, 0.0169491526, 0)
+Dorime.Size = UDim2.new(0, 419, 0, 224)
+Dorime.ScrollBarThickness = 0
+
+TextLabel_3.Parent = Dorime
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.245823383, 0, -0.00299113127, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Auto Egg Opening COMING SOON  with Webhook"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+Acraft.Name = "Acraft"
+Acraft.Parent = Dorime
+Acraft.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Acraft.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Acraft.BorderSizePixel = 0
+Acraft.Position = UDim2.new(0.0497764274, 0, 0.108107977, 0)
+Acraft.Size = UDim2.new(0, 384, 0, 50)
+Acraft.Font = Enum.Font.SourceSans
+Acraft.Text = "       AutoCraftAllPets"
+Acraft.TextColor3 = Color3.fromRGB(255, 255, 255)
+Acraft.TextSize = 14.000
+Acraft.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner.Parent = Acraft
+
+balerina.Name = "balerina"
+balerina.Parent = Acraft
+balerina.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina.BorderSizePixel = 0
+balerina.Position = UDim2.new(0.781001389, 0, 0.312415779, 0)
+balerina.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = balerina
+
+RollButton.Name = "RollButton"
+RollButton.Parent = balerina
+RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton.BorderSizePixel = 0
+RollButton.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton.Size = UDim2.new(0, 18, 0, 18)
+RollButton.Font = Enum.Font.SourceSans
+RollButton.Text = ""
+RollButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(1, 2)
+UICorner_3.Parent = RollButton
+
+Aequiq.Name = "Aequiq"
+Aequiq.Parent = Dorime
+Aequiq.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Aequiq.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aequiq.BorderSizePixel = 0
+Aequiq.Position = UDim2.new(0.0497764274, 0, 0.250120431, 0)
+Aequiq.Size = UDim2.new(0, 384, 0, 50)
+Aequiq.Font = Enum.Font.SourceSans
+Aequiq.Text = "       AutoEquiqBestPets"
+Aequiq.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aequiq.TextSize = 14.000
+Aequiq.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.Parent = Aequiq
+
+balerina_2.Name = "balerina"
+balerina_2.Parent = Aequiq
+balerina_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_2.BorderSizePixel = 0
+balerina_2.Position = UDim2.new(0.781001389, 0, 0.312415779, 0)
+balerina_2.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = balerina_2
+
+RollButton_2.Name = "RollButton"
+RollButton_2.Parent = balerina_2
+RollButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_2.BorderSizePixel = 0
+RollButton_2.Position = UDim2.new(0.110374928, 0, -0.0363630801, 0)
+RollButton_2.Size = UDim2.new(0, 18, 0, 18)
+RollButton_2.Font = Enum.Font.SourceSans
+RollButton_2.Text = ""
+RollButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_2.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(1, 2)
+UICorner_6.Parent = RollButton_2
+
+Tarea.Name = "Tarea"
+Tarea.Parent = Dorime
+Tarea.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Tarea.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tarea.BorderSizePixel = 0
+Tarea.Position = UDim2.new(0.0477326959, 0, 0.39609161, 0)
+Tarea.Size = UDim2.new(0, 384, 0, 50)
+Tarea.Font = Enum.Font.FredokaOne
+Tarea.Text = "Teleport To Egg Area"
+Tarea.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tarea.TextSize = 14.000
+
+UICorner_7.Parent = Tarea
+
+lineup.Name = "lineup"
+lineup.Parent = Hold
+lineup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lineup.BackgroundTransparency = 0.500
+lineup.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lineup.BorderSizePixel = 0
+lineup.Position = UDim2.new(0.146133482, 0, 0.178626209, 0)
+lineup.Size = UDim2.new(0, 426, 0, -1)
+
+lineup_2.Name = "lineup"
+lineup_2.Parent = Hold
+lineup_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lineup_2.BackgroundTransparency = 0.500
+lineup_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lineup_2.BorderSizePixel = 0
+lineup_2.Position = UDim2.new(-0.0286651663, 0, 0.178459167, 0)
+lineup_2.Size = UDim2.new(0, 69, 0, -1)
+
+InfoFrame.Name = "InfoFrame"
+InfoFrame.Parent = Hold
+InfoFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+InfoFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfoFrame.BorderSizePixel = 0
+InfoFrame.Position = UDim2.new(0.131749108, 0, 0.178459108, 0)
+InfoFrame.Size = UDim2.new(0, 433, 0, 236)
+InfoFrame.Visible = false
+
+ImageLabel_2.Parent = InfoFrame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.232505783, 0, 0.137096778, 0)
+ImageLabel_2.Size = UDim2.new(0, 212, 0, 179)
+ImageLabel_2.Image = "rbxassetid://107097205978898"
+ImageLabel_2.ImageTransparency = 0.660
+
+TextLabel_4.Parent = InfoFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.015725363, 0, 0.0384718031, 0)
+TextLabel_4.Size = UDim2.new(0, 420, 0, 49)
+TextLabel_4.Font = Enum.Font.JosefinSans
+TextLabel_4.Text = "Script is new, if u find any bugs , glitches or if u have any suggestion on game contact us on discord "
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 10.000
+TextLabel_4.TextWrapped = true
+
+UICorner_8.Parent = TextLabel_4
+
+TextLabel_5.Parent = InfoFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.015725363, 0, 0.284234524, 0)
+TextLabel_5.Size = UDim2.new(0, 420, 0, 49)
+TextLabel_5.Font = Enum.Font.JosefinSans
+TextLabel_5.Text = "if u want premium version of script join in discord and make ticket"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 10.000
+
+UICorner_9.Parent = TextLabel_5
+
+TextLabel_6.Parent = InfoFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.252071857, 0, 0.729017377, 0)
+TextLabel_6.Size = UDim2.new(0, 91, 0, 23)
+TextLabel_6.Font = Enum.Font.JosefinSans
+TextLabel_6.Text = " .gg/su4EUnyeB5"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 10.000
+TextLabel_6.TextWrapped = true
+
+UICorner_10.Parent = TextLabel_6
+
+TextLabel_7.Parent = InfoFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0795454532, 0, 0.669491529, 0)
+TextLabel_7.Size = UDim2.new(0, 44, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "🔵"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 30.000
+
+TextLabel_8.Parent = InfoFrame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.038636364, 0, 0.669491529, 0)
+TextLabel_8.Size = UDim2.new(0, 81, 0, 50)
+TextLabel_8.Font = Enum.Font.FredokaOne
+TextLabel_8.Text = "Discord"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 22.000
+
+SideFrame.Name = "SideFrame"
+SideFrame.Parent = Hold
+SideFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+SideFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideFrame.BorderSizePixel = 0
+SideFrame.Position = UDim2.new(-0.0386055261, 0, 0.178458959, 0)
+SideFrame.Size = UDim2.new(0, 92, 0, 236)
+
+ImageLabel_3.Parent = SideFrame
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.231105313, 0, 0.83004272, 0)
+ImageLabel_3.Size = UDim2.new(0, 38, 0, 33)
+ImageLabel_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+MainB.Name = "MainB"
+MainB.Parent = SideFrame
+MainB.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+MainB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainB.BorderSizePixel = 0
+MainB.Position = UDim2.new(0.0962607339, 0, 0.0544745252, 0)
+MainB.Size = UDim2.new(0, 60, 0, 26)
+MainB.Font = Enum.Font.Roboto
+MainB.Text = "Main"
+MainB.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainB.TextSize = 14.000
+
+UICorner_11.Parent = MainB
+
+ElemB.Name = "ElemB"
+ElemB.Parent = SideFrame
+ElemB.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ElemB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ElemB.BorderSizePixel = 0
+ElemB.Position = UDim2.new(0.115362085, 0, 0.331888229, 0)
+ElemB.Size = UDim2.new(0, 60, 0, 26)
+ElemB.Font = Enum.Font.Roboto
+ElemB.Text = "Elements"
+ElemB.TextColor3 = Color3.fromRGB(255, 255, 255)
+ElemB.TextSize = 14.000
+
+UICorner_12.Parent = ElemB
+
+Frame_2.Parent = SideFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 0.500
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.890191138, 0, 0.991359115, 0)
+Frame_2.Size = UDim2.new(0, 1, 0, -234)
+
+lineup_3.Name = "lineup"
+lineup_3.Parent = SideFrame
+lineup_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+lineup_3.BackgroundTransparency = 0.500
+lineup_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lineup_3.BorderSizePixel = 0
+lineup_3.Position = UDim2.new(0.047421664, 0, 0.779379487, 0)
+lineup_3.Size = UDim2.new(0, 69, 0, -1)
+
+EggB.Name = "EggB"
+EggB.Parent = SideFrame
+EggB.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+EggB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EggB.BorderSizePixel = 0
+EggB.Position = UDim2.new(0.115362085, 0, 0.192057729, 0)
+EggB.Size = UDim2.new(0, 60, 0, 26)
+EggB.Font = Enum.Font.Roboto
+EggB.Text = "Eggs"
+EggB.TextColor3 = Color3.fromRGB(255, 255, 255)
+EggB.TextSize = 14.000
+
+UICorner_13.Parent = EggB
+
+InfoB.Name = "InfoB"
+InfoB.Parent = SideFrame
+InfoB.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+InfoB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfoB.BorderSizePixel = 0
+InfoB.Position = UDim2.new(0.115000002, 0, 0.469999999, 0)
+InfoB.Size = UDim2.new(0, 60, 0, 26)
+InfoB.Font = Enum.Font.Roboto
+InfoB.Text = "Info"
+InfoB.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoB.TextSize = 14.000
+
+UICorner_14.Parent = InfoB
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Hold
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
+MainFrame.Size = UDim2.new(0, 434, 0, 236)
+MainFrame.Visible = false
+
+ImageLabel_4.Parent = MainFrame
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.232505783, 0, 0.137096778, 0)
+ImageLabel_4.Size = UDim2.new(0, 212, 0, 179)
+ImageLabel_4.Image = "rbxassetid://107097205978898"
+ImageLabel_4.ImageTransparency = 0.660
+
+Rscroll.Name = "Rscroll"
+Rscroll.Parent = MainFrame
+Rscroll.Active = true
+Rscroll.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Rscroll.BackgroundTransparency = 0.050
+Rscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rscroll.BorderSizePixel = 0
+Rscroll.Position = UDim2.new(0.551020384, 0, 0.0296610165, 0)
+Rscroll.Size = UDim2.new(0, 190, 0, 222)
+Rscroll.CanvasPosition = Vector2.new(0, 140)
+Rscroll.ScrollBarThickness = 0
+
+UICorner_15.Parent = Rscroll
+
+AkillB.Name = "AkillB"
+AkillB.Parent = Rscroll
+AkillB.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AkillB.BackgroundTransparency = 0.500
+AkillB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AkillB.BorderSizePixel = 0
+AkillB.Position = UDim2.new(0.0926314518, 0, 0.0132417418, 0)
+AkillB.Size = UDim2.new(0, 160, 0, 50)
+AkillB.Font = Enum.Font.SourceSans
+AkillB.Text = "          AutoKillBoss"
+AkillB.TextColor3 = Color3.fromRGB(255, 255, 255)
+AkillB.TextSize = 14.000
+AkillB.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_16.Parent = AkillB
+
+balerina_3.Name = "balerina"
+balerina_3.Parent = AkillB
+balerina_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_3.BorderSizePixel = 0
+balerina_3.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_3.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = balerina_3
+
+RollButton_3.Name = "RollButton"
+RollButton_3.Parent = balerina_3
+RollButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_3.BorderSizePixel = 0
+RollButton_3.Position = UDim2.new(0.109999999, 0, -0, 0)
+RollButton_3.Size = UDim2.new(0, 18, 0, 18)
+RollButton_3.Font = Enum.Font.SourceSans
+RollButton_3.Text = ""
+RollButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_3.TextSize = 13.000
+
+UICorner_18.CornerRadius = UDim.new(1, 2)
+UICorner_18.Parent = RollButton_3
+
+Areward.Name = "Areward"
+Areward.Parent = Rscroll
+Areward.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Areward.BackgroundTransparency = 0.500
+Areward.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Areward.BorderSizePixel = 0
+Areward.Position = UDim2.new(0.0930000022, 0, 0.141000003, 0)
+Areward.Size = UDim2.new(0, 160, 0, 50)
+Areward.Font = Enum.Font.SourceSans
+Areward.Text = "          AutoRewards"
+Areward.TextColor3 = Color3.fromRGB(255, 255, 255)
+Areward.TextSize = 14.000
+Areward.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_19.Parent = Areward
+
+balerina_4.Name = "balerina"
+balerina_4.Parent = Areward
+balerina_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_4.BorderSizePixel = 0
+balerina_4.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_4.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = balerina_4
+
+RollButton_4.Name = "RollButton"
+RollButton_4.Parent = balerina_4
+RollButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_4.BorderSizePixel = 0
+RollButton_4.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_4.Size = UDim2.new(0, 18, 0, 18)
+RollButton_4.Font = Enum.Font.SourceSans
+RollButton_4.Text = ""
+RollButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_4.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(1, 2)
+UICorner_21.Parent = RollButton_4
+
+Acrown.Name = "Acrown"
+Acrown.Parent = Rscroll
+Acrown.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Acrown.BackgroundTransparency = 0.500
+Acrown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Acrown.BorderSizePixel = 0
+Acrown.Position = UDim2.new(0.0926314518, 0, 0.266631246, 0)
+Acrown.Size = UDim2.new(0, 160, 0, 50)
+Acrown.Font = Enum.Font.SourceSans
+Acrown.Text = "        AutoCrown"
+Acrown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Acrown.TextSize = 14.000
+Acrown.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_22.Parent = Acrown
+
+balerina_5.Name = "balerina"
+balerina_5.Parent = Acrown
+balerina_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_5.BorderSizePixel = 0
+balerina_5.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_5.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_23.CornerRadius = UDim.new(1, 0)
+UICorner_23.Parent = balerina_5
+
+RollButton_5.Name = "RollButton"
+RollButton_5.Parent = balerina_5
+RollButton_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_5.BorderSizePixel = 0
+RollButton_5.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_5.Size = UDim2.new(0, 18, 0, 18)
+RollButton_5.Font = Enum.Font.SourceSans
+RollButton_5.Text = ""
+RollButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_5.TextSize = 14.000
+
+UICorner_24.CornerRadius = UDim.new(1, 2)
+UICorner_24.Parent = RollButton_5
+
+Afire.Name = "Afire"
+Afire.Parent = Rscroll
+Afire.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Afire.BackgroundTransparency = 0.500
+Afire.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Afire.BorderSizePixel = 0
+Afire.Position = UDim2.new(0.0926314518, 0, 0.404729486, 0)
+Afire.Size = UDim2.new(0, 160, 0, 50)
+Afire.Font = Enum.Font.SourceSans
+Afire.Text = "        AutoFireFarm"
+Afire.TextColor3 = Color3.fromRGB(255, 255, 255)
+Afire.TextSize = 14.000
+Afire.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_25.Parent = Afire
+
+balerina_6.Name = "balerina"
+balerina_6.Parent = Afire
+balerina_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_6.BorderSizePixel = 0
+balerina_6.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_6.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_26.CornerRadius = UDim.new(1, 0)
+UICorner_26.Parent = balerina_6
+
+RollButton_6.Name = "RollButton"
+RollButton_6.Parent = balerina_6
+RollButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_6.BorderSizePixel = 0
+RollButton_6.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_6.Size = UDim2.new(0, 18, 0, 18)
+RollButton_6.Font = Enum.Font.SourceSans
+RollButton_6.Text = ""
+RollButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_6.TextSize = 14.000
+
+UICorner_27.CornerRadius = UDim.new(1, 2)
+UICorner_27.Parent = RollButton_6
+
+Abura.Name = "Abura"
+Abura.Parent = Rscroll
+Abura.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Abura.BackgroundTransparency = 0.500
+Abura.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Abura.BorderSizePixel = 0
+Abura.Position = UDim2.new(0.0930000022, 0, 0.540000021, 0)
+Abura.Size = UDim2.new(0, 160, 0, 50)
+Abura.Font = Enum.Font.SourceSans
+Abura.Text = "        AutoBuyAura"
+Abura.TextColor3 = Color3.fromRGB(255, 255, 255)
+Abura.TextSize = 14.000
+Abura.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_28.Parent = Abura
+
+balerina_7.Name = "balerina"
+balerina_7.Parent = Abura
+balerina_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_7.BorderSizePixel = 0
+balerina_7.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_7.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_29.CornerRadius = UDim.new(1, 0)
+UICorner_29.Parent = balerina_7
+
+RollButton_7.Name = "RollButton"
+RollButton_7.Parent = balerina_7
+RollButton_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_7.BorderSizePixel = 0
+RollButton_7.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_7.Size = UDim2.new(0, 18, 0, 18)
+RollButton_7.Font = Enum.Font.SourceSans
+RollButton_7.Text = ""
+RollButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_7.TextSize = 14.000
+
+UICorner_30.CornerRadius = UDim.new(1, 2)
+UICorner_30.Parent = RollButton_7
+
+Lscroll.Name = "Lscroll"
+Lscroll.Parent = MainFrame
+Lscroll.Active = true
+Lscroll.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Lscroll.BackgroundTransparency = 0.050
+Lscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lscroll.BorderSizePixel = 0
+Lscroll.Position = UDim2.new(0.0385487527, 0, 0.0254237279, 0)
+Lscroll.Size = UDim2.new(0, 174, 0, 222)
+Lscroll.ScrollBarThickness = 0
+
+UICorner_31.Parent = Lscroll
+
+Abuy.Name = "Abuy"
+Abuy.Parent = Lscroll
+Abuy.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Abuy.BackgroundTransparency = 0.500
+Abuy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Abuy.BorderSizePixel = 0
+Abuy.Position = UDim2.new(0.0402298868, 0, 0.0171661377, 0)
+Abuy.Size = UDim2.new(0, 160, 0, 50)
+Abuy.Font = Enum.Font.SourceSans
+Abuy.Text = "       AutoBuyDna"
+Abuy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Abuy.TextSize = 14.000
+Abuy.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_32.Parent = Abuy
+
+balerina_8.Name = "balerina"
+balerina_8.Parent = Abuy
+balerina_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_8.BorderSizePixel = 0
+balerina_8.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_8.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_33.CornerRadius = UDim.new(1, 0)
+UICorner_33.Parent = balerina_8
+
+RollButton_8.Name = "RollButton"
+RollButton_8.Parent = balerina_8
+RollButton_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_8.BorderSizePixel = 0
+RollButton_8.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_8.Size = UDim2.new(0, 18, 0, 18)
+RollButton_8.Font = Enum.Font.SourceSans
+RollButton_8.Text = ""
+RollButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_8.TextSize = 14.000
+
+UICorner_34.CornerRadius = UDim.new(1, 2)
+UICorner_34.Parent = RollButton_8
+
+Aswing.Name = "Aswing"
+Aswing.Parent = Lscroll
+Aswing.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Aswing.BackgroundTransparency = 0.500
+Aswing.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aswing.BorderSizePixel = 0
+Aswing.Position = UDim2.new(0.0399999991, 0, 0.140000001, 0)
+Aswing.Size = UDim2.new(0, 160, 0, 50)
+Aswing.Font = Enum.Font.SourceSans
+Aswing.Text = "      AutoSwing"
+Aswing.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aswing.TextSize = 14.000
+Aswing.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_35.Parent = Aswing
+
+balerina_9.Name = "balerina"
+balerina_9.Parent = Aswing
+balerina_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_9.BorderSizePixel = 0
+balerina_9.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_9.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_36.CornerRadius = UDim.new(1, 0)
+UICorner_36.Parent = balerina_9
+
+RollButton_9.Name = "RollButton"
+RollButton_9.Parent = balerina_9
+RollButton_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_9.BorderSizePixel = 0
+RollButton_9.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_9.Size = UDim2.new(0, 18, 0, 18)
+RollButton_9.Font = Enum.Font.SourceSans
+RollButton_9.Text = ""
+RollButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_9.TextSize = 14.000
+
+UICorner_37.CornerRadius = UDim.new(1, 2)
+UICorner_37.Parent = RollButton_9
+
+Asell.Name = "Asell"
+Asell.Parent = Lscroll
+Asell.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Asell.BackgroundTransparency = 0.500
+Asell.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Asell.BorderSizePixel = 0
+Asell.Position = UDim2.new(0.0399999507, 0, 0.261621684, 0)
+Asell.Size = UDim2.new(0, 160, 0, 50)
+Asell.Font = Enum.Font.SourceSans
+Asell.Text = "        AutoSell"
+Asell.TextColor3 = Color3.fromRGB(255, 255, 255)
+Asell.TextSize = 14.000
+Asell.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_38.Parent = Asell
+
+balerina_10.Name = "balerina"
+balerina_10.Parent = Asell
+balerina_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_10.BorderSizePixel = 0
+balerina_10.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_10.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_39.CornerRadius = UDim.new(1, 0)
+UICorner_39.Parent = balerina_10
+
+RollButton_10.Name = "RollButton"
+RollButton_10.Parent = balerina_10
+RollButton_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_10.BorderSizePixel = 0
+RollButton_10.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_10.Size = UDim2.new(0, 18, 0, 18)
+RollButton_10.Font = Enum.Font.SourceSans
+RollButton_10.Text = ""
+RollButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_10.TextSize = 14.000
+
+UICorner_40.CornerRadius = UDim.new(1, 2)
+UICorner_40.Parent = RollButton_10
+
+Aclass.Name = "Aclass"
+Aclass.Parent = Lscroll
+Aclass.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Aclass.BackgroundTransparency = 0.500
+Aclass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aclass.BorderSizePixel = 0
+Aclass.Position = UDim2.new(0.0399999507, 0, 0.389574081, 0)
+Aclass.Size = UDim2.new(0, 160, 0, 50)
+Aclass.Font = Enum.Font.SourceSans
+Aclass.Text = "        AutoBuyClass"
+Aclass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aclass.TextSize = 14.000
+Aclass.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_41.Parent = Aclass
+
+balerina_11.Name = "balerina"
+balerina_11.Parent = Aclass
+balerina_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_11.BorderSizePixel = 0
+balerina_11.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_11.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_42.CornerRadius = UDim.new(1, 0)
+UICorner_42.Parent = balerina_11
+
+RollButton_11.Name = "RollButton"
+RollButton_11.Parent = balerina_11
+RollButton_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_11.BorderSizePixel = 0
+RollButton_11.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_11.Size = UDim2.new(0, 18, 0, 18)
+RollButton_11.Font = Enum.Font.SourceSans
+RollButton_11.Text = ""
+RollButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_11.TextSize = 14.000
+
+UICorner_43.CornerRadius = UDim.new(1, 2)
+UICorner_43.Parent = RollButton_11
+
+Asaber.Name = "Asaber"
+Asaber.Parent = Lscroll
+Asaber.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Asaber.BackgroundTransparency = 0.500
+Asaber.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Asaber.BorderSizePixel = 0
+Asaber.Position = UDim2.new(0.0399999507, 0, 0.527572215, 0)
+Asaber.Size = UDim2.new(0, 160, 0, 50)
+Asaber.Font = Enum.Font.SourceSans
+Asaber.Text = "        AutoBuySaber"
+Asaber.TextColor3 = Color3.fromRGB(255, 255, 255)
+Asaber.TextSize = 14.000
+Asaber.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_44.Parent = Asaber
+
+balerina_12.Name = "balerina"
+balerina_12.Parent = Asaber
+balerina_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_12.BorderSizePixel = 0
+balerina_12.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_12.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_45.CornerRadius = UDim.new(1, 0)
+UICorner_45.Parent = balerina_12
+
+RollButton_12.Name = "RollButton"
+RollButton_12.Parent = balerina_12
+RollButton_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_12.BorderSizePixel = 0
+RollButton_12.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_12.Size = UDim2.new(0, 18, 0, 18)
+RollButton_12.Font = Enum.Font.SourceSans
+RollButton_12.Text = ""
+RollButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_12.TextSize = 14.000
+
+UICorner_46.CornerRadius = UDim.new(1, 2)
+UICorner_46.Parent = RollButton_12
+
+Adamage.Name = "Adamage"
+Adamage.Parent = Lscroll
+Adamage.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Adamage.BackgroundTransparency = 0.500
+Adamage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Adamage.BorderSizePixel = 0
+Adamage.Position = UDim2.new(0.0399999507, 0, 0.657721162, 0)
+Adamage.Size = UDim2.new(0, 160, 0, 50)
+Adamage.Font = Enum.Font.SourceSans
+Adamage.Text = "  AutoBuyDamage"
+Adamage.TextColor3 = Color3.fromRGB(255, 255, 255)
+Adamage.TextSize = 14.000
+Adamage.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_47.Parent = Adamage
+
+balerina_13.Name = "balerina"
+balerina_13.Parent = Adamage
+balerina_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_13.BorderSizePixel = 0
+balerina_13.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_13.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_48.CornerRadius = UDim.new(1, 0)
+UICorner_48.Parent = balerina_13
+
+RollButton_13.Name = "RollButton"
+RollButton_13.Parent = balerina_13
+RollButton_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_13.BorderSizePixel = 0
+RollButton_13.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_13.Size = UDim2.new(0, 18, 0, 18)
+RollButton_13.Font = Enum.Font.SourceSans
+RollButton_13.Text = ""
+RollButton_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_13.TextSize = 14.000
+
+UICorner_49.CornerRadius = UDim.new(1, 2)
+UICorner_49.Parent = RollButton_13
+
+Apetr.Name = "Apetr"
+Apetr.Parent = Lscroll
+Apetr.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Apetr.BackgroundTransparency = 0.500
+Apetr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Apetr.BorderSizePixel = 0
+Apetr.Position = UDim2.new(0.0399999507, 0, 0.792856276, 0)
+Apetr.Size = UDim2.new(0, 160, 0, 50)
+Apetr.Font = Enum.Font.SourceSans
+Apetr.Text = "   AutoBuyPetAura"
+Apetr.TextColor3 = Color3.fromRGB(255, 255, 255)
+Apetr.TextSize = 14.000
+Apetr.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_50.Parent = Apetr
+
+balerina_14.Name = "balerina"
+balerina_14.Parent = Apetr
+balerina_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_14.BorderSizePixel = 0
+balerina_14.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_14.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_51.CornerRadius = UDim.new(1, 0)
+UICorner_51.Parent = balerina_14
+
+RollButton_14.Name = "RollButton"
+RollButton_14.Parent = balerina_14
+RollButton_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_14.BorderSizePixel = 0
+RollButton_14.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_14.Size = UDim2.new(0, 18, 0, 18)
+RollButton_14.Font = Enum.Font.SourceSans
+RollButton_14.Text = ""
+RollButton_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_14.TextSize = 14.000
+
+UICorner_52.CornerRadius = UDim.new(1, 2)
+UICorner_52.Parent = RollButton_14
+
+ElemFrame.Name = "ElemFrame"
+ElemFrame.Parent = Hold
+ElemFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ElemFrame.BackgroundTransparency = 0.500
+ElemFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ElemFrame.BorderSizePixel = 0
+ElemFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
+ElemFrame.Size = UDim2.new(0, 434, 0, 236)
+ElemFrame.Visible = false
+
+ImageLabel_5.Parent = ElemFrame
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.232505783, 0, 0.137096778, 0)
+ImageLabel_5.Size = UDim2.new(0, 212, 0, 179)
+ImageLabel_5.Image = "rbxassetid://107097205978898"
+ImageLabel_5.ImageTransparency = 0.660
+
+TextLabel_9.Parent = ElemFrame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.07571242, 0, 0.331246585, 0)
+TextLabel_9.Size = UDim2.new(0, 368, 0, 50)
+TextLabel_9.Font = Enum.Font.FredokaOne
+TextLabel_9.Text = "COMMING SOON!"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 14.000
+
+UICorner_53.Parent = TextLabel_9
+
+Abutton.Name = "Abutton"
+Abutton.Parent = ScreenGui
+Abutton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Abutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Abutton.BorderSizePixel = 0
+Abutton.Position = UDim2.new(0.00986620504, 0, 0.596433818, 0)
+Abutton.Size = UDim2.new(0, 35, 0, 28)
+Abutton.Visible = false
+Abutton.Image = "rbxassetid://90028088616811"
+
+UICorner_54.Parent = Abutton
+
+-- Scripts:
+
+local function RTXM_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local TweenService = game:GetService("TweenService")
+	local parent = script.Parent
+	local screenGui = parent -- Assuming parent is the ScreenGui
+	
+	-- Frame names in order of the word "FANTASY"
+	local frameNames = {
+		"SlidingFrame",   -- F
+		"SlidingFrame1",  -- A
+		"SlidingFrame2",  -- N
+		"SlidingFrame3",  -- T
+		"SlidingFrame4",  -- A
+		"SlidingFrame5",  -- S
+		"SlidingFrame6",  -- Y
+	}
+	
+	local tweenInfo = TweenInfo.new(
+		1, -- duration
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out
+	)
+	
+	-- Animate sliding frames
+	local total = #frameNames
+	for i, name in ipairs(frameNames) do
+		local frame = parent:WaitForChild(name)
+	
+		-- Set AnchorPoint to center of frame
+		frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	
+		-- Start off-screen to the right
+		frame.Position = UDim2.new(1.2, 0, 0.5, 0)
+	
+		-- Evenly spaced X position
+		local spacing = i / (total + 1)
+		local goal = {
+			Position = UDim2.new(spacing, 0, 0.5, 0)
+		}
+	
+		local tween = TweenService:Create(frame, tweenInfo, goal)
+		tween:Play()
+	
+		-- Hide each frame after delay
+		task.delay(tweenInfo.Time + 3, function()
+			frame.Visible = false
+		end)
+	end
+	
+	-- After all frames are hidden, show MainFrame and Abutton
+	task.delay(tweenInfo.Time + 3, function()
+		local Hold = screenGui:WaitForChild("Hold")
+		local aButton = screenGui:WaitForChild("Abutton")
+	
+		Hold.Visible = true
+		aButton.Visible = true
+	end)
+	
+	
+	
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local screenGui = script.Parent
+	local Hold = screenGui:WaitForChild("Hold")
+	local SideFrame = Hold:WaitForChild("SideFrame")
+	local imageLabel = SideFrame:WaitForChild("ImageLabel") -- Correct the name if needed
+	
+	print("Running user thumbnail script...")
+	
+	local thumbUrl = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	print("Thumbnail URL:", thumbUrl)
+	
+	imageLabel.Image = thumbUrl
+	
+end
+coroutine.wrap(RTXM_fake_script)()
+local function GLSMSXK_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Hold")
+	local Button = SGui:WaitForChild("Abutton")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+	
+	
+	
+	local UIS = game:GetService("UserInputService")
+	local screenGui = script.Parent
+	local Hold = screenGui:WaitForChild("Hold")
+	local frame = Hold	
+	local dragToggle = nil
+	local dragSpeed = 0.1
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale,startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService("TweenService"):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+	
+	
+	
+	
+	
+	local SGui = script.Parent
+	local Hold = SGui:WaitForChild("Hold")
+	local MainFrame = Hold:WaitForChild("MainFrame")
+	local SideFrame = Hold:WaitForChild("SideFrame")
+	local Button = SideFrame:WaitForChild("MainB")
+	local InfoFrame = Hold:WaitForChild("InfoFrame")
+	local EggFrame = Hold:WaitForChild("EggFrame")
+	local ElemFrame = Hold:WaitForChild("ElemFrame")
+	
+	
+	
+	
+	
+	Button.MouseButton1Up:Connect(function()
+		MainFrame.Visible = not MainFrame.Visible
+		InfoFrame.Visible = false
+		EggFrame.Visible = false
+		ElemFrame.Visible = false
+	
+	end)
+	
+	
+	local SGui = script.Parent
+	local Hold = SGui:WaitForChild("Hold")
+	local InfoFrame = Hold:WaitForChild("InfoFrame")
+	local SideFrame = Hold:WaitForChild("SideFrame")
+	local Button = SideFrame:WaitForChild("InfoB")
+	local MainFrame = Hold:WaitForChild("MainFrame")
+	local EggFrame = Hold:WaitForChild("EggFrame")
+	local ElemFrame = Hold:WaitForChild("ElemFrame")
+	
+	
+	
+	
+	
+	Button.MouseButton1Up:Connect(function()
+		InfoFrame.Visible = not InfoFrame.Visible
+		MainFrame.Visible = false
+		EggFrame.Visible = false
+		ElemFrame.Visible = false
+	
+	end)
+	
+	
+	local SGui = script.Parent
+	local Hold = SGui:WaitForChild("Hold")
+	local EggFrame = Hold:WaitForChild("EggFrame")
+	local SideFrame = Hold:WaitForChild("SideFrame")
+	local Button = SideFrame:WaitForChild("EggB")
+	local MainFrame = Hold:WaitForChild("MainFrame")
+	local InfoFrame = Hold:WaitForChild("InfoFrame")
+	local ElemFrame = Hold:WaitForChild("ElemFrame")
+	
+	
+	Button.MouseButton1Up:Connect(function()
+		EggFrame.Visible = not EggFrame.Visible
+		MainFrame.Visible = false
+		InfoFrame.Visible = false
+		ElemFrame.Visible = false	
+	
+	end)
+	
+	local SGui = script.Parent
+	local Hold = SGui:WaitForChild("Hold")
+	local ElemFrame = Hold:WaitForChild("ElemFrame")
+	local SideFrame = Hold:WaitForChild("SideFrame")
+	local Button = SideFrame:WaitForChild("ElemB")
+	local MainFrame = Hold:WaitForChild("MainFrame")
+	local InfoFrame = Hold:WaitForChild("InfoFrame")
+	local EggFrame = Hold:WaitForChild("EggFrame")
+	
+	
+	Button.MouseButton1Up:Connect(function()
+		ElemFrame.Visible = not ElemFrame.Visible
+		MainFrame.Visible = false
+		InfoFrame.Visible = false
+		EggFrame.Visible = false	
+	
+	end)
+	
+end
+coroutine.wrap(GLSMSXK_fake_script)()
+local function IMTFC_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Abuy = Lscroll:WaitForChild("Abuy")
+	local Balerina = Abuy:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
+	
+	local isOn = false
+	local run = false
+	
+	-- Function to control the BuyAllDNAs loop
+	local function toggleBuyDNALoop(state)
+		run = state
+		if run then
+			task.spawn(function()
+				while run do
+					UIAction:FireServer("BuyAllDNAs")
+					wait(0.1) -- Adjust the delay as needed
+				end
+			end)
+		end
+	end
+	
+	-- RollButton toggle behavior
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Toggle ON: move right and turn green
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			toggleBuyDNALoop(true)
+		else
+			-- Toggle OFF: move left and turn black
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			toggleBuyDNALoop(false)
+		end
+	end)
+	
+	
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Aclass = Lscroll:WaitForChild("Aclass")
+	local Balerina = Aclass:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Move right and up
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Move back to left and original Y
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Adamage = Lscroll:WaitForChild("Adamage")
+	local Balerina = Adamage:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Move right and up
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Move back to left and original Y
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Apetr = Lscroll:WaitForChild("Apetr")
+	local Balerina = Apetr:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
+	
+	local isOn = false
+	local run = false
+	
+	-- Function to toggle the BuyAllPetAuras loop
+	local function toggleAuraLoop(state)
+		run = state
+		if run then
+			task.spawn(function()
+				while run do
+					UIAction:FireServer("BuyAllPetAuras")
+					wait(0.5) -- Adjust delay as needed
+				end
+			end)
+		end
+	end
+	
+	-- Toggle button behavior
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- ON: move button and turn green
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			toggleAuraLoop(true)
+		else
+			-- OFF: reset position and color
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			toggleAuraLoop(false)
+		end
+	end)
+	
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Asaber = Lscroll:WaitForChild("Asaber")
+	local Balerina = Asaber:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
+	
+	local isOn = false
+	local run = false
+	
+	-- Function to run the BuyAllWeapons loop
+	local function toggleBuyLoop(state)
+		run = state
+		if run then
+			task.spawn(function()
+				while run do
+					UIAction:FireServer("BuyAllWeapons")
+					wait(0.1) -- Adjust delay as needed
+				end
+			end)
+		end
+	end
+	
+	-- RollButton toggle behavior
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Toggle ON: move right and turn green
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			toggleBuyLoop(true)
+		else
+			-- Toggle OFF: move left and turn black
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			toggleBuyLoop(false)
+		end
+	end)
+	
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Asell = Lscroll:WaitForChild("Asell")
+	local Balerina = Asell:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local SellStrength = ReplicatedStorage:WaitForChild("Events"):WaitForChild("SellStrength")
+	
+	local isOn = false
+	local run = false
+	
+	-- Function to toggle the Sell loop
+	local function toggleSellLoop(state)
+		run = state
+		if run then
+			task.spawn(function()
+				while run do
+					SellStrength:FireServer()
+					wait(0.1) -- Adjust delay as needed
+				end
+			end)
+		end
+	end
+	
+	-- Button click handler
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Turn ON: Move button right and turn green
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			toggleSellLoop(true)
+		else
+			-- Turn OFF: Move button left and turn black
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			toggleSellLoop(false)
+		end
+	end)
+	
+	
+	-- Services
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	-- Remote references
+	local SwingSaber = ReplicatedStorage:WaitForChild("Events"):WaitForChild("SwingSaber")
+	
+	-- UI elements
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local Aswing = Lscroll:WaitForChild("Aswing")
+	local Balerina = Aswing:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	-- State variables
+	local isOn = false
+	local loopThread = nil
+	
+	-- Get equipped Tool with RemoteClick
+	local function getToolWithRemoteClick()
+		local char = player.Character or player.CharacterAdded:Wait()
+		for _, child in ipairs(char:GetChildren()) do
+			if child:IsA("Tool") and child:FindFirstChild("RemoteClick") then
+				return child.RemoteClick
+			end
+		end
+		return nil
+	end
+	
+	-- Function to start the loop
+	local function startLoop()
+		loopThread = task.spawn(function()
+			while isOn do
+				SwingSaber:FireServer()
+				local remote = getToolWithRemoteClick()
+				if remote then
+					pcall(function()
+						remote:FireServer()
+					end)
+				end
+				task.wait(0.25)
+			end
+		end)
+	end
+	
+	-- Handle button click toggle
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+	
+		if isOn then
+			-- Visual ON
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			startLoop()
+		else
+			-- Visual OFF
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			isOn = false
+		end
+	end)
+	
+	
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Rscroll = MainFrame:WaitForChild("Rscroll")
+	local Acrown = Rscroll:WaitForChild("Acrown")
+	local Balerina = Acrown:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Move right and up
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Move back to left and original Y
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Rscroll = MainFrame:WaitForChild("Rscroll")
+	local AkillB = Rscroll:WaitForChild("AkillB")
+	local Balerina = AkillB:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Move right and up
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Move back to left and original Y
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Rscroll = MainFrame:WaitForChild("Rscroll")
+	local Areward = Rscroll:WaitForChild("Areward")
+	local Balerina = Areward:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	-- Loop controlled by isOn flag
+	task.spawn(function()
+		while true do
+			if isOn then
+				pcall(function()
+					UIAction:FireServer("ClaimDailyTimedReward")
+				end)
+			end
+			task.wait(60) -- Run every 60 seconds
+		end
+	end)
+	
+	-- Toggle UI Button Logic
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+	
+		if isOn then
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	
+	
+	
+	-- Services and Remote
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
+	
+	-- UI Elements
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local EggFrame = hold:WaitForChild("EggFrame")
+	local Dorime = EggFrame:WaitForChild("Dorime")
+	local Acraft = Dorime:WaitForChild("Acraft")
+	local Balerina = Acraft:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	-- Control flag
+	local isOn = false
+	
+	-- Looping function controlled by isOn
+	task.spawn(function()
+		while true do
+			if isOn then
+				local success, err = pcall(function()
+					UIAction:FireServer("CombineAllPets")
+				end)
+				if not success then
+					warn("Failed to fire CombineAllPets:", err)
+				end
+			end
+			task.wait(0.1) -- Delay to prevent overload
+		end
+	end)
+	
+	-- Toggle Button Behavior
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	
+	-- Services and Remote
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
+	
+	-- UI Setup
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local EggFrame = hold:WaitForChild("EggFrame")
+	local Dorime = EggFrame:WaitForChild("Dorime")
+	local Aequiq = Dorime:WaitForChild("Aequiq")
+	local Balerina = Aequiq:WaitForChild("balerina") -- ✅ Corrected reference
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	-- Toggle variable
+	local isOn = false
+	
+	-- Looping logic
+	task.spawn(function()
+		while true do
+			if isOn then
+				local success, err = pcall(function()
+					UIAction:FireServer("EquipBestPets", true)
+				end)
+				if not success then
+					warn("Failed to fire EquipBestPets:", err)
+				end
+			end
+			task.wait(0.1)
+		end
+	end)
+	
+	-- Button click behavior
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	
+	
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Rscroll = MainFrame:WaitForChild("Rscroll")
+	local Afire = Rscroll:WaitForChild("Afire")
+	local Balerina = Afire:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Move right and up
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Move back to left and original Y
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	-- UI References
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Rscroll = MainFrame:WaitForChild("Rscroll")
+	local Abura = Rscroll:WaitForChild("Abura")
+	local Balerina = Abura:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	-- Control Variable
+	local isOn = false
+	
+	-- BuyAllAuras Loop (runs only when isOn is true)
+	task.spawn(function()
+		while true do
+			if isOn then
+				local args = { "BuyAllAuras" }
+				pcall(function()
+					game:GetService("ReplicatedStorage")
+						:WaitForChild("Events")
+						:WaitForChild("UIAction")
+						:FireServer(unpack(args))
+				end)
+			end
+			task.wait(0.5) -- Adjust delay to avoid spamming or errors
+		end
+	end)
+	
+	-- RollButton Toggle Behavior
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+	
+		if isOn then
+			-- Toggle ON: Green, Slide Right
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Toggle OFF: Black, Slide Back
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(IMTFC_fake_script)()
