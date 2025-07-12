@@ -155,7 +155,6 @@ SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame.BorderSizePixel = 0
 SlidingFrame.Position = UDim2.new(0.0541259982, 0, 0.387755096, 0)
 SlidingFrame.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame.Visible = false
 SlidingFrame.Font = Enum.Font.Unknown
 SlidingFrame.Text = "F"
 SlidingFrame.TextColor3 = Color3.fromRGB(38, 150, 184)
@@ -170,7 +169,6 @@ SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame1.BorderSizePixel = 0
 SlidingFrame1.Position = UDim2.new(0.173913047, 0, 0.387755096, 0)
 SlidingFrame1.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame1.Visible = false
 SlidingFrame1.Font = Enum.Font.Unknown
 SlidingFrame1.Text = "A"
 SlidingFrame1.TextColor3 = Color3.fromRGB(24, 74, 212)
@@ -185,7 +183,6 @@ SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame2.BorderSizePixel = 0
 SlidingFrame2.Position = UDim2.new(0.264418811, 0, 0.387755096, 0)
 SlidingFrame2.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame2.Visible = false
 SlidingFrame2.Font = Enum.Font.Unknown
 SlidingFrame2.Text = "N"
 SlidingFrame2.TextColor3 = Color3.fromRGB(184, 184, 184)
@@ -200,7 +197,6 @@ SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame3.BorderSizePixel = 0
 SlidingFrame3.Position = UDim2.new(0.348713398, 0, 0.387755096, 0)
 SlidingFrame3.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame3.Visible = false
 SlidingFrame3.Font = Enum.Font.Unknown
 SlidingFrame3.Text = "T"
 SlidingFrame3.TextColor3 = Color3.fromRGB(38, 150, 184)
@@ -215,7 +211,6 @@ SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame5.BorderSizePixel = 0
 SlidingFrame5.Position = UDim2.new(0.588287473, 0, 0.387755096, 0)
 SlidingFrame5.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame5.Visible = false
 SlidingFrame5.Font = Enum.Font.Unknown
 SlidingFrame5.Text = "S"
 SlidingFrame5.TextColor3 = Color3.fromRGB(184, 184, 184)
@@ -230,7 +225,6 @@ SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame6.BorderSizePixel = 0
 SlidingFrame6.Position = UDim2.new(0.6903283, 0, 0.387755096, 0)
 SlidingFrame6.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame6.Visible = false
 SlidingFrame6.Font = Enum.Font.Unknown
 SlidingFrame6.LineHeight = 0.000
 SlidingFrame6.Text = "Y"
@@ -246,7 +240,6 @@ SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame4.BorderSizePixel = 0
 SlidingFrame4.Position = UDim2.new(0.447204977, 0, 0.387755096, 0)
 SlidingFrame4.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame4.Visible = false
 SlidingFrame4.Font = Enum.Font.Unknown
 SlidingFrame4.Text = "A"
 SlidingFrame4.TextColor3 = Color3.fromRGB(24, 74, 212)
@@ -260,6 +253,7 @@ Hold.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Hold.BorderSizePixel = 0
 Hold.Position = UDim2.new(0.279503107, 0, 0.294642895, 0)
 Hold.Size = UDim2.new(0, 498, 0, 286)
+Hold.Visible = false
 
 Frame.Parent = Hold
 Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -321,6 +315,7 @@ Dorime.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Dorime.BorderSizePixel = 0
 Dorime.Position = UDim2.new(0.0207373276, 0, 0.0169491526, 0)
 Dorime.Size = UDim2.new(0, 419, 0, 224)
+Dorime.CanvasPosition = Vector2.new(0, 108)
 Dorime.ScrollBarThickness = 0
 
 TextLabel_3.Parent = Dorime
@@ -1056,7 +1051,7 @@ Asaber.BorderSizePixel = 0
 Asaber.Position = UDim2.new(0.0399999507, 0, 0.527572215, 0)
 Asaber.Size = UDim2.new(0, 160, 0, 50)
 Asaber.Font = Enum.Font.SourceSans
-Asaber.Text = "        AutoBuySaber"
+Asaber.Text = "       AutoBuySaber"
 Asaber.TextColor3 = Color3.fromRGB(255, 255, 255)
 Asaber.TextSize = 14.000
 Asaber.TextXAlignment = Enum.TextXAlignment.Left
@@ -1207,7 +1202,7 @@ TextLabel_9.TextSize = 14.000
 UICorner_53.Parent = TextLabel_9
 
 Abutton.Name = "Abutton"
-Abutton.Parent = ScreenGui
+Abutton.Parent = Hold
 Abutton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Abutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Abutton.BorderSizePixel = 0
@@ -1220,7 +1215,7 @@ UICorner_54.Parent = Abutton
 
 -- Scripts:
 
-local function RTXM_fake_script() -- ScreenGui.LocalScript 
+local function IHGT_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -1296,8 +1291,8 @@ local function RTXM_fake_script() -- ScreenGui.LocalScript
 	imageLabel.Image = thumbUrl
 	
 end
-coroutine.wrap(RTXM_fake_script)()
-local function GLSMSXK_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(IHGT_fake_script)()
+local function PNONR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1433,8 +1428,8 @@ local function GLSMSXK_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(GLSMSXK_fake_script)()
-local function IMTFC_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(PNONR_fake_script)()
+local function NNNFNP_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1970,9 +1965,39 @@ local function IMTFC_fake_script() -- ScreenGui.LocalScript
 		end
 	end)
 	
+	-- UI references
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local EggFrame = hold:WaitForChild("EggFrame")
+	local Button = EggFrame:WaitForChild("Tarea")
 	
+	-- Services
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
 	
+	-- Target position
+	local targetCFrame = CFrame.new(
+		557.834839, 184.468918, -20.540802,
+		0.980429649, 1.86422451e-08, -0.19686985,
+		-3.00588994e-08, 1, -5.50027863e-08,
+		0.19686985, 5.98440479e-08, 0.980429649
+	)
 	
+	-- Teleport function
+	local function teleport()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local root = character:WaitForChild("HumanoidRootPart", 5)
+		if root then
+			root.CFrame = targetCFrame
+		else
+			warn("HumanoidRootPart not found!")
+		end
+	end
+	
+	-- Run teleport when button is clicked
+	Button.MouseButton1Click:Connect(function()
+		teleport()
+	end)
 	
 	
 	
@@ -1987,4 +2012,4 @@ local function IMTFC_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(IMTFC_fake_script)()
+coroutine.wrap(NNNFNP_fake_script)()
