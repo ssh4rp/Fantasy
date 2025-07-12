@@ -4,13 +4,6 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local SlidingFrame = Instance.new("TextLabel")
-local SlidingFrame1 = Instance.new("TextLabel")
-local SlidingFrame2 = Instance.new("TextLabel")
-local SlidingFrame3 = Instance.new("TextLabel")
-local SlidingFrame5 = Instance.new("TextLabel")
-local SlidingFrame6 = Instance.new("TextLabel")
-local SlidingFrame4 = Instance.new("TextLabel")
 local Hold = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -141,110 +134,19 @@ local TextLabel_9 = Instance.new("TextLabel")
 local UICorner_53 = Instance.new("UICorner")
 local Abutton = Instance.new("ImageButton")
 local UICorner_54 = Instance.new("UICorner")
+local Holy = Instance.new("ImageButton")
+local SlidingFrame = Instance.new("TextLabel")
+local SlidingFrame1 = Instance.new("TextLabel")
+local SlidingFrame2 = Instance.new("TextLabel")
+local SlidingFrame3 = Instance.new("TextLabel")
+local SlidingFrame4 = Instance.new("TextLabel")
+local SlidingFrame5 = Instance.new("TextLabel")
+local SlidingFrame6 = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-SlidingFrame.Name = "SlidingFrame"
-SlidingFrame.Parent = ScreenGui
-SlidingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame.BackgroundTransparency = 1.000
-SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame.BorderSizePixel = 0
-SlidingFrame.Position = UDim2.new(0.0541259982, 0, 0.387755096, 0)
-SlidingFrame.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame.Font = Enum.Font.Unknown
-SlidingFrame.Text = "F"
-SlidingFrame.TextColor3 = Color3.fromRGB(38, 150, 184)
-SlidingFrame.TextSize = 100.000
-SlidingFrame.TextWrapped = true
-
-SlidingFrame1.Name = "SlidingFrame1"
-SlidingFrame1.Parent = ScreenGui
-SlidingFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame1.BackgroundTransparency = 1.000
-SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame1.BorderSizePixel = 0
-SlidingFrame1.Position = UDim2.new(0.173913047, 0, 0.387755096, 0)
-SlidingFrame1.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame1.Font = Enum.Font.Unknown
-SlidingFrame1.Text = "A"
-SlidingFrame1.TextColor3 = Color3.fromRGB(24, 74, 212)
-SlidingFrame1.TextSize = 100.000
-SlidingFrame1.TextWrapped = true
-
-SlidingFrame2.Name = "SlidingFrame2"
-SlidingFrame2.Parent = ScreenGui
-SlidingFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame2.BackgroundTransparency = 1.000
-SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame2.BorderSizePixel = 0
-SlidingFrame2.Position = UDim2.new(0.264418811, 0, 0.387755096, 0)
-SlidingFrame2.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame2.Font = Enum.Font.Unknown
-SlidingFrame2.Text = "N"
-SlidingFrame2.TextColor3 = Color3.fromRGB(184, 184, 184)
-SlidingFrame2.TextSize = 100.000
-SlidingFrame2.TextWrapped = true
-
-SlidingFrame3.Name = "SlidingFrame3"
-SlidingFrame3.Parent = ScreenGui
-SlidingFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame3.BackgroundTransparency = 1.000
-SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame3.BorderSizePixel = 0
-SlidingFrame3.Position = UDim2.new(0.348713398, 0, 0.387755096, 0)
-SlidingFrame3.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame3.Font = Enum.Font.Unknown
-SlidingFrame3.Text = "T"
-SlidingFrame3.TextColor3 = Color3.fromRGB(38, 150, 184)
-SlidingFrame3.TextSize = 100.000
-SlidingFrame3.TextWrapped = true
-
-SlidingFrame5.Name = "SlidingFrame5"
-SlidingFrame5.Parent = ScreenGui
-SlidingFrame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame5.BackgroundTransparency = 1.000
-SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame5.BorderSizePixel = 0
-SlidingFrame5.Position = UDim2.new(0.588287473, 0, 0.387755096, 0)
-SlidingFrame5.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame5.Font = Enum.Font.Unknown
-SlidingFrame5.Text = "S"
-SlidingFrame5.TextColor3 = Color3.fromRGB(184, 184, 184)
-SlidingFrame5.TextSize = 100.000
-SlidingFrame5.TextWrapped = true
-
-SlidingFrame6.Name = "SlidingFrame6"
-SlidingFrame6.Parent = ScreenGui
-SlidingFrame6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame6.BackgroundTransparency = 1.000
-SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame6.BorderSizePixel = 0
-SlidingFrame6.Position = UDim2.new(0.6903283, 0, 0.387755096, 0)
-SlidingFrame6.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame6.Font = Enum.Font.Unknown
-SlidingFrame6.LineHeight = 0.000
-SlidingFrame6.Text = "Y"
-SlidingFrame6.TextColor3 = Color3.fromRGB(38, 150, 184)
-SlidingFrame6.TextSize = 100.000
-SlidingFrame6.TextWrapped = true
-
-SlidingFrame4.Name = "SlidingFrame4"
-SlidingFrame4.Parent = ScreenGui
-SlidingFrame4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SlidingFrame4.BackgroundTransparency = 1.000
-SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SlidingFrame4.BorderSizePixel = 0
-SlidingFrame4.Position = UDim2.new(0.447204977, 0, 0.387755096, 0)
-SlidingFrame4.Size = UDim2.new(0, 218, 0, 175)
-SlidingFrame4.Font = Enum.Font.Unknown
-SlidingFrame4.Text = "A"
-SlidingFrame4.TextColor3 = Color3.fromRGB(24, 74, 212)
-SlidingFrame4.TextSize = 100.000
-SlidingFrame4.TextWrapped = true
 
 Hold.Name = "Hold"
 Hold.Parent = ScreenGui
@@ -295,6 +197,7 @@ EggFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 EggFrame.BorderSizePixel = 0
 EggFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
 EggFrame.Size = UDim2.new(0, 434, 0, 236)
+EggFrame.Visible = false
 
 ImageLabel.Parent = EggFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -315,7 +218,6 @@ Dorime.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Dorime.BorderSizePixel = 0
 Dorime.Position = UDim2.new(0.0207373276, 0, 0.0169491526, 0)
 Dorime.Size = UDim2.new(0, 419, 0, 224)
-Dorime.CanvasPosition = Vector2.new(0, 108)
 Dorime.ScrollBarThickness = 0
 
 TextLabel_3.Parent = Dorime
@@ -625,7 +527,6 @@ MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
 MainFrame.Size = UDim2.new(0, 434, 0, 236)
-MainFrame.Visible = false
 
 ImageLabel_4.Parent = MainFrame
 ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -646,7 +547,6 @@ Rscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Rscroll.BorderSizePixel = 0
 Rscroll.Position = UDim2.new(0.551020384, 0, 0.0296610165, 0)
 Rscroll.Size = UDim2.new(0, 190, 0, 222)
-Rscroll.CanvasPosition = Vector2.new(0, 140)
 Rscroll.ScrollBarThickness = 0
 
 UICorner_15.Parent = Rscroll
@@ -1202,7 +1102,7 @@ TextLabel_9.TextSize = 14.000
 UICorner_53.Parent = TextLabel_9
 
 Abutton.Name = "Abutton"
-Abutton.Parent = Hold
+Abutton.Parent = ScreenGui
 Abutton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Abutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Abutton.BorderSizePixel = 0
@@ -1213,86 +1113,117 @@ Abutton.Image = "rbxassetid://90028088616811"
 
 UICorner_54.Parent = Abutton
 
+Holy.Name = "Holy"
+Holy.Parent = ScreenGui
+Holy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Holy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Holy.BorderSizePixel = 0
+Holy.Position = UDim2.new(-0.0148148146, 0, -0.0945082232, 0)
+Holy.Size = UDim2.new(0, 1507, 0, 898)
+Holy.Image = "rbxassetid://132834478786155"
+
+SlidingFrame.Name = "SlidingFrame"
+SlidingFrame.Parent = ScreenGui
+SlidingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame.BackgroundTransparency = 1.000
+SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame.BorderSizePixel = 0
+SlidingFrame.Position = UDim2.new(0.0541259982, 0, 0.387755096, 0)
+SlidingFrame.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame.Font = Enum.Font.Unknown
+SlidingFrame.Text = "F"
+SlidingFrame.TextColor3 = Color3.fromRGB(38, 150, 184)
+SlidingFrame.TextSize = 100.000
+SlidingFrame.TextWrapped = true
+
+SlidingFrame1.Name = "SlidingFrame1"
+SlidingFrame1.Parent = ScreenGui
+SlidingFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame1.BackgroundTransparency = 1.000
+SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame1.BorderSizePixel = 0
+SlidingFrame1.Position = UDim2.new(0.173913047, 0, 0.387755096, 0)
+SlidingFrame1.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame1.Font = Enum.Font.Unknown
+SlidingFrame1.Text = "A"
+SlidingFrame1.TextColor3 = Color3.fromRGB(24, 74, 212)
+SlidingFrame1.TextSize = 100.000
+SlidingFrame1.TextWrapped = true
+
+SlidingFrame2.Name = "SlidingFrame2"
+SlidingFrame2.Parent = ScreenGui
+SlidingFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame2.BackgroundTransparency = 1.000
+SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame2.BorderSizePixel = 0
+SlidingFrame2.Position = UDim2.new(0.264418811, 0, 0.387755096, 0)
+SlidingFrame2.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame2.Font = Enum.Font.Unknown
+SlidingFrame2.Text = "N"
+SlidingFrame2.TextColor3 = Color3.fromRGB(184, 184, 184)
+SlidingFrame2.TextSize = 100.000
+SlidingFrame2.TextWrapped = true
+
+SlidingFrame3.Name = "SlidingFrame3"
+SlidingFrame3.Parent = ScreenGui
+SlidingFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame3.BackgroundTransparency = 1.000
+SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame3.BorderSizePixel = 0
+SlidingFrame3.Position = UDim2.new(0.348713398, 0, 0.387755096, 0)
+SlidingFrame3.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame3.Font = Enum.Font.Unknown
+SlidingFrame3.Text = "T"
+SlidingFrame3.TextColor3 = Color3.fromRGB(38, 150, 184)
+SlidingFrame3.TextSize = 100.000
+SlidingFrame3.TextWrapped = true
+
+SlidingFrame4.Name = "SlidingFrame4"
+SlidingFrame4.Parent = ScreenGui
+SlidingFrame4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame4.BackgroundTransparency = 1.000
+SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame4.BorderSizePixel = 0
+SlidingFrame4.Position = UDim2.new(0.447204977, 0, 0.387755096, 0)
+SlidingFrame4.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame4.Font = Enum.Font.Unknown
+SlidingFrame4.Text = "A"
+SlidingFrame4.TextColor3 = Color3.fromRGB(24, 74, 212)
+SlidingFrame4.TextSize = 100.000
+SlidingFrame4.TextWrapped = true
+
+SlidingFrame5.Name = "SlidingFrame5"
+SlidingFrame5.Parent = ScreenGui
+SlidingFrame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame5.BackgroundTransparency = 1.000
+SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame5.BorderSizePixel = 0
+SlidingFrame5.Position = UDim2.new(0.588287473, 0, 0.387755096, 0)
+SlidingFrame5.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame5.Font = Enum.Font.Unknown
+SlidingFrame5.Text = "S"
+SlidingFrame5.TextColor3 = Color3.fromRGB(184, 184, 184)
+SlidingFrame5.TextSize = 100.000
+SlidingFrame5.TextWrapped = true
+
+SlidingFrame6.Name = "SlidingFrame6"
+SlidingFrame6.Parent = ScreenGui
+SlidingFrame6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SlidingFrame6.BackgroundTransparency = 1.000
+SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SlidingFrame6.BorderSizePixel = 0
+SlidingFrame6.Position = UDim2.new(0.6903283, 0, 0.387755096, 0)
+SlidingFrame6.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame6.Font = Enum.Font.Unknown
+SlidingFrame6.LineHeight = 0.000
+SlidingFrame6.Text = "Y"
+SlidingFrame6.TextColor3 = Color3.fromRGB(38, 150, 184)
+SlidingFrame6.TextSize = 100.000
+SlidingFrame6.TextWrapped = true
+
 -- Scripts:
 
-local function IHGT_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	local TweenService = game:GetService("TweenService")
-	local parent = script.Parent
-	local screenGui = parent -- Assuming parent is the ScreenGui
-	
-	-- Frame names in order of the word "FANTASY"
-	local frameNames = {
-		"SlidingFrame",   -- F
-		"SlidingFrame1",  -- A
-		"SlidingFrame2",  -- N
-		"SlidingFrame3",  -- T
-		"SlidingFrame4",  -- A
-		"SlidingFrame5",  -- S
-		"SlidingFrame6",  -- Y
-	}
-	
-	local tweenInfo = TweenInfo.new(
-		1, -- duration
-		Enum.EasingStyle.Sine,
-		Enum.EasingDirection.Out
-	)
-	
-	-- Animate sliding frames
-	local total = #frameNames
-	for i, name in ipairs(frameNames) do
-		local frame = parent:WaitForChild(name)
-	
-		-- Set AnchorPoint to center of frame
-		frame.AnchorPoint = Vector2.new(0.5, 0.5)
-	
-		-- Start off-screen to the right
-		frame.Position = UDim2.new(1.2, 0, 0.5, 0)
-	
-		-- Evenly spaced X position
-		local spacing = i / (total + 1)
-		local goal = {
-			Position = UDim2.new(spacing, 0, 0.5, 0)
-		}
-	
-		local tween = TweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	
-		-- Hide each frame after delay
-		task.delay(tweenInfo.Time + 3, function()
-			frame.Visible = false
-		end)
-	end
-	
-	-- After all frames are hidden, show MainFrame and Abutton
-	task.delay(tweenInfo.Time + 3, function()
-		local Hold = screenGui:WaitForChild("Hold")
-		local aButton = screenGui:WaitForChild("Abutton")
-	
-		Hold.Visible = true
-		aButton.Visible = true
-	end)
-	
-	
-	
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local screenGui = script.Parent
-	local Hold = screenGui:WaitForChild("Hold")
-	local SideFrame = Hold:WaitForChild("SideFrame")
-	local imageLabel = SideFrame:WaitForChild("ImageLabel") -- Correct the name if needed
-	
-	print("Running user thumbnail script...")
-	
-	local thumbUrl = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
-	print("Thumbnail URL:", thumbUrl)
-	
-	imageLabel.Image = thumbUrl
-	
-end
-coroutine.wrap(IHGT_fake_script)()
-local function PNONR_fake_script() -- ScreenGui.LocalScript 
+local function DQUTGE_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1428,8 +1359,8 @@ local function PNONR_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(PNONR_fake_script)()
-local function NNNFNP_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(DQUTGE_fake_script)()
+local function MMFXR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -2012,4 +1943,114 @@ local function NNNFNP_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(NNNFNP_fake_script)()
+coroutine.wrap(MMFXR_fake_script)()
+local function YVMYAH_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local TweenService = game:GetService("TweenService")
+	local parent = script.Parent
+	local screenGui = parent -- Assuming parent is the ScreenGui
+	
+	-- Frame names in order of the word "FANTASY"
+	local frameNames = {
+		"SlidingFrame",   -- F
+		"SlidingFrame1",  -- A
+		"SlidingFrame2",  -- N
+		"SlidingFrame3",  -- T
+		"SlidingFrame4",  -- A
+		"SlidingFrame5",  -- S
+		"SlidingFrame6",  -- Y
+	}
+	
+	local tweenInfo = TweenInfo.new(
+		1, -- duration
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out
+	)
+	
+	-- Animate sliding frames
+	local total = #frameNames
+	for i, name in ipairs(frameNames) do
+		local frame = parent:WaitForChild(name)
+	
+		-- Set AnchorPoint to center of frame
+		frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	
+		-- Start off-screen to the right
+		frame.Position = UDim2.new(1.2, 0, 0.5, 0)
+	
+		-- Evenly spaced X position
+		local spacing = i / (total + 1)
+		local goal = {
+			Position = UDim2.new(spacing, 0, 0.5, 0)
+		}
+	
+		local tween = TweenService:Create(frame, tweenInfo, goal)
+		tween:Play()
+	
+		-- Hide each frame after delay
+		task.delay(tweenInfo.Time + 3, function()
+			frame.Visible = false
+		end)
+	end
+	
+	-- After all frames are hidden, show MainFrame and Abutton
+	task.delay(tweenInfo.Time + 3, function()
+		local Hold = screenGui:WaitForChild("Hold")
+		local aButton = screenGui:WaitForChild("Abutton")
+	
+		Hold.Visible = true
+		aButton.Visible = true
+	end)
+	
+	
+	
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local screenGui = script.Parent
+	local Hold = screenGui:WaitForChild("Hold")
+	local SideFrame = Hold:WaitForChild("SideFrame")
+	local imageLabel = SideFrame:WaitForChild("ImageLabel") -- Correct the name if needed
+	
+	print("Running user thumbnail script...")
+	
+	local thumbUrl = Players:GetUserThumbnailAsync(player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	print("Thumbnail URL:", thumbUrl)
+	
+	imageLabel.Image = thumbUrl
+	
+	
+	
+	local TweenService = game:GetService("TweenService")
+	local player = game.Players.LocalPlayer
+	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local holyFrame = gui:WaitForChild("Holy")
+	
+	-- Tween info: 4 seconds duration
+	local tweenInfo = TweenInfo.new(4)
+	
+	-- Fade out background of the frame
+	local backgroundGoal = {BackgroundTransparency = 1}
+	local backgroundTween = TweenService:Create(holyFrame, tweenInfo, backgroundGoal)
+	backgroundTween:Play()
+	
+	-- Fade out all child text/image elements inside the frame
+	for _, child in ipairs(holyFrame:GetDescendants()) do
+		if child:IsA("TextLabel") then
+			TweenService:Create(child, tweenInfo, {TextTransparency = 1}):Play()
+		elseif child:IsA("ImageLabel") then
+			TweenService:Create(child, tweenInfo, {ImageTransparency = 1}):Play()
+		elseif child:IsA("TextButton") then
+			TweenService:Create(child, tweenInfo, {
+				TextTransparency = 1,
+				BackgroundTransparency = 1
+			}):Play()
+		end
+	end
+	
+	-- Optionally hide the frame after fade out
+	task.wait(4)
+	holyFrame.Visible = false
+	
+end
+coroutine.wrap(YVMYAH_fake_script)()
