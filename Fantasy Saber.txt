@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function PBJPG_fake_script() -- ScreenGui.LocalScript 
+local function LNERNB_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function PBJPG_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(PBJPG_fake_script)()
-local function WNSFMX_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(LNERNB_fake_script)()
+local function HWRYSDF_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1788,6 +1788,7 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 	
 	
 	-- UI setup
+	-- UI references
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1801,11 +1802,9 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 	local RunService = game:GetService("RunService")
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	
-	-- Player and character
+	-- Player setup
 	local player = Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-	local myHRP = character:WaitForChild("HumanoidRootPart")
+	local character, humanoid, myHRP
 	
 	-- Boss setup
 	local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
@@ -1816,15 +1815,42 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 	local stickConnection = nil
 	local attackLoop = nil
 	
-	-- Start logic
+	-- Restore player control
+	local function resetPlayerState()
+		if humanoid then
+			humanoid:ChangeState(Enum.HumanoidStateType.Running)
+			humanoid.AutoRotate = true
+		end
+	end
+	
+	-- Wait for character and initialize variables
+	local function waitForCharacter()
+		character = player.Character or player.CharacterAdded:Wait()
+		humanoid = character:WaitForChild("Humanoid")
+		myHRP = character:WaitForChild("HumanoidRootPart")
+		resetPlayerState()
+	end
+	
+	-- Handle respawn
+	player.CharacterAdded:Connect(function()
+		waitForCharacter()
+	end)
+	
+	-- Initial load
+	waitForCharacter()
+	
+	-- Start auto-kill
 	local function startAutoKill()
+		-- Prevent duplicate logic
+		if stickConnection or attackLoop then return end
+	
 		-- Freeze player
 		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
 		humanoid.AutoRotate = false
 	
 		-- Stick to boss
 		stickConnection = RunService.Heartbeat:Connect(function()
-			if myHRP and bossHRP then
+			if isOn and myHRP and bossHRP then
 				myHRP.CFrame = bossHRP.CFrame
 				myHRP.Velocity = Vector3.zero
 				myHRP.RotVelocity = Vector3.zero
@@ -1854,9 +1880,8 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 		end)
 	end
 	
-	-- Stop logic
+	-- Stop auto-kill
 	local function stopAutoKill()
-		-- Restore control
 		if stickConnection then
 			stickConnection:Disconnect()
 			stickConnection = nil
@@ -1865,11 +1890,10 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 			task.cancel(attackLoop)
 			attackLoop = nil
 		end
-		humanoid:ChangeState(Enum.HumanoidStateType.Running)
-		humanoid.AutoRotate = true
+		resetPlayerState()
 	end
 	
-	-- Button toggle
+	-- Button toggle logic
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 	
@@ -1883,6 +1907,7 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 			stopAutoKill()
 		end
 	end)
+	
 	
 	
 	-- Game Services & References
@@ -2205,8 +2230,8 @@ local function WNSFMX_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(WNSFMX_fake_script)()
-local function IYJSBH_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(HWRYSDF_fake_script)()
+local function NZNZX_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2285,4 +2310,4 @@ local function IYJSBH_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(IYJSBH_fake_script)()
+coroutine.wrap(NZNZX_fake_script)()
