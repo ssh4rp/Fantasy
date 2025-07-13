@@ -1253,7 +1253,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function UHAESR_fake_script() -- ScreenGui.LocalScript 
+local function CYDNA_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1389,8 +1389,8 @@ local function UHAESR_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(UHAESR_fake_script)()
-local function CMFXAF_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(CYDNA_fake_script)()
+local function MYRZX_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1824,10 +1824,10 @@ local function CMFXAF_fake_script() -- ScreenGui.LocalScript
 		isOn = not isOn
 	
 		if isOn then
+			-- ✅ ON: Stick and attack
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 	
-			-- ⛓️ Freeze character and attach to boss
 			humanoid:ChangeState(Enum.HumanoidStateType.Physics)
 			humanoid.AutoRotate = false
 	
@@ -1839,7 +1839,6 @@ local function CMFXAF_fake_script() -- ScreenGui.LocalScript
 				end
 			end)
 	
-			-- 🗡️ Auto Attack Loop
 			attacking = true
 			task.spawn(function()
 				while attacking do
@@ -1863,17 +1862,21 @@ local function CMFXAF_fake_script() -- ScreenGui.LocalScript
 				end
 			end)
 		else
+			-- ❌ OFF: Stop everything
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	
-			-- 🛑 Stop sticking and attacking
+			-- Unstick and restore character control
 			if heartbeatConn then
 				heartbeatConn:Disconnect()
 				heartbeatConn = nil
 			end
 	
-			humanoid.AutoRotate = true
 			attacking = false
+			humanoid.AutoRotate = true
+	
+			-- Force re-enable movement by setting to a walkable state
+			humanoid:ChangeState(Enum.HumanoidStateType.Running)
 		end
 	end)
 	
@@ -2198,8 +2201,8 @@ local function CMFXAF_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(CMFXAF_fake_script)()
-local function FUXPMM_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(MYRZX_fake_script)()
+local function EAOIRK_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2278,4 +2281,4 @@ local function FUXPMM_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(FUXPMM_fake_script)()
+coroutine.wrap(EAOIRK_fake_script)()
