@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function DIZJJF_fake_script() -- ScreenGui.LocalScript 
+local function BCEH_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function DIZJJF_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(DIZJJF_fake_script)()
-local function EXOJO_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(BCEH_fake_script)()
+local function KVSOXT_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1787,7 +1787,6 @@ local function EXOJO_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	
-	-- UI setup
 	-- UI references
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
@@ -1815,22 +1814,11 @@ local function EXOJO_fake_script() -- ScreenGui.LocalScript
 	local stickConnection = nil
 	local attackLoop = nil
 	
-	-- Restore player control
-	local function resetPlayerState()
-		if humanoid then
-			humanoid:ChangeState(Enum.HumanoidStateType.Running)
-			humanoid.AutoRotate = true
-		end
-	end
-	
 	-- Wait for character and initialize
 	local function initCharacter()
 		character = player.Character or player.CharacterAdded:Wait()
 		humanoid = character:WaitForChild("Humanoid")
 		myHRP = character:WaitForChild("HumanoidRootPart")
-	
-		task.wait(0.1)
-		resetPlayerState()
 	end
 	
 	-- Handle respawn
@@ -1850,17 +1838,14 @@ local function EXOJO_fake_script() -- ScreenGui.LocalScript
 	local function startAutoKill()
 		if stickConnection or attackLoop then return end
 	
-		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
-		humanoid.AutoRotate = false
-	
+		-- Stick to boss
 		stickConnection = RunService.Heartbeat:Connect(function()
 			if isOn and myHRP and bossHRP then
 				myHRP.CFrame = bossHRP.CFrame
-				myHRP.Velocity = Vector3.zero
-				myHRP.RotVelocity = Vector3.zero
 			end
 		end)
 	
+		-- Attack loop
 		attackLoop = task.spawn(function()
 			while isOn do
 				local frost = character:FindFirstChild("Frost")
@@ -1893,7 +1878,6 @@ local function EXOJO_fake_script() -- ScreenGui.LocalScript
 			task.cancel(attackLoop)
 			attackLoop = nil
 		end
-		resetPlayerState()
 	end
 	
 	-- Button toggle logic
@@ -1910,6 +1894,7 @@ local function EXOJO_fake_script() -- ScreenGui.LocalScript
 			stopAutoKill()
 		end
 	end)
+	
 	
 	
 	
@@ -2233,8 +2218,8 @@ local function EXOJO_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(EXOJO_fake_script)()
-local function GEVIE_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(KVSOXT_fake_script)()
+local function IRWUKK_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2313,4 +2298,4 @@ local function GEVIE_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(GEVIE_fake_script)()
+coroutine.wrap(IRWUKK_fake_script)()
