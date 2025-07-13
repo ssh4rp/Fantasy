@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function DDWOEFK_fake_script() -- ScreenGui.LocalScript 
+local function YTDGHO_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function DDWOEFK_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(DDWOEFK_fake_script)()
-local function KXVFH_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(YTDGHO_fake_script)()
+local function BWSORYA_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -2097,6 +2097,7 @@ local function KXVFH_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	
+	-- UI
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -2105,18 +2106,157 @@ local function KXVFH_fake_script() -- ScreenGui.LocalScript
 	local Balerina = AkillAl:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
-	local isOn = false
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local Workspace = game:GetService("Workspace")
 	
+	-- Player Info
+	local LocalPlayer = Players.LocalPlayer
+	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	local HRP = Character:WaitForChild("HumanoidRootPart")
+	
+	-- State
+	local isOn = false
+	local currentTarget = nil
+	local followConnection
+	local collisionConnection
+	local gyro, velocity
+	
+	-- Config
+	local HEIGHT_OFFSET = Vector3.new(0, -8.8, 0)
+	local SWITCH_TIME = 5
+	
+	-- 🔁 Target Cycle Loop
+	local targetLoop = task.spawn(function()
+		while true do
+			if isOn then
+				for _, player in ipairs(Players:GetPlayers()) do
+					if player ~= LocalPlayer then
+						currentTarget = player
+						task.wait(SWITCH_TIME)
+					end
+				end
+			else
+				task.wait(1)
+			end
+		end
+	end)
+	
+	-- 🚫 Disable collisions (except characters)
+	local function disableIfNotPlayerPart(part)
+		if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player.Character and part:IsDescendantOf(player.Character) then
+					return
+				end
+			end
+			part.CanCollide = false
+		end
+	end
+	
+	-- 🧠 NoClip your own parts
+	local function noClipLoop()
+		for _, part in ipairs(Character:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+				part.CanCollide = false
+			end
+		end
+	end
+	
+	-- 🛫 Activate Fly + Follow
+	local function enableFollow()
+		-- Disable collisions for all parts except characters
+		for _, part in ipairs(Workspace:GetDescendants()) do
+			disableIfNotPlayerPart(part)
+		end
+		collisionConnection = Workspace.DescendantAdded:Connect(disableIfNotPlayerPart)
+	
+		-- Add body movers
+		gyro = Instance.new("BodyGyro", HRP)
+		gyro.P = 9e4
+		gyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+		gyro.CFrame = HRP.CFrame
+	
+		velocity = Instance.new("BodyVelocity", HRP)
+		velocity.Velocity = Vector3.zero
+		velocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+		-- Follow & attack loop
+		followConnection = RunService.RenderStepped:Connect(function()
+			if not isOn then return end
+	
+			noClipLoop()
+	
+			if gyro and velocity then
+				local camCF = Workspace.CurrentCamera.CFrame
+				gyro.CFrame = camCF
+				velocity.Velocity = Vector3.zero
+			end
+	
+			local yourChar = LocalPlayer.Character
+			if not (yourChar and currentTarget) then return end
+	
+			local yourHRP = yourChar:FindFirstChild("HumanoidRootPart")
+			local targetChar = currentTarget.Character
+			local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
+	
+			if yourHRP and targetHRP then
+				local targetPos = targetHRP.Position + HEIGHT_OFFSET
+				yourHRP.CFrame = CFrame.new(targetPos, targetHRP.Position + targetHRP.CFrame.LookVector)
+	
+				-- Trigger attack
+				local tool = yourChar:FindFirstChildOfClass("Tool")
+				if tool then
+					local remote = tool:FindFirstChild("RemoteClick")
+					if remote then
+						pcall(function()
+							remote:FireServer({})
+						end)
+					end
+				end
+			end
+		end)
+	end
+	
+	-- 🛑 Deactivate Fly + Follow
+	local function disableFollow()
+		if followConnection then
+			followConnection:Disconnect()
+			followConnection = nil
+		end
+		if collisionConnection then
+			collisionConnection:Disconnect()
+			collisionConnection = nil
+		end
+		if gyro then
+			gyro:Destroy()
+			gyro = nil
+		end
+		if velocity then
+			velocity:Destroy()
+			velocity = nil
+		end
+	
+		-- Re-enable collisions for own parts
+		for _, part in ipairs(Character:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = true
+			end
+		end
+	end
+	
+	-- 🟢 Toggle UI and Function
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 		if isOn then
-			-- Move right and up
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			enableFollow()
 		else
-			-- Move back to left and original Y
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			disableFollow()
 		end
 	end)
 	
@@ -2133,8 +2273,8 @@ local function KXVFH_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(KXVFH_fake_script)()
-local function MECEC_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(BWSORYA_fake_script)()
+local function EEDLWJ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2213,4 +2353,4 @@ local function MECEC_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(MECEC_fake_script)()
+coroutine.wrap(EEDLWJ_fake_script)()
