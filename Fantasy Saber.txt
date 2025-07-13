@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function GHIQR_fake_script() -- ScreenGui.LocalScript 
+local function BKCG_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function GHIQR_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(GHIQR_fake_script)()
-local function RUJB_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(BKCG_fake_script)()
+local function BXEMPK_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1787,7 +1787,7 @@ local function RUJB_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	
-	-- UI Setup
+	-- UI setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1796,22 +1796,94 @@ local function RUJB_fake_script() -- ScreenGui.LocalScript
 	local Balerina = AkillB:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
-	-- Toggle State
-	local isOn = false
+	-- Services
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	
+	-- Player and character
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local myHRP = character:WaitForChild("HumanoidRootPart")
+	
+	-- Boss setup
+	local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
+	local bossHRP = bossModel:WaitForChild("HumanoidRootPart")
+	
+	-- State
+	local isOn = false
+	local stickConnection = nil
+	local attackLoop = nil
+	
+	-- Start logic
+	local function startAutoKill()
+		-- Freeze player
+		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+		humanoid.AutoRotate = false
+	
+		-- Stick to boss
+		stickConnection = RunService.Heartbeat:Connect(function()
+			if myHRP and bossHRP then
+				myHRP.CFrame = bossHRP.CFrame
+				myHRP.Velocity = Vector3.zero
+				myHRP.RotVelocity = Vector3.zero
+			end
+		end)
+	
+		-- Attack loop
+		attackLoop = task.spawn(function()
+			while isOn do
+				local frost = character:FindFirstChild("Frost")
+				local remoteClick = frost and frost:FindFirstChild("RemoteClick")
+				if remoteClick then
+					pcall(function()
+						remoteClick:FireServer({bossModel})
+					end)
+				end
+	
+				local swing = ReplicatedStorage:FindFirstChild("Events") and ReplicatedStorage.Events:FindFirstChild("SwingSaber")
+				if swing then
+					pcall(function()
+						swing:FireServer()
+					end)
+				end
+	
+				task.wait(1)
+			end
+		end)
+	end
+	
+	-- Stop logic
+	local function stopAutoKill()
+		-- Restore control
+		if stickConnection then
+			stickConnection:Disconnect()
+			stickConnection = nil
+		end
+		if attackLoop then
+			task.cancel(attackLoop)
+			attackLoop = nil
+		end
+		humanoid:ChangeState(Enum.HumanoidStateType.Running)
+		humanoid.AutoRotate = true
+	end
+	
+	-- Button toggle
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 	
 		if isOn then
-			-- ON: Green and move right
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			startAutoKill()
 		else
-			-- OFF: Black and move left
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			stopAutoKill()
 		end
 	end)
+	
 	
 	-- Game Services & References
 	local Players = game:GetService("Players")
@@ -2133,8 +2205,8 @@ local function RUJB_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(RUJB_fake_script)()
-local function WGKBEE_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(BXEMPK_fake_script)()
+local function YSMMNBS_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2213,4 +2285,4 @@ local function WGKBEE_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(WGKBEE_fake_script)()
+coroutine.wrap(YSMMNBS_fake_script)()
