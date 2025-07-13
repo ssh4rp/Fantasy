@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function LNERNB_fake_script() -- ScreenGui.LocalScript 
+local function DIZJJF_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function LNERNB_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(LNERNB_fake_script)()
-local function HWRYSDF_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(DIZJJF_fake_script)()
+local function EXOJO_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1823,32 +1823,36 @@ local function HWRYSDF_fake_script() -- ScreenGui.LocalScript
 		end
 	end
 	
-	-- Wait for character and initialize variables
-	local function waitForCharacter()
+	-- Wait for character and initialize
+	local function initCharacter()
 		character = player.Character or player.CharacterAdded:Wait()
 		humanoid = character:WaitForChild("Humanoid")
 		myHRP = character:WaitForChild("HumanoidRootPart")
+	
+		task.wait(0.1)
 		resetPlayerState()
 	end
 	
 	-- Handle respawn
 	player.CharacterAdded:Connect(function()
-		waitForCharacter()
+		initCharacter()
 	end)
 	
-	-- Initial load
-	waitForCharacter()
+	-- Initial character load
+	if player.Character then
+		initCharacter()
+	else
+		player.CharacterAdded:Wait()
+		initCharacter()
+	end
 	
 	-- Start auto-kill
 	local function startAutoKill()
-		-- Prevent duplicate logic
 		if stickConnection or attackLoop then return end
 	
-		-- Freeze player
 		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
 		humanoid.AutoRotate = false
 	
-		-- Stick to boss
 		stickConnection = RunService.Heartbeat:Connect(function()
 			if isOn and myHRP and bossHRP then
 				myHRP.CFrame = bossHRP.CFrame
@@ -1857,7 +1861,6 @@ local function HWRYSDF_fake_script() -- ScreenGui.LocalScript
 			end
 		end)
 	
-		-- Attack loop
 		attackLoop = task.spawn(function()
 			while isOn do
 				local frost = character:FindFirstChild("Frost")
@@ -2230,8 +2233,8 @@ local function HWRYSDF_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(HWRYSDF_fake_script)()
-local function NZNZX_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(EXOJO_fake_script)()
+local function GEVIE_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2310,4 +2313,4 @@ local function NZNZX_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(NZNZX_fake_script)()
+coroutine.wrap(GEVIE_fake_script)()
