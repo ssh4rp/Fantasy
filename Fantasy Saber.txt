@@ -199,6 +199,7 @@ EggFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 EggFrame.BorderSizePixel = 0
 EggFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
 EggFrame.Size = UDim2.new(0, 434, 0, 236)
+EggFrame.Visible = false
 
 ImageLabel.Parent = EggFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -320,8 +321,8 @@ Tarea.Parent = Dorime
 Tarea.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 Tarea.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tarea.BorderSizePixel = 0
-Tarea.Position = UDim2.new(0.0482420996, 0, 0.396394461, 0)
-Tarea.Size = UDim2.new(0, 150, 0, 50)
+Tarea.Position = UDim2.new(0.0477326959, 0, 0.39609161, 0)
+Tarea.Size = UDim2.new(0, 384, 0, 50)
 Tarea.Font = Enum.Font.FredokaOne
 Tarea.Text = "Teleport To Egg Area"
 Tarea.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -528,7 +529,6 @@ MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.127855599, 0, 0.178459108, 0)
 MainFrame.Size = UDim2.new(0, 434, 0, 236)
-MainFrame.Visible = false
 
 ImageLabel_4.Parent = MainFrame
 ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function XHZHJ_fake_script() -- ScreenGui.LocalScript 
+local function GFQIIAP_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function XHZHJ_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(XHZHJ_fake_script)()
-local function MLNRMLU_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(GFQIIAP_fake_script)()
+local function XPZN_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1948,7 +1948,6 @@ local function MLNRMLU_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
-	
 	-- Game Services & References
 	local Players = game:GetService("Players")
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -2258,30 +2257,9 @@ local function MLNRMLU_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
-	local SGUI = script.Parent
-	local hold = SGUI:WaitForChild("Hold")
-	local EggFrame = hold:WaitForChild("EggFrame")
-	local Dorime = EggFrame:WaitForChild("Dorime")
-	local button = hold:WaitForChild("Tarea")
 	
-	local player = game.Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local hrp = character:WaitForChild("HumanoidRootPart")
 	
-	local targetCFrame = CFrame.new(
-		561.471863, 184.468399, -19.8992558,
-		0.960000634, -2.06808117e-08, -0.279997736,
-		2.29803394e-08, 1, 4.92978547e-09,
-		0.279997736, -1.11670406e-08, 0.960000634
-	)
 	
-	button.MouseButton1Click:Connect(function()
-		-- Refresh character and HumanoidRootPart in case of respawn
-		character = player.Character or player.CharacterAdded:Wait()
-		hrp = character:WaitForChild("HumanoidRootPart")
-	
-		hrp.CFrame = targetCFrame
-	end)
 	
 	
 	
@@ -2290,15 +2268,21 @@ local function MLNRMLU_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(MLNRMLU_fake_script)()
-local function JFUFS_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(XPZN_fake_script)()
+local function SEOIIQI_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
+	-- Services
 	local TweenService = game:GetService("TweenService")
-	local parent = script.Parent
-	local screenGui = parent -- Assuming parent is the ScreenGui
 	
-	-- Frame names in order of the word "FANTASY"
+	-- GUI Setup
+	local screenGui = script.Parent
+	if not screenGui or not screenGui:IsA("ScreenGui") then
+		warn("Script parent must be a ScreenGui.")
+		return
+	end
+	
+	-- Frame names that spell "FANTASY"
 	local frameNames = {
 		"SlidingFrame",   -- F
 		"SlidingFrame1",  -- A
@@ -2306,49 +2290,54 @@ local function JFUFS_fake_script() -- ScreenGui.LocalScript
 		"SlidingFrame3",  -- T
 		"SlidingFrame4",  -- A
 		"SlidingFrame5",  -- S
-		"SlidingFrame6",  -- Y
+		"SlidingFrame6"   -- Y
 	}
 	
+	-- Tween settings
 	local tweenInfo = TweenInfo.new(
-		1, -- duration
+		1, -- Duration in seconds
 		Enum.EasingStyle.Sine,
 		Enum.EasingDirection.Out
 	)
 	
-	-- Animate sliding frames
-	local total = #frameNames
-	for i, name in ipairs(frameNames) do
-		local frame = parent:WaitForChild(name)
+	-- Animate each letter frame
+	local totalFrames = #frameNames
+	for i, frameName in ipairs(frameNames) do
+		local frame = screenGui:FindFirstChild(frameName)
 	
-		-- Set AnchorPoint to center of frame
-		frame.AnchorPoint = Vector2.new(0.5, 0.5)
+		if frame and frame:IsA("Frame") then
+			frame.AnchorPoint = Vector2.new(0.5, 0.5)
+			frame.Position = UDim2.new(1.2, 0, 0.5, 0)
+			frame.Visible = true
 	
-		-- Start off-screen to the right
-		frame.Position = UDim2.new(1.2, 0, 0.5, 0)
+			local spacing = i / (totalFrames + 1)
+			local goal = {
+				Position = UDim2.new(spacing, 0, 0.5, 0)
+			}
 	
-		-- Evenly spaced X position
-		local spacing = i / (total + 1)
-		local goal = {
-			Position = UDim2.new(spacing, 0, 0.5, 0)
-		}
+			local tween = TweenService:Create(frame, tweenInfo, goal)
+			tween:Play()
 	
-		local tween = TweenService:Create(frame, tweenInfo, goal)
-		tween:Play()
-	
-		-- Hide each frame after delay
-		task.delay(tweenInfo.Time + 3, function()
-			frame.Visible = false
-		end)
+			-- Hide frame after delay
+			task.delay(tweenInfo.Time + 3, function()
+				if frame then
+					frame.Visible = false
+				end
+			end)
+		else
+			warn("Missing or invalid frame: " .. tostring(frameName))
+		end
 	end
 	
-	-- After all frames are hidden, show MainFrame and Abutton
+	-- Reveal Hold and Abutton after animation
 	task.delay(tweenInfo.Time + 3, function()
-		local Hold = screenGui:WaitForChild("Hold")
-		local aButton = screenGui:WaitForChild("Abutton")
+		local hold = screenGui:FindFirstChild("Hold")
+		local aButton = screenGui:FindFirstChild("Abutton")
 	
-		Hold.Visible = true
-		aButton.Visible = true
+		if hold then hold.Visible = true end
+		if aButton then aButton.Visible = true end
 	end)
+	
 	
 	
 	
@@ -2370,4 +2359,4 @@ local function JFUFS_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(JFUFS_fake_script)()
+coroutine.wrap(SEOIIQI_fake_script)()
