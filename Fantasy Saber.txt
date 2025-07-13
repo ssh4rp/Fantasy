@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function GFQIIAP_fake_script() -- ScreenGui.LocalScript 
+local function EKEJ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function GFQIIAP_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(GFQIIAP_fake_script)()
-local function XPZN_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(EKEJ_fake_script)()
+local function UIUJ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1787,161 +1787,83 @@ local function XPZN_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	
-	-- UI
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
 	local Lscroll = MainFrame:WaitForChild("Lscroll")
-	local AkillAl = Lscroll:WaitForChild("AkillAl")
-	local Balerina = AkillAl:WaitForChild("balerina")
+	local AkillB = Lscroll:WaitForChild("AkillB")
+	local Balerina = AkillB:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
-	-- Services
-	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	local Workspace = game:GetService("Workspace")
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local playerHRP = character:WaitForChild("HumanoidRootPart")
 	
-	-- Player info
-	local LocalPlayer = Players.LocalPlayer
-	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-	local HRP = Character:WaitForChild("HumanoidRootPart")
+	local bossHRP = workspace:WaitForChild("Gameplay")
+		:WaitForChild("Boss")
+		:WaitForChild("BossHolder")
+		:WaitForChild("Boss")
+		:WaitForChild("HumanoidRootPart")
 	
-	-- Config
-	local HEIGHT_OFFSET = Vector3.new(0, -8.8, 0)
-	local SWITCH_TIME = 5
+	local offset = Vector3.new(0, 0, -3)
 	
-	-- State
+	local quadVenom = character:WaitForChild("QuadVenom")
+	local remoteClick = quadVenom:WaitForChild("RemoteClick")
+	local args = {{}}
+	
 	local isOn = false
-	local followConn, noclipConn, disablePartsConn, gyro, velocity
-	local currentTarget = nil
-	local stopSignal = false
 	
-	-- 🔁 Target switching coroutine (only runs when toggled ON)
-	local function startTargetLoop()
-		return task.spawn(function()
+	local runService = game:GetService("RunService")
+	local renderConnection
+	local firingCoroutine
+	
+	-- Function to start the follow + fire behavior
+	local function startBehavior()
+		-- Connect RenderStepped to follow the boss
+		renderConnection = runService.RenderStepped:Connect(function()
+			if bossHRP and playerHRP then
+				playerHRP.CFrame = bossHRP.CFrame * CFrame.new(offset)
+			end
+		end)
+	
+		-- Coroutine to keep firing the remote
+		firingCoroutine = coroutine.create(function()
 			while isOn do
-				for _, player in ipairs(Players:GetPlayers()) do
-					if not isOn then break end
-					if player ~= LocalPlayer then
-						currentTarget = player
-						task.wait(SWITCH_TIME)
-					end
-				end
-				task.wait(1)
+				remoteClick:FireServer(unpack(args))
+				wait(0.1)
 			end
 		end)
+		coroutine.resume(firingCoroutine)
 	end
 	
-	-- 🚫 Disable collisions (but not on characters)
-	local function disableIfNotCharacterPart(part)
-		if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
-			for _, p in ipairs(Players:GetPlayers()) do
-				if p.Character and part:IsDescendantOf(p.Character) then
-					return
-				end
-			end
-			part.CanCollide = false
+	-- Function to stop the behavior
+	local function stopBehavior()
+		-- Disconnect the RenderStepped event
+		if renderConnection then
+			renderConnection:Disconnect()
+			renderConnection = nil
 		end
+		-- Stop the coroutine by setting isOn false (already false here)
+		-- Coroutine will automatically stop on next loop because it checks isOn
 	end
 	
-	-- 🧠 NoClip your own character parts (except HRP)
-	local function startNoclipLoop()
-		return RunService.Stepped:Connect(function()
-			if not isOn then return end
-			for _, part in ipairs(Character:GetDescendants()) do
-				if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
-					part.CanCollide = false
-				end
-			end
-		end)
-	end
-	
-	-- 🛫 Start flying and following
-	local function enableFlyAndFollow()
-		-- Disable workspace part collisions
-		for _, part in ipairs(Workspace:GetDescendants()) do
-			disableIfNotCharacterPart(part)
-		end
-		disablePartsConn = Workspace.DescendantAdded:Connect(disableIfNotCharacterPart)
-	
-		-- Add body movers
-		gyro = Instance.new("BodyGyro", HRP)
-		gyro.P = 9e4
-		gyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
-		gyro.CFrame = HRP.CFrame
-	
-		velocity = Instance.new("BodyVelocity", HRP)
-		velocity.Velocity = Vector3.zero
-		velocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
-	
-		-- Follow logic
-		followConn = RunService.RenderStepped:Connect(function()
-			if not isOn then return end
-	
-			if gyro and velocity then
-				gyro.CFrame = Workspace.CurrentCamera.CFrame
-				velocity.Velocity = Vector3.zero
-			end
-	
-			local yourChar = LocalPlayer.Character
-			if not (yourChar and currentTarget) then return end
-	
-			local yourHRP = yourChar:FindFirstChild("HumanoidRootPart")
-			local targetChar = currentTarget.Character
-			local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
-	
-			if yourHRP and targetHRP then
-				local targetPos = targetHRP.Position + HEIGHT_OFFSET
-				yourHRP.CFrame = CFrame.new(targetPos, targetHRP.Position + targetHRP.CFrame.LookVector)
-	
-				-- Attack
-				local tool = yourChar:FindFirstChildOfClass("Tool")
-				if tool then
-					local remote = tool:FindFirstChild("RemoteClick")
-					if remote then
-						pcall(function()
-							remote:FireServer({})
-						end)
-					end
-				end
-			end
-		end)
-	
-		-- Start noclip
-		noclipConn = startNoclipLoop()
-	
-		-- Start target switching
-		startTargetLoop()
-	end
-	
-	-- 🛑 Stop flying, reset physics
-	local function disableFlyAndFollow()
-		if followConn then followConn:Disconnect() followConn = nil end
-		if noclipConn then noclipConn:Disconnect() noclipConn = nil end
-		if disablePartsConn then disablePartsConn:Disconnect() disablePartsConn = nil end
-		if gyro then gyro:Destroy() gyro = nil end
-		if velocity then velocity:Destroy() velocity = nil end
-	
-		-- Re-enable collisions for your parts
-		for _, part in ipairs(Character:GetDescendants()) do
-			if part:IsA("BasePart") then
-				part.CanCollide = true
-			end
-		end
-	end
-	
-	-- ✅ Toggle logic
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 	
 		if isOn then
+			-- Move right and up & turn green
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-			enableFlyAndFollow()
+	
+			-- Start the boss follow + remote fire behavior
+			startBehavior()
 		else
+			-- Move back to left and original Y & turn black
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-			disableFlyAndFollow()
+	
+			-- Stop the behavior
+			stopBehavior()
 		end
 	end)
 	
@@ -2268,8 +2190,8 @@ local function XPZN_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(XPZN_fake_script)()
-local function SEOIIQI_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(UIUJ_fake_script)()
+local function WHDEPLR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- Services
@@ -2359,4 +2281,4 @@ local function SEOIIQI_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(SEOIIQI_fake_script)()
+coroutine.wrap(WHDEPLR_fake_script)()
