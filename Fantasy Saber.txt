@@ -126,12 +126,19 @@ local balerina_14 = Instance.new("Frame")
 local UICorner_50 = Instance.new("UICorner")
 local RollButton_14 = Instance.new("TextButton")
 local UICorner_51 = Instance.new("UICorner")
+local AkillAl = Instance.new("TextLabel")
+local UICorner_52 = Instance.new("UICorner")
+local balerina_15 = Instance.new("Frame")
+local UICorner_53 = Instance.new("UICorner")
+local RollButton_15 = Instance.new("TextButton")
+local UICorner_54 = Instance.new("UICorner")
 local ElemFrame = Instance.new("Frame")
 local ImageLabel_5 = Instance.new("ImageLabel")
 local TextLabel_9 = Instance.new("TextLabel")
-local UICorner_52 = Instance.new("UICorner")
+local UICorner_55 = Instance.new("UICorner")
 local Abutton = Instance.new("ImageButton")
-local UICorner_53 = Instance.new("UICorner")
+local UICorner_56 = Instance.new("UICorner")
+local AnimFrame = Instance.new("Frame")
 local SlidingFrame = Instance.new("TextLabel")
 local SlidingFrame1 = Instance.new("TextLabel")
 local SlidingFrame2 = Instance.new("TextLabel")
@@ -544,6 +551,7 @@ Lscroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Lscroll.BorderSizePixel = 0
 Lscroll.Position = UDim2.new(0.0385487638, 0, 0.0254237279, 0)
 Lscroll.Size = UDim2.new(0, 411, 0, 222)
+Lscroll.CanvasPosition = Vector2.new(0, 140)
 Lscroll.ScrollBarThickness = 0
 
 UICorner_15.Parent = Lscroll
@@ -683,7 +691,7 @@ Aclass.BorderSizePixel = 0
 Aclass.Position = UDim2.new(0.0399999507, 0, 0.389574081, 0)
 Aclass.Size = UDim2.new(0, 160, 0, 50)
 Aclass.Font = Enum.Font.SourceSans
-Aclass.Text = "        AutoBuyClass"
+Aclass.Text = "       AutoBuyClass"
 Aclass.TextColor3 = Color3.fromRGB(255, 255, 255)
 Aclass.TextSize = 14.000
 Aclass.TextXAlignment = Enum.TextXAlignment.Left
@@ -893,7 +901,7 @@ Areward.BorderSizePixel = 0
 Areward.Position = UDim2.new(0.583999991, 0, 0.140000001, 0)
 Areward.Size = UDim2.new(0, 160, 0, 50)
 Areward.Font = Enum.Font.SourceSans
-Areward.Text = "          AutoRewards"
+Areward.Text = "        AutoRewards"
 Areward.TextColor3 = Color3.fromRGB(255, 255, 255)
 Areward.TextSize = 14.000
 Areward.TextXAlignment = Enum.TextXAlignment.Left
@@ -1052,6 +1060,48 @@ RollButton_14.TextSize = 14.000
 UICorner_51.CornerRadius = UDim.new(1, 2)
 UICorner_51.Parent = RollButton_14
 
+AkillAl.Name = "AkillAl"
+AkillAl.Parent = Lscroll
+AkillAl.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AkillAl.BackgroundTransparency = 0.500
+AkillAl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AkillAl.BorderSizePixel = 0
+AkillAl.Position = UDim2.new(0.582000017, 0, 0.657999992, 0)
+AkillAl.Size = UDim2.new(0, 160, 0, 50)
+AkillAl.Font = Enum.Font.SourceSans
+AkillAl.Text = "        AutoKillAll"
+AkillAl.TextColor3 = Color3.fromRGB(255, 255, 255)
+AkillAl.TextSize = 14.000
+AkillAl.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_52.Parent = AkillAl
+
+balerina_15.Name = "balerina"
+balerina_15.Parent = AkillAl
+balerina_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+balerina_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+balerina_15.BorderSizePixel = 0
+balerina_15.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
+balerina_15.Size = UDim2.new(0, 54, 0, 18)
+
+UICorner_53.CornerRadius = UDim.new(1, 0)
+UICorner_53.Parent = balerina_15
+
+RollButton_15.Name = "RollButton"
+RollButton_15.Parent = balerina_15
+RollButton_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_15.BorderSizePixel = 0
+RollButton_15.Position = UDim2.new(0.109999999, 0, 0, 0)
+RollButton_15.Size = UDim2.new(0, 18, 0, 18)
+RollButton_15.Font = Enum.Font.SourceSans
+RollButton_15.Text = ""
+RollButton_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+RollButton_15.TextSize = 14.000
+
+UICorner_54.CornerRadius = UDim.new(1, 2)
+UICorner_54.Parent = RollButton_15
+
 ElemFrame.Name = "ElemFrame"
 ElemFrame.Parent = Hold
 ElemFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -1083,7 +1133,7 @@ TextLabel_9.Text = "COMMING SOON!"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 
-UICorner_52.Parent = TextLabel_9
+UICorner_55.Parent = TextLabel_9
 
 Abutton.Name = "Abutton"
 Abutton.Parent = ScreenGui
@@ -1095,10 +1145,18 @@ Abutton.Size = UDim2.new(0, 35, 0, 28)
 Abutton.Visible = false
 Abutton.Image = "rbxassetid://90028088616811"
 
-UICorner_53.Parent = Abutton
+UICorner_56.Parent = Abutton
+
+AnimFrame.Name = "AnimFrame"
+AnimFrame.Parent = ScreenGui
+AnimFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+AnimFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AnimFrame.BorderSizePixel = 0
+AnimFrame.Position = UDim2.new(-0.103030302, 0, -0.100893997, 0)
+AnimFrame.Size = UDim2.new(0, 1737, 0, 905)
 
 SlidingFrame.Name = "SlidingFrame"
-SlidingFrame.Parent = ScreenGui
+SlidingFrame.Parent = AnimFrame
 SlidingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame.BackgroundTransparency = 1.000
 SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1112,7 +1170,7 @@ SlidingFrame.TextSize = 100.000
 SlidingFrame.TextWrapped = true
 
 SlidingFrame1.Name = "SlidingFrame1"
-SlidingFrame1.Parent = ScreenGui
+SlidingFrame1.Parent = AnimFrame
 SlidingFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame1.BackgroundTransparency = 1.000
 SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1126,7 +1184,7 @@ SlidingFrame1.TextSize = 100.000
 SlidingFrame1.TextWrapped = true
 
 SlidingFrame2.Name = "SlidingFrame2"
-SlidingFrame2.Parent = ScreenGui
+SlidingFrame2.Parent = AnimFrame
 SlidingFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame2.BackgroundTransparency = 1.000
 SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1140,7 +1198,7 @@ SlidingFrame2.TextSize = 100.000
 SlidingFrame2.TextWrapped = true
 
 SlidingFrame3.Name = "SlidingFrame3"
-SlidingFrame3.Parent = ScreenGui
+SlidingFrame3.Parent = AnimFrame
 SlidingFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame3.BackgroundTransparency = 1.000
 SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1154,7 +1212,7 @@ SlidingFrame3.TextSize = 100.000
 SlidingFrame3.TextWrapped = true
 
 SlidingFrame4.Name = "SlidingFrame4"
-SlidingFrame4.Parent = ScreenGui
+SlidingFrame4.Parent = AnimFrame
 SlidingFrame4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame4.BackgroundTransparency = 1.000
 SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1168,7 +1226,7 @@ SlidingFrame4.TextSize = 100.000
 SlidingFrame4.TextWrapped = true
 
 SlidingFrame5.Name = "SlidingFrame5"
-SlidingFrame5.Parent = ScreenGui
+SlidingFrame5.Parent = AnimFrame
 SlidingFrame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame5.BackgroundTransparency = 1.000
 SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1182,7 +1240,7 @@ SlidingFrame5.TextSize = 100.000
 SlidingFrame5.TextWrapped = true
 
 SlidingFrame6.Name = "SlidingFrame6"
-SlidingFrame6.Parent = ScreenGui
+SlidingFrame6.Parent = AnimFrame
 SlidingFrame6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame6.BackgroundTransparency = 1.000
 SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1198,7 +1256,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function VYKFI_fake_script() -- ScreenGui.LocalScript 
+local function IDWS_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1334,8 +1392,8 @@ local function VYKFI_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(VYKFI_fake_script)()
-local function DHZMNF_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(IDWS_fake_script)()
+local function NGYTF_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1383,6 +1441,7 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
+	-- UI Setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1396,15 +1455,53 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 		if isOn then
-			-- Move right and up
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		else
-			-- Move back to left and original Y
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	end)
+	
+	-- Class Names
+	local classes = {
+		"Noob", "Apprentice", "Soldier", "Paladin", "Assassin", "Warrior", "Warlord",
+		"Berserker", "Saber", "Cyborg", "Master", "Titan", "Phantom", "Shadow", "Ghoul",
+		"Tempest", "Elementalist", "Beast", "Dark Ninja", "Warlock", "Overlord",
+		"Demigod", "Archangel", "Wraith", "Deity", "Nemesis", "Executioner",
+		"Terminator", "Colossus", "Zeus", "Elf", "Santa", "Corruptor", "Prestige",
+		"Caster", "Cyclops", "King", "Hacker", "Angel", "Minotaur", "Cerberus", "Yeti",
+		"Samurai", "Baron", "Detective", "Red Baron", "Witch", "Gladiator",
+		"Purple Baron", "Guard", "Shadow Titan", "Superhuman", "Brain", "Shadow Guard",
+		"Shadow Gladiator", "Red Elf", "Gingerbread", "Ninja Warrior", "Snowman",
+		"Lord Of Death", "Demonic", "Alien", "Ghost", "Dracula", "Golem", "Dragon",
+		"Spirit", "Pharaoh", "Mummy", "Ape", "Robot", "Goblin", "Techno",
+		"Golden Warrior", "Golden Royalty", "Demonic Imp", "Anubis", "Illuminati",
+		"Hydra", "Skeleton", "Supervillain", "Dark Slayer", "Dark Spider", "Troll",
+		"Shark", "Pirate", "Kraken", "Genie", "Cobra", "Sphinx", "Dark Witch", "Knight",
+		"Chimera", "Kitsune", "Odin"
+	}
+	
+	-- Remote event
+	local event = game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UIAction")
+	
+	-- Auto-buy loop (runs only when isOn is true)
+	task.spawn(function()
+		while true do
+			if isOn then
+				for _, className in ipairs(classes) do
+					if isOn then -- Recheck inside loop in case user disables mid-way
+						event:FireServer("BuyClass", className)
+						task.wait(1)
+					else
+						break
+					end
+				end
+			end
+			task.wait(1)
+		end
+	end)
+	
 	
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
@@ -1629,6 +1726,7 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
+	-- 🧩 UI Setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1642,16 +1740,60 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 		if isOn then
-			-- Move right and up
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		else
-			-- Move back to left and original Y
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	end)
 	
+	-- 👑 Crown Collector Setup
+	local player = game.Players.LocalPlayer
+	local char = player.Character or player.CharacterAdded:Wait()
+	local root = char:WaitForChild("HumanoidRootPart")
+	
+	local currencyHolder = workspace:WaitForChild("Gameplay")
+		:WaitForChild("CurrencyPickup")
+		:WaitForChild("CurrencyHolder")
+	
+	-- Simulate touching the part
+	local function fireTouch(part)
+		firetouchinterest(root, part, 0)
+		task.wait(0.05)
+		firetouchinterest(root, part, 1)
+	end
+	
+	-- Function to collect a single crown
+	local function collectCrown(crown)
+		local part = crown:IsA("BasePart") and crown or crown:FindFirstChildWhichIsA("BasePart", true)
+		if part then
+			fireTouch(part)
+		end
+	end
+	
+	-- 🔁 Background loop to touch all crowns if toggle is enabled
+	task.spawn(function()
+		while true do
+			if isOn then
+				for _, crown in ipairs(currencyHolder:GetChildren()) do
+					collectCrown(crown)
+				end
+			end
+			task.wait(0.5)
+		end
+	end)
+	
+	-- ⚡ Auto-collect newly added crowns if toggle is on
+	currencyHolder.ChildAdded:Connect(function(newCrown)
+		task.wait(0.2)
+		if isOn then
+			collectCrown(newCrown)
+		end
+	end)
+	
+	
+	-- UI Setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1660,20 +1802,75 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	local Balerina = AkillB:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
+	-- Toggle State
 	local isOn = false
 	
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
+	
 		if isOn then
-			-- Move right and up
+			-- ON: Green and move right
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		else
-			-- Move back to left and original Y
+			-- OFF: Black and move left
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	end)
+	
+	-- Game Services & References
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local myHRP = character:WaitForChild("HumanoidRootPart")
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local bossModel = workspace:WaitForChild("Gameplay")
+		:WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
+	local bossHRP = bossModel:WaitForChild("HumanoidRootPart")
+	
+	-- Freeze movement but keep physics
+	humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+	humanoid.AutoRotate = false
+	
+	-- Stick to boss when active
+	RunService.Heartbeat:Connect(function()
+		if isOn and myHRP and bossHRP then
+			myHRP.Velocity = Vector3.zero
+			myHRP.RotVelocity = Vector3.zero
+			myHRP.CFrame = bossHRP.CFrame
+		end
+	end)
+	
+	-- Auto attack loop
+	task.spawn(function()
+		while true do
+			if isOn then
+				local frost = character:FindFirstChild("Frost")
+				local remoteClick = frost and frost:FindFirstChild("RemoteClick")
+	
+				if remoteClick then
+					pcall(function()
+						remoteClick:FireServer({bossModel})
+					end)
+				end
+	
+				local swingRemote = ReplicatedStorage:FindFirstChild("Events") and ReplicatedStorage.Events:FindFirstChild("SwingSaber")
+				if swingRemote then
+					pcall(function()
+						swingRemote:FireServer()
+					end)
+				end
+			end
+	
+			task.wait(1) -- Adjust frequency if needed
+		end
+	end)
+	
 	
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local UIAction = ReplicatedStorage:WaitForChild("Events"):WaitForChild("UIAction")
@@ -1906,6 +2103,129 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	
+	-- UI PART
+	local SGUI = script.Parent
+	local hold = SGUI:WaitForChild("Hold")
+	local MainFrame = hold:WaitForChild("MainFrame")
+	local Lscroll = MainFrame:WaitForChild("Lscroll")
+	local AkillAl = Lscroll:WaitForChild("AkillAl")
+	local Balerina = AkillAl:WaitForChild("balerina")
+	local RollButton = Balerina:WaitForChild("RollButton")
+	
+	local isOn = false
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			-- Move right and up
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			-- Move back to left and original Y
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		end
+	end)
+	
+	-- ATTACK / FOLLOW LOGIC
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local Workspace = game:GetService("Workspace")
+	
+	local LocalPlayer = Players.LocalPlayer
+	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	local HRP = Character:WaitForChild("HumanoidRootPart")
+	
+	local HEIGHT_OFFSET = Vector3.new(0, -9, 0)
+	local SWITCH_TIME = 5
+	
+	local currentTarget = nil
+	
+	-- 🔁 Cycle through all other players
+	task.spawn(function()
+		while true do
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player ~= LocalPlayer then
+					currentTarget = player
+					task.wait(SWITCH_TIME)
+				end
+			end
+		end
+	end)
+	
+	-- Disable non-player part collisions
+	local function disableIfNotPlayerPart(part)
+		if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player.Character and part:IsDescendantOf(player.Character) then
+					return
+				end
+			end
+			part.CanCollide = false
+		end
+	end
+	
+	for _, part in ipairs(Workspace:GetDescendants()) do
+		disableIfNotPlayerPart(part)
+	end
+	Workspace.DescendantAdded:Connect(disableIfNotPlayerPart)
+	
+	-- 🌀 NoClip for your own character
+	RunService.Stepped:Connect(function()
+		for _, part in ipairs(Character:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+				part.CanCollide = false
+			end
+		end
+	end)
+	
+	-- ✈️ Flying logic
+	local BodyGyro = Instance.new("BodyGyro", HRP)
+	BodyGyro.P = 9e4
+	BodyGyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+	BodyGyro.CFrame = HRP.CFrame
+	
+	local BodyVelocity = Instance.new("BodyVelocity", HRP)
+	BodyVelocity.Velocity = Vector3.zero
+	BodyVelocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+	RunService.RenderStepped:Connect(function()
+		if isOn then
+			local camCF = Workspace.CurrentCamera.CFrame
+			BodyGyro.CFrame = camCF
+			BodyVelocity.Velocity = Vector3.zero
+		end
+	end)
+	
+	-- 🎯 Follow + Attack
+	RunService.RenderStepped:Connect(function()
+		if not isOn then return end
+	
+		local yourChar = LocalPlayer.Character
+		if not (yourChar and currentTarget) then return end
+	
+		local yourHRP = yourChar:FindFirstChild("HumanoidRootPart")
+		local targetChar = currentTarget.Character
+		local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
+	
+		if yourHRP and targetHRP then
+			local targetPos = targetHRP.Position + HEIGHT_OFFSET
+			yourHRP.CFrame = CFrame.new(targetPos, targetHRP.Position + targetHRP.CFrame.LookVector)
+	
+			local tool = yourChar:FindFirstChildOfClass("Tool")
+			if tool then
+				local remote = tool:FindFirstChild("RemoteClick")
+				if remote then
+					pcall(function()
+						remote:FireServer({}) -- You could also pass {targetChar} if needed
+					end)
+				end
+			end
+		end
+	end)
+	
+	
+	
 	
 	
 	
@@ -1918,13 +2238,35 @@ local function DHZMNF_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(DHZMNF_fake_script)()
-local function NYMUJ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(NGYTF_fake_script)()
+local function UVSVW_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
 	local parent = script.Parent
-	local screenGui = parent -- Assuming parent is the ScreenGui
+	local screenGui = parent
+	local animFrame = screenGui:WaitForChild("AnimFrame")
+	
+	-- 🌧️ Add Rain Effect to AnimFrame
+	local function addRainEffect(targetFrame)
+		local rain = Instance.new("ParticleEmitter")
+		rain.Name = "RainEmitter"
+		rain.Texture = "rbxassetid://6034291776" -- rain streak texture
+		rain.Size = NumberSequence.new(0.05)
+		rain.Transparency = NumberSequence.new(0.2)
+		rain.Color = ColorSequence.new(Color3.new(1, 1, 1))
+		rain.Lifetime = NumberRange.new(1.2)
+		rain.Rate = 300
+		rain.Speed = NumberRange.new(50, 70)
+		rain.VelocitySpread = 5
+		rain.EmissionDirection = Enum.NormalId.Top
+		rain.Acceleration = Vector3.new(0, -200, 0)
+		rain.LockedToPart = false
+		rain.SpreadAngle = Vector2.new(0, 5)
+		rain.Parent = targetFrame
+	end
+	
+	addRainEffect(animFrame)
 	
 	-- Frame names in order of the word "FANTASY"
 	local frameNames = {
@@ -1946,37 +2288,52 @@ local function NYMUJ_fake_script() -- ScreenGui.LocalScript
 	-- Animate sliding frames
 	local total = #frameNames
 	for i, name in ipairs(frameNames) do
-		local frame = parent:WaitForChild(name)
+		local frame = animFrame:WaitForChild(name)
 	
-		-- Set AnchorPoint to center of frame
+		-- Set AnchorPoint and start off-screen
 		frame.AnchorPoint = Vector2.new(0.5, 0.5)
-	
-		-- Start off-screen to the right
 		frame.Position = UDim2.new(1.2, 0, 0.5, 0)
 	
-		-- Evenly spaced X position
+		-- 🔴 Add red glow stroke
+		local stroke = Instance.new("UIStroke")
+		stroke.Color = Color3.fromRGB(255, 0, 0)
+		stroke.Thickness = 2
+		stroke.Transparency = 0.2
+		stroke.Parent = frame
+	
+		local glowTween = TweenService:Create(stroke, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
+			Transparency = 0.7
+		})
+		glowTween:Play()
+	
+		-- Slide to final position
 		local spacing = i / (total + 1)
 		local goal = {
 			Position = UDim2.new(spacing, 0, 0.5, 0)
 		}
-	
 		local tween = TweenService:Create(frame, tweenInfo, goal)
 		tween:Play()
-	
-		-- Hide each frame after delay
-		task.delay(tweenInfo.Time + 3, function()
-			frame.Visible = false
-		end)
 	end
 	
-	-- After all frames are hidden, show MainFrame and Abutton
+	-- After animation finishes + delay, hide sliding frames and AnimFrame
 	task.delay(tweenInfo.Time + 3, function()
-		local Hold = screenGui:WaitForChild("Hold")
-		local aButton = screenGui:WaitForChild("Abutton")
+		for _, name in ipairs(frameNames) do
+			local frame = animFrame:FindFirstChild(name)
+			if frame then
+				frame.Visible = false
+			end
+		end
 	
-		Hold.Visible = true
-		aButton.Visible = true
+		animFrame.Visible = false
+	
+		-- Show main UI
+		local Hold = screenGui:FindFirstChild("Hold")
+		local aButton = screenGui:FindFirstChild("Abutton")
+	
+		if Hold then Hold.Visible = true end
+		if aButton then aButton.Visible = true end
 	end)
+	
 	
 	
 	
@@ -1998,4 +2355,4 @@ local function NYMUJ_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(NYMUJ_fake_script)()
+coroutine.wrap(UVSVW_fake_script)()
