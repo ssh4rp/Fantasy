@@ -1253,7 +1253,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function MSEP_fake_script() -- ScreenGui.LocalScript 
+local function UHAESR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1389,8 +1389,8 @@ local function MSEP_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(MSEP_fake_script)()
-local function UQPERA_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(UHAESR_fake_script)()
+local function CMFXAF_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1789,6 +1789,7 @@ local function UQPERA_fake_script() -- ScreenGui.LocalScript
 	
 	
 	-- UI Setup
+	-- 🧱 UI Setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1797,22 +1798,85 @@ local function UQPERA_fake_script() -- ScreenGui.LocalScript
 	local Balerina = AkillB:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
-	-- Toggle State
-	local isOn = false
+	-- 🎮 Player & Character
+	local player = game:GetService("Players").LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local myHRP = character:WaitForChild("HumanoidRootPart")
+	local humanoid = character:WaitForChild("Humanoid")
 	
+	-- 👹 Boss Setup
+	local bossHRP
+	local bossModel
+	
+	pcall(function()
+		bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss")
+			:WaitForChild("BossHolder"):WaitForChild("Boss")
+		bossHRP = bossModel:WaitForChild("HumanoidRootPart")
+	end)
+	
+	-- 🔁 State
+	local isOn = false
+	local attacking = false
+	local heartbeatConn
+	
+	-- 🔘 Toggle Button Behavior
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 	
 		if isOn then
-			-- ON: Green and move right
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	
+			-- ⛓️ Freeze character and attach to boss
+			humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+			humanoid.AutoRotate = false
+	
+			heartbeatConn = game:GetService("RunService").Heartbeat:Connect(function()
+				if myHRP and bossHRP then
+					myHRP.Velocity = Vector3.zero
+					myHRP.RotVelocity = Vector3.zero
+					myHRP.CFrame = bossHRP.CFrame
+				end
+			end)
+	
+			-- 🗡️ Auto Attack Loop
+			attacking = true
+			task.spawn(function()
+				while attacking do
+					local frost = character:FindFirstChild("Frost")
+					local remoteClick = frost and frost:FindFirstChild("RemoteClick")
+					if remoteClick then
+						pcall(function()
+							remoteClick:FireServer({bossModel})
+						end)
+					end
+	
+					local swingRemote = game:GetService("ReplicatedStorage"):FindFirstChild("Events")
+						and game:GetService("ReplicatedStorage").Events:FindFirstChild("SwingSaber")
+					if swingRemote then
+						pcall(function()
+							swingRemote:FireServer()
+						end)
+					end
+	
+					task.wait(1)
+				end
+			end)
 		else
-			-- OFF: Black and move left
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	
+			-- 🛑 Stop sticking and attacking
+			if heartbeatConn then
+				heartbeatConn:Disconnect()
+				heartbeatConn = nil
+			end
+	
+			humanoid.AutoRotate = true
+			attacking = false
 		end
 	end)
+	
 	
 	-- Game Services & References
 	local Players = game:GetService("Players")
@@ -2134,8 +2198,8 @@ local function UQPERA_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(UQPERA_fake_script)()
-local function BGXEN_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(CMFXAF_fake_script)()
+local function FUXPMM_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2214,4 +2278,4 @@ local function BGXEN_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(BGXEN_fake_script)()
+coroutine.wrap(FUXPMM_fake_script)()
