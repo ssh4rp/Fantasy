@@ -1253,7 +1253,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function JJVDQM_fake_script() -- ScreenGui.LocalScript 
+local function GUFE_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1389,8 +1389,8 @@ local function JJVDQM_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(JJVDQM_fake_script)()
-local function TEAAVHJ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(GUFE_fake_script)()
+local function QAYNSIF_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1789,7 +1789,7 @@ local function TEAAVHJ_fake_script() -- ScreenGui.LocalScript
 	
 	
 	-- UI Setup
-	-- UI Setup
+	-- UI setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1798,95 +1798,91 @@ local function TEAAVHJ_fake_script() -- ScreenGui.LocalScript
 	local Balerina = AkillB:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
-	-- Player and character
+	-- Services
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	
+	-- Player and character
 	local player = Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
-	local myHRP = character:WaitForChild("HumanoidRootPart")
 	local humanoid = character:WaitForChild("Humanoid")
+	local myHRP = character:WaitForChild("HumanoidRootPart")
 	
 	-- Boss setup
-	local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss")
-		:WaitForChild("BossHolder"):WaitForChild("Boss")
+	local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
 	local bossHRP = bossModel:WaitForChild("HumanoidRootPart")
 	
-	-- Toggle state
+	-- State
 	local isOn = false
-	local attacking = false
-	local heartbeatConn
+	local stickConnection = nil
+	local attackLoop = nil
 	
-	-- Reset character state function
-	local function restoreMovement()
-		if humanoid then
-			humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
-			humanoid:ChangeState(Enum.HumanoidStateType.Running)
-			humanoid.AutoRotate = true
-		end
+	-- Start logic
+	local function startAutoKill()
+		-- Freeze player
+		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+		humanoid.AutoRotate = false
+	
+		-- Stick to boss
+		stickConnection = RunService.Heartbeat:Connect(function()
+			if myHRP and bossHRP then
+				myHRP.CFrame = bossHRP.CFrame
+				myHRP.Velocity = Vector3.zero
+				myHRP.RotVelocity = Vector3.zero
+			end
+		end)
+	
+		-- Attack loop
+		attackLoop = task.spawn(function()
+			while isOn do
+				local frost = character:FindFirstChild("Frost")
+				local remoteClick = frost and frost:FindFirstChild("RemoteClick")
+				if remoteClick then
+					pcall(function()
+						remoteClick:FireServer({bossModel})
+					end)
+				end
+	
+				local swing = ReplicatedStorage:FindFirstChild("Events") and ReplicatedStorage.Events:FindFirstChild("SwingSaber")
+				if swing then
+					pcall(function()
+						swing:FireServer()
+					end)
+				end
+	
+				task.wait(1)
+			end
+		end)
 	end
 	
-	-- Button click
+	-- Stop logic
+	local function stopAutoKill()
+		-- Restore control
+		if stickConnection then
+			stickConnection:Disconnect()
+			stickConnection = nil
+		end
+		if attackLoop then
+			task.cancel(attackLoop)
+			attackLoop = nil
+		end
+		humanoid:ChangeState(Enum.HumanoidStateType.Running)
+		humanoid.AutoRotate = true
+	end
+	
+	-- Button toggle
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 	
 		if isOn then
-			-- UI On
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-	
-			-- Freeze and stick to boss
-			humanoid:ChangeState(Enum.HumanoidStateType.Physics)
-			humanoid.AutoRotate = false
-	
-			heartbeatConn = RunService.Heartbeat:Connect(function()
-				if myHRP and bossHRP then
-					myHRP.Velocity = Vector3.zero
-					myHRP.RotVelocity = Vector3.zero
-					myHRP.CFrame = bossHRP.CFrame
-				end
-			end)
-	
-			-- Start auto attacking
-			attacking = true
-			task.spawn(function()
-				while attacking do
-					local frost = character:FindFirstChild("Frost")
-					local remoteClick = frost and frost:FindFirstChild("RemoteClick")
-					if remoteClick then
-						pcall(function()
-							remoteClick:FireServer({bossModel})
-						end)
-					end
-	
-					local swingRemote = ReplicatedStorage:FindFirstChild("Events")
-						and ReplicatedStorage.Events:FindFirstChild("SwingSaber")
-					if swingRemote then
-						pcall(function()
-							swingRemote:FireServer()
-						end)
-					end
-	
-					task.wait(1)
-				end
-			end)
+			startAutoKill()
 		else
-			-- UI Off
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	
-			-- Stop sticking
-			if heartbeatConn then
-				heartbeatConn:Disconnect()
-				heartbeatConn = nil
-			end
-	
-			attacking = false
-	
-			-- Delay slightly before resetting to ensure clean transition
-			task.wait(0.1)
-			restoreMovement()
+			stopAutoKill()
 		end
 	end)
 	
@@ -2211,8 +2207,8 @@ local function TEAAVHJ_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(TEAAVHJ_fake_script)()
-local function GWKSBLM_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(QAYNSIF_fake_script)()
+local function VTOR_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2291,4 +2287,4 @@ local function GWKSBLM_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(GWKSBLM_fake_script)()
+coroutine.wrap(VTOR_fake_script)()
