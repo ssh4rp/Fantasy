@@ -24,117 +24,117 @@ local balerina_2 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local RollButton_2 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local Tarea = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local lineup = Instance.new("Frame")
 local lineup_2 = Instance.new("Frame")
 local InfoFrame = Instance.new("Frame")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local TextLabel_4 = Instance.new("TextLabel")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel_5 = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
-local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
 local SideFrame = Instance.new("Frame")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local MainB = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local ElemB = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
+local ElemB = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
 local lineup_3 = Instance.new("Frame")
 local EggB = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local InfoB = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local InfoB = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
 local MainFrame = Instance.new("Frame")
 local ImageLabel_4 = Instance.new("ImageLabel")
 local Lscroll = Instance.new("ScrollingFrame")
-local UICorner_14 = Instance.new("UICorner")
-local Abuy = Instance.new("TextLabel")
 local UICorner_15 = Instance.new("UICorner")
-local balerina_3 = Instance.new("Frame")
+local Abuy = Instance.new("TextLabel")
 local UICorner_16 = Instance.new("UICorner")
-local RollButton_3 = Instance.new("TextButton")
+local balerina_3 = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
-local Aswing = Instance.new("TextLabel")
+local RollButton_3 = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local balerina_4 = Instance.new("Frame")
+local Aswing = Instance.new("TextLabel")
 local UICorner_19 = Instance.new("UICorner")
-local RollButton_4 = Instance.new("TextButton")
+local balerina_4 = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
-local Asell = Instance.new("TextLabel")
+local RollButton_4 = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local balerina_5 = Instance.new("Frame")
+local Asell = Instance.new("TextLabel")
 local UICorner_22 = Instance.new("UICorner")
-local RollButton_5 = Instance.new("TextButton")
+local balerina_5 = Instance.new("Frame")
 local UICorner_23 = Instance.new("UICorner")
-local Aclass = Instance.new("TextLabel")
+local RollButton_5 = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
-local balerina_6 = Instance.new("Frame")
+local Aclass = Instance.new("TextLabel")
 local UICorner_25 = Instance.new("UICorner")
-local RollButton_6 = Instance.new("TextButton")
+local balerina_6 = Instance.new("Frame")
 local UICorner_26 = Instance.new("UICorner")
-local Asaber = Instance.new("TextLabel")
+local RollButton_6 = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
-local balerina_7 = Instance.new("Frame")
+local Asaber = Instance.new("TextLabel")
 local UICorner_28 = Instance.new("UICorner")
-local RollButton_7 = Instance.new("TextButton")
+local balerina_7 = Instance.new("Frame")
 local UICorner_29 = Instance.new("UICorner")
-local Adamage = Instance.new("TextLabel")
+local RollButton_7 = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
-local balerina_8 = Instance.new("Frame")
+local Adamage = Instance.new("TextLabel")
 local UICorner_31 = Instance.new("UICorner")
-local RollButton_8 = Instance.new("TextButton")
+local balerina_8 = Instance.new("Frame")
 local UICorner_32 = Instance.new("UICorner")
-local Apetr = Instance.new("TextLabel")
+local RollButton_8 = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
-local balerina_9 = Instance.new("Frame")
+local Apetr = Instance.new("TextLabel")
 local UICorner_34 = Instance.new("UICorner")
-local RollButton_9 = Instance.new("TextButton")
+local balerina_9 = Instance.new("Frame")
 local UICorner_35 = Instance.new("UICorner")
-local AkillB = Instance.new("TextLabel")
+local RollButton_9 = Instance.new("TextButton")
 local UICorner_36 = Instance.new("UICorner")
-local balerina_10 = Instance.new("Frame")
+local AkillB = Instance.new("TextLabel")
 local UICorner_37 = Instance.new("UICorner")
-local RollButton_10 = Instance.new("TextButton")
+local balerina_10 = Instance.new("Frame")
 local UICorner_38 = Instance.new("UICorner")
-local Areward = Instance.new("TextLabel")
+local RollButton_10 = Instance.new("TextButton")
 local UICorner_39 = Instance.new("UICorner")
-local balerina_11 = Instance.new("Frame")
+local Areward = Instance.new("TextLabel")
 local UICorner_40 = Instance.new("UICorner")
-local RollButton_11 = Instance.new("TextButton")
+local balerina_11 = Instance.new("Frame")
 local UICorner_41 = Instance.new("UICorner")
-local Acrown = Instance.new("TextLabel")
+local RollButton_11 = Instance.new("TextButton")
 local UICorner_42 = Instance.new("UICorner")
-local balerina_12 = Instance.new("Frame")
+local Acrown = Instance.new("TextLabel")
 local UICorner_43 = Instance.new("UICorner")
-local RollButton_12 = Instance.new("TextButton")
+local balerina_12 = Instance.new("Frame")
 local UICorner_44 = Instance.new("UICorner")
-local Afire = Instance.new("TextLabel")
+local RollButton_12 = Instance.new("TextButton")
 local UICorner_45 = Instance.new("UICorner")
-local balerina_13 = Instance.new("Frame")
+local Afire = Instance.new("TextLabel")
 local UICorner_46 = Instance.new("UICorner")
-local RollButton_13 = Instance.new("TextButton")
+local balerina_13 = Instance.new("Frame")
 local UICorner_47 = Instance.new("UICorner")
-local Abura = Instance.new("TextLabel")
+local RollButton_13 = Instance.new("TextButton")
 local UICorner_48 = Instance.new("UICorner")
-local balerina_14 = Instance.new("Frame")
+local Abura = Instance.new("TextLabel")
 local UICorner_49 = Instance.new("UICorner")
-local RollButton_14 = Instance.new("TextButton")
+local balerina_14 = Instance.new("Frame")
 local UICorner_50 = Instance.new("UICorner")
-local AkillAl = Instance.new("TextLabel")
+local RollButton_14 = Instance.new("TextButton")
 local UICorner_51 = Instance.new("UICorner")
-local balerina_15 = Instance.new("Frame")
+local AkillAl = Instance.new("TextLabel")
 local UICorner_52 = Instance.new("UICorner")
-local RollButton_15 = Instance.new("TextButton")
+local balerina_15 = Instance.new("Frame")
 local UICorner_53 = Instance.new("UICorner")
+local RollButton_15 = Instance.new("TextButton")
+local UICorner_54 = Instance.new("UICorner")
 local ElemFrame = Instance.new("Frame")
 local ImageLabel_5 = Instance.new("ImageLabel")
 local TextLabel_9 = Instance.new("TextLabel")
-local UICorner_54 = Instance.new("UICorner")
-local Tarea = Instance.new("TextButton")
 local UICorner_55 = Instance.new("UICorner")
 local Abutton = Instance.new("ImageButton")
 local UICorner_56 = Instance.new("UICorner")
@@ -315,6 +315,20 @@ RollButton_2.TextSize = 14.000
 UICorner_6.CornerRadius = UDim.new(1, 2)
 UICorner_6.Parent = RollButton_2
 
+Tarea.Name = "Tarea"
+Tarea.Parent = Dorime
+Tarea.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Tarea.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tarea.BorderSizePixel = 0
+Tarea.Position = UDim2.new(0.0482420996, 0, 0.396394461, 0)
+Tarea.Size = UDim2.new(0, 150, 0, 50)
+Tarea.Font = Enum.Font.FredokaOne
+Tarea.Text = "Teleport To Egg Area"
+Tarea.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tarea.TextSize = 14.000
+
+UICorner_7.Parent = Tarea
+
 lineup.Name = "lineup"
 lineup.Parent = Hold
 lineup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -364,7 +378,7 @@ TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 10.000
 TextLabel_4.TextWrapped = true
 
-UICorner_7.Parent = TextLabel_4
+UICorner_8.Parent = TextLabel_4
 
 TextLabel_5.Parent = InfoFrame
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -377,7 +391,7 @@ TextLabel_5.Text = "if u want premium version of script join in discord and make
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 10.000
 
-UICorner_8.Parent = TextLabel_5
+UICorner_9.Parent = TextLabel_5
 
 TextLabel_6.Parent = InfoFrame
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -391,7 +405,7 @@ TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 10.000
 TextLabel_6.TextWrapped = true
 
-UICorner_9.Parent = TextLabel_6
+UICorner_10.Parent = TextLabel_6
 
 TextLabel_7.Parent = InfoFrame
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -446,7 +460,7 @@ MainB.Text = "Main"
 MainB.TextColor3 = Color3.fromRGB(255, 255, 255)
 MainB.TextSize = 14.000
 
-UICorner_10.Parent = MainB
+UICorner_11.Parent = MainB
 
 ElemB.Name = "ElemB"
 ElemB.Parent = SideFrame
@@ -460,7 +474,7 @@ ElemB.Text = "Elements"
 ElemB.TextColor3 = Color3.fromRGB(255, 255, 255)
 ElemB.TextSize = 14.000
 
-UICorner_11.Parent = ElemB
+UICorner_12.Parent = ElemB
 
 Frame_2.Parent = SideFrame
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -491,7 +505,7 @@ EggB.Text = "Eggs"
 EggB.TextColor3 = Color3.fromRGB(255, 255, 255)
 EggB.TextSize = 14.000
 
-UICorner_12.Parent = EggB
+UICorner_13.Parent = EggB
 
 InfoB.Name = "InfoB"
 InfoB.Parent = SideFrame
@@ -505,7 +519,7 @@ InfoB.Text = "Info"
 InfoB.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfoB.TextSize = 14.000
 
-UICorner_13.Parent = InfoB
+UICorner_14.Parent = InfoB
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = Hold
@@ -537,7 +551,7 @@ Lscroll.Position = UDim2.new(0.0385487638, 0, 0.0254237279, 0)
 Lscroll.Size = UDim2.new(0, 411, 0, 222)
 Lscroll.ScrollBarThickness = 0
 
-UICorner_14.Parent = Lscroll
+UICorner_15.Parent = Lscroll
 
 Abuy.Name = "Abuy"
 Abuy.Parent = Lscroll
@@ -553,7 +567,7 @@ Abuy.TextColor3 = Color3.fromRGB(255, 255, 255)
 Abuy.TextSize = 14.000
 Abuy.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_15.Parent = Abuy
+UICorner_16.Parent = Abuy
 
 balerina_3.Name = "balerina"
 balerina_3.Parent = Abuy
@@ -563,8 +577,8 @@ balerina_3.BorderSizePixel = 0
 balerina_3.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_3.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_16.CornerRadius = UDim.new(1, 0)
-UICorner_16.Parent = balerina_3
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = balerina_3
 
 RollButton_3.Name = "RollButton"
 RollButton_3.Parent = balerina_3
@@ -578,8 +592,8 @@ RollButton_3.Text = ""
 RollButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_3.TextSize = 14.000
 
-UICorner_17.CornerRadius = UDim.new(1, 2)
-UICorner_17.Parent = RollButton_3
+UICorner_18.CornerRadius = UDim.new(1, 2)
+UICorner_18.Parent = RollButton_3
 
 Aswing.Name = "Aswing"
 Aswing.Parent = Lscroll
@@ -595,7 +609,7 @@ Aswing.TextColor3 = Color3.fromRGB(255, 255, 255)
 Aswing.TextSize = 14.000
 Aswing.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_18.Parent = Aswing
+UICorner_19.Parent = Aswing
 
 balerina_4.Name = "balerina"
 balerina_4.Parent = Aswing
@@ -605,8 +619,8 @@ balerina_4.BorderSizePixel = 0
 balerina_4.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_4.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_19.CornerRadius = UDim.new(1, 0)
-UICorner_19.Parent = balerina_4
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = balerina_4
 
 RollButton_4.Name = "RollButton"
 RollButton_4.Parent = balerina_4
@@ -620,8 +634,8 @@ RollButton_4.Text = ""
 RollButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_4.TextSize = 14.000
 
-UICorner_20.CornerRadius = UDim.new(1, 2)
-UICorner_20.Parent = RollButton_4
+UICorner_21.CornerRadius = UDim.new(1, 2)
+UICorner_21.Parent = RollButton_4
 
 Asell.Name = "Asell"
 Asell.Parent = Lscroll
@@ -637,7 +651,7 @@ Asell.TextColor3 = Color3.fromRGB(255, 255, 255)
 Asell.TextSize = 14.000
 Asell.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_21.Parent = Asell
+UICorner_22.Parent = Asell
 
 balerina_5.Name = "balerina"
 balerina_5.Parent = Asell
@@ -647,8 +661,8 @@ balerina_5.BorderSizePixel = 0
 balerina_5.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_5.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_22.CornerRadius = UDim.new(1, 0)
-UICorner_22.Parent = balerina_5
+UICorner_23.CornerRadius = UDim.new(1, 0)
+UICorner_23.Parent = balerina_5
 
 RollButton_5.Name = "RollButton"
 RollButton_5.Parent = balerina_5
@@ -662,8 +676,8 @@ RollButton_5.Text = ""
 RollButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_5.TextSize = 14.000
 
-UICorner_23.CornerRadius = UDim.new(1, 2)
-UICorner_23.Parent = RollButton_5
+UICorner_24.CornerRadius = UDim.new(1, 2)
+UICorner_24.Parent = RollButton_5
 
 Aclass.Name = "Aclass"
 Aclass.Parent = Lscroll
@@ -679,7 +693,7 @@ Aclass.TextColor3 = Color3.fromRGB(255, 255, 255)
 Aclass.TextSize = 14.000
 Aclass.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_24.Parent = Aclass
+UICorner_25.Parent = Aclass
 
 balerina_6.Name = "balerina"
 balerina_6.Parent = Aclass
@@ -689,8 +703,8 @@ balerina_6.BorderSizePixel = 0
 balerina_6.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_6.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_25.CornerRadius = UDim.new(1, 0)
-UICorner_25.Parent = balerina_6
+UICorner_26.CornerRadius = UDim.new(1, 0)
+UICorner_26.Parent = balerina_6
 
 RollButton_6.Name = "RollButton"
 RollButton_6.Parent = balerina_6
@@ -704,8 +718,8 @@ RollButton_6.Text = ""
 RollButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_6.TextSize = 14.000
 
-UICorner_26.CornerRadius = UDim.new(1, 2)
-UICorner_26.Parent = RollButton_6
+UICorner_27.CornerRadius = UDim.new(1, 2)
+UICorner_27.Parent = RollButton_6
 
 Asaber.Name = "Asaber"
 Asaber.Parent = Lscroll
@@ -721,7 +735,7 @@ Asaber.TextColor3 = Color3.fromRGB(255, 255, 255)
 Asaber.TextSize = 14.000
 Asaber.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_27.Parent = Asaber
+UICorner_28.Parent = Asaber
 
 balerina_7.Name = "balerina"
 balerina_7.Parent = Asaber
@@ -731,8 +745,8 @@ balerina_7.BorderSizePixel = 0
 balerina_7.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_7.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_28.CornerRadius = UDim.new(1, 0)
-UICorner_28.Parent = balerina_7
+UICorner_29.CornerRadius = UDim.new(1, 0)
+UICorner_29.Parent = balerina_7
 
 RollButton_7.Name = "RollButton"
 RollButton_7.Parent = balerina_7
@@ -746,8 +760,8 @@ RollButton_7.Text = ""
 RollButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_7.TextSize = 14.000
 
-UICorner_29.CornerRadius = UDim.new(1, 2)
-UICorner_29.Parent = RollButton_7
+UICorner_30.CornerRadius = UDim.new(1, 2)
+UICorner_30.Parent = RollButton_7
 
 Adamage.Name = "Adamage"
 Adamage.Parent = Lscroll
@@ -763,7 +777,7 @@ Adamage.TextColor3 = Color3.fromRGB(255, 255, 255)
 Adamage.TextSize = 14.000
 Adamage.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_30.Parent = Adamage
+UICorner_31.Parent = Adamage
 
 balerina_8.Name = "balerina"
 balerina_8.Parent = Adamage
@@ -773,8 +787,8 @@ balerina_8.BorderSizePixel = 0
 balerina_8.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_8.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_31.CornerRadius = UDim.new(1, 0)
-UICorner_31.Parent = balerina_8
+UICorner_32.CornerRadius = UDim.new(1, 0)
+UICorner_32.Parent = balerina_8
 
 RollButton_8.Name = "RollButton"
 RollButton_8.Parent = balerina_8
@@ -788,8 +802,8 @@ RollButton_8.Text = ""
 RollButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_8.TextSize = 14.000
 
-UICorner_32.CornerRadius = UDim.new(1, 2)
-UICorner_32.Parent = RollButton_8
+UICorner_33.CornerRadius = UDim.new(1, 2)
+UICorner_33.Parent = RollButton_8
 
 Apetr.Name = "Apetr"
 Apetr.Parent = Lscroll
@@ -805,7 +819,7 @@ Apetr.TextColor3 = Color3.fromRGB(255, 255, 255)
 Apetr.TextSize = 14.000
 Apetr.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_33.Parent = Apetr
+UICorner_34.Parent = Apetr
 
 balerina_9.Name = "balerina"
 balerina_9.Parent = Apetr
@@ -815,8 +829,8 @@ balerina_9.BorderSizePixel = 0
 balerina_9.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_9.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_34.CornerRadius = UDim.new(1, 0)
-UICorner_34.Parent = balerina_9
+UICorner_35.CornerRadius = UDim.new(1, 0)
+UICorner_35.Parent = balerina_9
 
 RollButton_9.Name = "RollButton"
 RollButton_9.Parent = balerina_9
@@ -830,8 +844,8 @@ RollButton_9.Text = ""
 RollButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_9.TextSize = 14.000
 
-UICorner_35.CornerRadius = UDim.new(1, 2)
-UICorner_35.Parent = RollButton_9
+UICorner_36.CornerRadius = UDim.new(1, 2)
+UICorner_36.Parent = RollButton_9
 
 AkillB.Name = "AkillB"
 AkillB.Parent = Lscroll
@@ -847,7 +861,7 @@ AkillB.TextColor3 = Color3.fromRGB(255, 255, 255)
 AkillB.TextSize = 14.000
 AkillB.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_36.Parent = AkillB
+UICorner_37.Parent = AkillB
 
 balerina_10.Name = "balerina"
 balerina_10.Parent = AkillB
@@ -857,8 +871,8 @@ balerina_10.BorderSizePixel = 0
 balerina_10.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_10.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_37.CornerRadius = UDim.new(1, 0)
-UICorner_37.Parent = balerina_10
+UICorner_38.CornerRadius = UDim.new(1, 0)
+UICorner_38.Parent = balerina_10
 
 RollButton_10.Name = "RollButton"
 RollButton_10.Parent = balerina_10
@@ -872,8 +886,8 @@ RollButton_10.Text = ""
 RollButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_10.TextSize = 13.000
 
-UICorner_38.CornerRadius = UDim.new(1, 2)
-UICorner_38.Parent = RollButton_10
+UICorner_39.CornerRadius = UDim.new(1, 2)
+UICorner_39.Parent = RollButton_10
 
 Areward.Name = "Areward"
 Areward.Parent = Lscroll
@@ -889,7 +903,7 @@ Areward.TextColor3 = Color3.fromRGB(255, 255, 255)
 Areward.TextSize = 14.000
 Areward.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_39.Parent = Areward
+UICorner_40.Parent = Areward
 
 balerina_11.Name = "balerina"
 balerina_11.Parent = Areward
@@ -899,8 +913,8 @@ balerina_11.BorderSizePixel = 0
 balerina_11.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_11.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_40.CornerRadius = UDim.new(1, 0)
-UICorner_40.Parent = balerina_11
+UICorner_41.CornerRadius = UDim.new(1, 0)
+UICorner_41.Parent = balerina_11
 
 RollButton_11.Name = "RollButton"
 RollButton_11.Parent = balerina_11
@@ -914,8 +928,8 @@ RollButton_11.Text = ""
 RollButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_11.TextSize = 14.000
 
-UICorner_41.CornerRadius = UDim.new(1, 2)
-UICorner_41.Parent = RollButton_11
+UICorner_42.CornerRadius = UDim.new(1, 2)
+UICorner_42.Parent = RollButton_11
 
 Acrown.Name = "Acrown"
 Acrown.Parent = Lscroll
@@ -931,7 +945,7 @@ Acrown.TextColor3 = Color3.fromRGB(255, 255, 255)
 Acrown.TextSize = 14.000
 Acrown.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_42.Parent = Acrown
+UICorner_43.Parent = Acrown
 
 balerina_12.Name = "balerina"
 balerina_12.Parent = Acrown
@@ -941,8 +955,8 @@ balerina_12.BorderSizePixel = 0
 balerina_12.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_12.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_43.CornerRadius = UDim.new(1, 0)
-UICorner_43.Parent = balerina_12
+UICorner_44.CornerRadius = UDim.new(1, 0)
+UICorner_44.Parent = balerina_12
 
 RollButton_12.Name = "RollButton"
 RollButton_12.Parent = balerina_12
@@ -956,8 +970,8 @@ RollButton_12.Text = ""
 RollButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_12.TextSize = 14.000
 
-UICorner_44.CornerRadius = UDim.new(1, 2)
-UICorner_44.Parent = RollButton_12
+UICorner_45.CornerRadius = UDim.new(1, 2)
+UICorner_45.Parent = RollButton_12
 
 Afire.Name = "Afire"
 Afire.Parent = Lscroll
@@ -973,7 +987,7 @@ Afire.TextColor3 = Color3.fromRGB(255, 255, 255)
 Afire.TextSize = 14.000
 Afire.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_45.Parent = Afire
+UICorner_46.Parent = Afire
 
 balerina_13.Name = "balerina"
 balerina_13.Parent = Afire
@@ -983,8 +997,8 @@ balerina_13.BorderSizePixel = 0
 balerina_13.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_13.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_46.CornerRadius = UDim.new(1, 0)
-UICorner_46.Parent = balerina_13
+UICorner_47.CornerRadius = UDim.new(1, 0)
+UICorner_47.Parent = balerina_13
 
 RollButton_13.Name = "RollButton"
 RollButton_13.Parent = balerina_13
@@ -998,8 +1012,8 @@ RollButton_13.Text = ""
 RollButton_13.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_13.TextSize = 14.000
 
-UICorner_47.CornerRadius = UDim.new(1, 2)
-UICorner_47.Parent = RollButton_13
+UICorner_48.CornerRadius = UDim.new(1, 2)
+UICorner_48.Parent = RollButton_13
 
 Abura.Name = "Abura"
 Abura.Parent = Lscroll
@@ -1015,7 +1029,7 @@ Abura.TextColor3 = Color3.fromRGB(255, 255, 255)
 Abura.TextSize = 14.000
 Abura.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_48.Parent = Abura
+UICorner_49.Parent = Abura
 
 balerina_14.Name = "balerina"
 balerina_14.Parent = Abura
@@ -1025,8 +1039,8 @@ balerina_14.BorderSizePixel = 0
 balerina_14.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_14.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_49.CornerRadius = UDim.new(1, 0)
-UICorner_49.Parent = balerina_14
+UICorner_50.CornerRadius = UDim.new(1, 0)
+UICorner_50.Parent = balerina_14
 
 RollButton_14.Name = "RollButton"
 RollButton_14.Parent = balerina_14
@@ -1040,8 +1054,8 @@ RollButton_14.Text = ""
 RollButton_14.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_14.TextSize = 14.000
 
-UICorner_50.CornerRadius = UDim.new(1, 2)
-UICorner_50.Parent = RollButton_14
+UICorner_51.CornerRadius = UDim.new(1, 2)
+UICorner_51.Parent = RollButton_14
 
 AkillAl.Name = "AkillAl"
 AkillAl.Parent = Lscroll
@@ -1057,7 +1071,7 @@ AkillAl.TextColor3 = Color3.fromRGB(255, 255, 255)
 AkillAl.TextSize = 14.000
 AkillAl.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_51.Parent = AkillAl
+UICorner_52.Parent = AkillAl
 
 balerina_15.Name = "balerina"
 balerina_15.Parent = AkillAl
@@ -1067,8 +1081,8 @@ balerina_15.BorderSizePixel = 0
 balerina_15.Position = UDim2.new(0.588293076, 0, 0.35241577, 0)
 balerina_15.Size = UDim2.new(0, 54, 0, 18)
 
-UICorner_52.CornerRadius = UDim.new(1, 0)
-UICorner_52.Parent = balerina_15
+UICorner_53.CornerRadius = UDim.new(1, 0)
+UICorner_53.Parent = balerina_15
 
 RollButton_15.Name = "RollButton"
 RollButton_15.Parent = balerina_15
@@ -1082,8 +1096,8 @@ RollButton_15.Text = ""
 RollButton_15.TextColor3 = Color3.fromRGB(0, 0, 0)
 RollButton_15.TextSize = 14.000
 
-UICorner_53.CornerRadius = UDim.new(1, 2)
-UICorner_53.Parent = RollButton_15
+UICorner_54.CornerRadius = UDim.new(1, 2)
+UICorner_54.Parent = RollButton_15
 
 ElemFrame.Name = "ElemFrame"
 ElemFrame.Parent = Hold
@@ -1116,21 +1130,7 @@ TextLabel_9.Text = "COMMING SOON!"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 
-UICorner_54.Parent = TextLabel_9
-
-Tarea.Name = "Tarea"
-Tarea.Parent = Hold
-Tarea.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Tarea.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Tarea.BorderSizePixel = 0
-Tarea.Position = UDim2.new(-0.174600378, 0, -0.750439823, 0)
-Tarea.Size = UDim2.new(0, 150, 0, 50)
-Tarea.Font = Enum.Font.FredokaOne
-Tarea.Text = "Teleport To Egg Area"
-Tarea.TextColor3 = Color3.fromRGB(255, 255, 255)
-Tarea.TextSize = 14.000
-
-UICorner_55.Parent = Tarea
+UICorner_55.Parent = TextLabel_9
 
 Abutton.Name = "Abutton"
 Abutton.Parent = ScreenGui
@@ -1252,7 +1252,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function OYRHJTT_fake_script() -- ScreenGui.LocalScript 
+local function XHZHJ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1388,8 +1388,8 @@ local function OYRHJTT_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(OYRHJTT_fake_script)()
-local function DSOA_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(XHZHJ_fake_script)()
+local function MLNRMLU_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1787,115 +1787,164 @@ local function DSOA_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 	
-	-- UI references
+	-- UI
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
 	local Lscroll = MainFrame:WaitForChild("Lscroll")
-	local AkillB = Lscroll:WaitForChild("AkillB")
-	local Balerina = AkillB:WaitForChild("balerina")
+	local AkillAl = Lscroll:WaitForChild("AkillAl")
+	local Balerina = AkillAl:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
 	-- Services
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local Workspace = game:GetService("Workspace")
 	
-	-- Player setup
-	local player = Players.LocalPlayer
-	local character, humanoid, myHRP
+	-- Player info
+	local LocalPlayer = Players.LocalPlayer
+	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	local HRP = Character:WaitForChild("HumanoidRootPart")
 	
-	-- Boss setup
-	local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
-	local bossHRP = bossModel:WaitForChild("HumanoidRootPart")
+	-- Config
+	local HEIGHT_OFFSET = Vector3.new(0, -8.8, 0)
+	local SWITCH_TIME = 5
 	
 	-- State
 	local isOn = false
-	local stickConnection = nil
-	local attackLoop = nil
+	local followConn, noclipConn, disablePartsConn, gyro, velocity
+	local currentTarget = nil
+	local stopSignal = false
 	
-	-- Wait for character and setup references
-	local function initCharacter()
-		character = player.Character or player.CharacterAdded:Wait()
-		humanoid = character:WaitForChild("Humanoid")
-		myHRP = character:WaitForChild("HumanoidRootPart")
-	end
-	
-	-- Handle respawn
-	player.CharacterAdded:Connect(function()
-		initCharacter()
-	end)
-	
-	-- Initial character load
-	if player.Character then
-		initCharacter()
-	else
-		player.CharacterAdded:Wait()
-		initCharacter()
-	end
-	
-	-- Start auto-kill logic
-	local function startAutoKill()
-		if stickConnection or attackLoop then return end
-	
-		-- Stick to boss
-		stickConnection = RunService.Heartbeat:Connect(function()
-			if isOn and myHRP and bossHRP then
-				myHRP.CFrame = bossHRP.CFrame
-				myHRP.Velocity = Vector3.zero
-				myHRP.RotVelocity = Vector3.zero
-			end
-		end)
-	
-		-- Attack loop
-		attackLoop = task.spawn(function()
+	-- 🔁 Target switching coroutine (only runs when toggled ON)
+	local function startTargetLoop()
+		return task.spawn(function()
 			while isOn do
-				local frost = character:FindFirstChild("Frost")
-				local remoteClick = frost and frost:FindFirstChild("RemoteClick")
-				if remoteClick then
-					pcall(function()
-						remoteClick:FireServer({bossModel})
-					end)
+				for _, player in ipairs(Players:GetPlayers()) do
+					if not isOn then break end
+					if player ~= LocalPlayer then
+						currentTarget = player
+						task.wait(SWITCH_TIME)
+					end
 				end
-	
-				local swing = ReplicatedStorage:FindFirstChild("Events") and ReplicatedStorage.Events:FindFirstChild("SwingSaber")
-				if swing then
-					pcall(function()
-						swing:FireServer()
-					end)
-				end
-	
 				task.wait(1)
 			end
 		end)
 	end
 	
-	-- Stop auto-kill logic
-	local function stopAutoKill()
-		if stickConnection then
-			stickConnection:Disconnect()
-			stickConnection = nil
-		end
-		if attackLoop then
-			task.cancel(attackLoop)
-			attackLoop = nil
+	-- 🚫 Disable collisions (but not on characters)
+	local function disableIfNotCharacterPart(part)
+		if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+			for _, p in ipairs(Players:GetPlayers()) do
+				if p.Character and part:IsDescendantOf(p.Character) then
+					return
+				end
+			end
+			part.CanCollide = false
 		end
 	end
 	
-	-- Button toggle logic
+	-- 🧠 NoClip your own character parts (except HRP)
+	local function startNoclipLoop()
+		return RunService.Stepped:Connect(function()
+			if not isOn then return end
+			for _, part in ipairs(Character:GetDescendants()) do
+				if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+					part.CanCollide = false
+				end
+			end
+		end)
+	end
+	
+	-- 🛫 Start flying and following
+	local function enableFlyAndFollow()
+		-- Disable workspace part collisions
+		for _, part in ipairs(Workspace:GetDescendants()) do
+			disableIfNotCharacterPart(part)
+		end
+		disablePartsConn = Workspace.DescendantAdded:Connect(disableIfNotCharacterPart)
+	
+		-- Add body movers
+		gyro = Instance.new("BodyGyro", HRP)
+		gyro.P = 9e4
+		gyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+		gyro.CFrame = HRP.CFrame
+	
+		velocity = Instance.new("BodyVelocity", HRP)
+		velocity.Velocity = Vector3.zero
+		velocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+		-- Follow logic
+		followConn = RunService.RenderStepped:Connect(function()
+			if not isOn then return end
+	
+			if gyro and velocity then
+				gyro.CFrame = Workspace.CurrentCamera.CFrame
+				velocity.Velocity = Vector3.zero
+			end
+	
+			local yourChar = LocalPlayer.Character
+			if not (yourChar and currentTarget) then return end
+	
+			local yourHRP = yourChar:FindFirstChild("HumanoidRootPart")
+			local targetChar = currentTarget.Character
+			local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
+	
+			if yourHRP and targetHRP then
+				local targetPos = targetHRP.Position + HEIGHT_OFFSET
+				yourHRP.CFrame = CFrame.new(targetPos, targetHRP.Position + targetHRP.CFrame.LookVector)
+	
+				-- Attack
+				local tool = yourChar:FindFirstChildOfClass("Tool")
+				if tool then
+					local remote = tool:FindFirstChild("RemoteClick")
+					if remote then
+						pcall(function()
+							remote:FireServer({})
+						end)
+					end
+				end
+			end
+		end)
+	
+		-- Start noclip
+		noclipConn = startNoclipLoop()
+	
+		-- Start target switching
+		startTargetLoop()
+	end
+	
+	-- 🛑 Stop flying, reset physics
+	local function disableFlyAndFollow()
+		if followConn then followConn:Disconnect() followConn = nil end
+		if noclipConn then noclipConn:Disconnect() noclipConn = nil end
+		if disablePartsConn then disablePartsConn:Disconnect() disablePartsConn = nil end
+		if gyro then gyro:Destroy() gyro = nil end
+		if velocity then velocity:Destroy() velocity = nil end
+	
+		-- Re-enable collisions for your parts
+		for _, part in ipairs(Character:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = true
+			end
+		end
+	end
+	
+	-- ✅ Toggle logic
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 	
 		if isOn then
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-			startAutoKill()
+			enableFlyAndFollow()
 		else
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-			stopAutoKill()
+			disableFlyAndFollow()
 		end
 	end)
+	
 	
 	
 	
@@ -2211,18 +2260,25 @@ local function DSOA_fake_script() -- ScreenGui.LocalScript
 	
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
+	local EggFrame = hold:WaitForChild("EggFrame")
+	local Dorime = EggFrame:WaitForChild("Dorime")
 	local button = hold:WaitForChild("Tarea")
 	
-	-- The CFrame to teleport to
-	local targetCFrame = CFrame.new(561.471863, 184.468399, -19.8992558, 
-		0.960000634, -2.06808117e-08, -0.279997736, 
-		2.29803394e-08, 1, 4.92978547e-09, 
-		0.279997736, -1.11670406e-08, 0.960000634)
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local hrp = character:WaitForChild("HumanoidRootPart")
+	
+	local targetCFrame = CFrame.new(
+		561.471863, 184.468399, -19.8992558,
+		0.960000634, -2.06808117e-08, -0.279997736,
+		2.29803394e-08, 1, 4.92978547e-09,
+		0.279997736, -1.11670406e-08, 0.960000634
+	)
 	
 	button.MouseButton1Click:Connect(function()
-		local player = game.Players.LocalPlayer
-		local character = player.Character or player.CharacterAdded:Wait()
-		local hrp = character:WaitForChild("HumanoidRootPart")
+		-- Refresh character and HumanoidRootPart in case of respawn
+		character = player.Character or player.CharacterAdded:Wait()
+		hrp = character:WaitForChild("HumanoidRootPart")
 	
 		hrp.CFrame = targetCFrame
 	end)
@@ -2233,11 +2289,9 @@ local function DSOA_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
-	
-	
 end
-coroutine.wrap(DSOA_fake_script)()
-local function UFXH_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(MLNRMLU_fake_script)()
+local function JFUFS_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2316,4 +2370,4 @@ local function UFXH_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(UFXH_fake_script)()
+coroutine.wrap(JFUFS_fake_script)()
