@@ -158,6 +158,7 @@ Hold.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Hold.BorderSizePixel = 0
 Hold.Position = UDim2.new(0.279503107, 0, 0.294642895, 0)
 Hold.Size = UDim2.new(0, 498, 0, 286)
+Hold.Visible = false
 
 Frame.Parent = Hold
 Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -1153,7 +1154,6 @@ SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame.BorderSizePixel = 0
 SlidingFrame.Position = UDim2.new(0.0765784979, 0, 0.413169473, 0)
 SlidingFrame.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame.Visible = false
 SlidingFrame.Font = Enum.Font.Unknown
 SlidingFrame.Text = "F"
 SlidingFrame.TextColor3 = Color3.fromRGB(38, 150, 184)
@@ -1168,7 +1168,6 @@ SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame1.BorderSizePixel = 0
 SlidingFrame1.Position = UDim2.new(0.117462307, 0, 0.413169473, 0)
 SlidingFrame1.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame1.Visible = false
 SlidingFrame1.Font = Enum.Font.Unknown
 SlidingFrame1.Text = "A"
 SlidingFrame1.TextColor3 = Color3.fromRGB(24, 74, 212)
@@ -1183,7 +1182,6 @@ SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame2.BorderSizePixel = 0
 SlidingFrame2.Position = UDim2.new(0.161209717, 0, 0.413169473, 0)
 SlidingFrame2.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame2.Visible = false
 SlidingFrame2.Font = Enum.Font.Unknown
 SlidingFrame2.Text = "N"
 SlidingFrame2.TextColor3 = Color3.fromRGB(184, 184, 184)
@@ -1198,7 +1196,6 @@ SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame3.BorderSizePixel = 0
 SlidingFrame3.Position = UDim2.new(0.198359549, 0, 0.413169473, 0)
 SlidingFrame3.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame3.Visible = false
 SlidingFrame3.Font = Enum.Font.Unknown
 SlidingFrame3.Text = "T"
 SlidingFrame3.TextColor3 = Color3.fromRGB(38, 150, 184)
@@ -1213,7 +1210,6 @@ SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame4.BorderSizePixel = 0
 SlidingFrame4.Position = UDim2.new(0.237348378, 0, 0.413169473, 0)
 SlidingFrame4.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame4.Visible = false
 SlidingFrame4.Font = Enum.Font.Unknown
 SlidingFrame4.Text = "A"
 SlidingFrame4.TextColor3 = Color3.fromRGB(24, 74, 212)
@@ -1228,7 +1224,6 @@ SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame5.BorderSizePixel = 0
 SlidingFrame5.Position = UDim2.new(0.278400153, 0, 0.413169473, 0)
 SlidingFrame5.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame5.Visible = false
 SlidingFrame5.Font = Enum.Font.Unknown
 SlidingFrame5.Text = "S"
 SlidingFrame5.TextColor3 = Color3.fromRGB(184, 184, 184)
@@ -1243,7 +1238,6 @@ SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame6.BorderSizePixel = 0
 SlidingFrame6.Position = UDim2.new(0.31482622, 0, 0.413169473, 0)
 SlidingFrame6.Size = UDim2.new(0, 89, 0, 115)
-SlidingFrame6.Visible = false
 SlidingFrame6.Font = Enum.Font.Unknown
 SlidingFrame6.LineHeight = 0.000
 SlidingFrame6.Text = "Y"
@@ -1253,7 +1247,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function EAGIEH_fake_script() -- ScreenGui.LocalScript 
+local function YPQJU_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1389,8 +1383,8 @@ local function EAGIEH_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(EAGIEH_fake_script)()
-local function OPHZ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(YPQJU_fake_script)()
+local function ALJQI_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -2099,7 +2093,11 @@ local function OPHZ_fake_script() -- ScreenGui.LocalScript
 		teleport()
 	end)
 	
-	-- UI PART
+	
+	
+	
+	
+	
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -2108,22 +2106,6 @@ local function OPHZ_fake_script() -- ScreenGui.LocalScript
 	local Balerina = AkillAl:WaitForChild("balerina")
 	local RollButton = Balerina:WaitForChild("RollButton")
 	
-	local isOn = false
-	
-	RollButton.MouseButton1Click:Connect(function()
-		isOn = not isOn
-		if isOn then
-			-- Move right and up
-			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
-			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-		else
-			-- Move back to left
-			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
-			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		end
-	end)
-	
-	-- SERVICES
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local Workspace = game:GetService("Workspace")
@@ -2132,104 +2114,144 @@ local function OPHZ_fake_script() -- ScreenGui.LocalScript
 	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 	local HRP = Character:WaitForChild("HumanoidRootPart")
 	
-	local HEIGHT_OFFSET = Vector3.new(0, -9, 0)
+	local HEIGHT_OFFSET = Vector3.new(0, -8.8, 0)
 	local SWITCH_TIME = 5
 	
-	local currentTarget = nil
+	local isOn = false
+	local running = false
 	
-	-- 🔁 Player cycling (only runs when toggled ON)
-	task.spawn(function()
-		while true do
-			if isOn then
+	local currentTarget = nil
+	local flyConnections = {}
+	
+	local function startScript()
+		if running then return end
+		running = true
+	
+		-- Target switching loop
+		flyConnections.switchLoop = task.spawn(function()
+			while isOn do
 				for _, player in ipairs(Players:GetPlayers()) do
+					if not isOn then break end
 					if player ~= LocalPlayer then
 						currentTarget = player
 						task.wait(SWITCH_TIME)
 					end
 				end
-			else
-				task.wait(0.5)
 			end
-		end
-	end)
+		end)
 	
-	-- 🚫 Disable collisions for non-player parts
-	local function disableIfNotPlayerPart(part)
-		if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
-			for _, player in ipairs(Players:GetPlayers()) do
-				if player.Character and part:IsDescendantOf(player.Character) then
-					return
+		-- Disable collisions for non-player parts
+		for _, part in ipairs(Workspace:GetDescendants()) do
+			if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+				local isPlayerPart = false
+				for _, player in ipairs(Players:GetPlayers()) do
+					if player.Character and part:IsDescendantOf(player.Character) then
+						isPlayerPart = true
+						break
+					end
+				end
+				if not isPlayerPart then
+					part.CanCollide = false
 				end
 			end
-			part.CanCollide = false
 		end
-	end
 	
-	for _, part in ipairs(Workspace:GetDescendants()) do
-		disableIfNotPlayerPart(part)
-	end
-	
-	Workspace.DescendantAdded:Connect(disableIfNotPlayerPart)
-	
-	-- 🌀 NoClip for your own character
-	RunService.Stepped:Connect(function()
-		if not isOn then return end
-		for _, part in ipairs(Character:GetDescendants()) do
+		flyConnections.descAdded = Workspace.DescendantAdded:Connect(function(part)
 			if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+				for _, player in ipairs(Players:GetPlayers()) do
+					if player.Character and part:IsDescendantOf(player.Character) then
+						return
+					end
+				end
 				part.CanCollide = false
 			end
-		end
-	end)
+		end)
 	
-	-- ✈️ Flying logic
-	local BodyGyro = Instance.new("BodyGyro", HRP)
-	BodyGyro.P = 9e4
-	BodyGyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
-	BodyGyro.CFrame = HRP.CFrame
+		-- Disable collisions for own parts
+		flyConnections.noclip = RunService.Stepped:Connect(function()
+			for _, part in ipairs(Character:GetDescendants()) do
+				if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+					part.CanCollide = false
+				end
+			end
+		end)
 	
-	local BodyVelocity = Instance.new("BodyVelocity", HRP)
-	BodyVelocity.Velocity = Vector3.zero
-	BodyVelocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+		-- Flying setup
+		local BodyGyro = Instance.new("BodyGyro", HRP)
+		BodyGyro.P = 9e4
+		BodyGyro.MaxTorque = Vector3.new(9e9, 9e9, 9e9)
+		BodyGyro.CFrame = HRP.CFrame
 	
-	RunService.RenderStepped:Connect(function()
-		if isOn then
+		local BodyVelocity = Instance.new("BodyVelocity", HRP)
+		BodyVelocity.Velocity = Vector3.zero
+		BodyVelocity.MaxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+		flyConnections.fly = RunService.RenderStepped:Connect(function()
+			if not isOn then return end
 			local camCF = Workspace.CurrentCamera.CFrame
 			BodyGyro.CFrame = camCF
 			BodyVelocity.Velocity = Vector3.zero
-		end
-	end)
+		end)
 	
-	-- 🎯 Follow + Attack
-	RunService.RenderStepped:Connect(function()
-		if not isOn then return end
+		-- Follow and attack
+		flyConnections.follow = RunService.RenderStepped:Connect(function()
+			if not isOn then return end
+			local yourChar = LocalPlayer.Character
+			if not (yourChar and currentTarget) then return end
 	
-		local yourChar = LocalPlayer.Character
-		if not (yourChar and currentTarget) then return end
+			local yourHRP = yourChar:FindFirstChild("HumanoidRootPart")
+			local targetChar = currentTarget.Character
+			local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
 	
-		local yourHRP = yourChar:FindFirstChild("HumanoidRootPart")
-		local targetChar = currentTarget.Character
-		local targetHRP = targetChar and targetChar:FindFirstChild("HumanoidRootPart")
+			if yourHRP and targetHRP then
+				local targetPos = targetHRP.Position + HEIGHT_OFFSET
+				yourHRP.CFrame = CFrame.new(targetPos, targetHRP.Position + targetHRP.CFrame.LookVector)
 	
-		if yourHRP and targetHRP then
-			local targetPos = targetHRP.Position + HEIGHT_OFFSET
-			yourHRP.CFrame = CFrame.new(targetPos, targetHRP.Position + targetHRP.CFrame.LookVector)
-	
-			local tool = yourChar:FindFirstChildOfClass("Tool")
-			if tool then
-				local remote = tool:FindFirstChild("RemoteClick")
-				if remote then
-					pcall(function()
-						remote:FireServer({})
-					end)
+				local tool = yourChar:FindFirstChildOfClass("Tool")
+				if tool then
+					local remote = tool:FindFirstChild("RemoteClick")
+					if remote then
+						pcall(function()
+							remote:FireServer({})
+						end)
+					end
 				end
 			end
+		end)
+	
+		-- Store the body movers so they can be destroyed later
+		flyConnections.BodyGyro = BodyGyro
+		flyConnections.BodyVelocity = BodyVelocity
+	end
+	
+	local function stopScript()
+		running = false
+	
+		-- Disconnect all connections
+		for _, conn in pairs(flyConnections) do
+			if typeof(conn) == "RBXScriptConnection" then
+				conn:Disconnect()
+			elseif typeof(conn) == "Instance" and conn:IsA("BodyMover") then
+				conn:Destroy()
+			elseif typeof(conn) == "thread" then
+				task.cancel(conn)
+			end
+		end
+		table.clear(flyConnections)
+	end
+	
+	RollButton.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		if isOn then
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			startScript()
+		else
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			stopScript()
 		end
 	end)
-	
-	
-	
-	
-	
 	
 	
 	
@@ -2238,8 +2260,8 @@ local function OPHZ_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(OPHZ_fake_script)()
-local function MATQC_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ALJQI_fake_script)()
+local function WJYC_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2318,4 +2340,4 @@ local function MATQC_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(MATQC_fake_script)()
+coroutine.wrap(WJYC_fake_script)()
