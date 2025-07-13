@@ -1253,7 +1253,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function NYFECC_fake_script() -- ScreenGui.LocalScript 
+local function ARIVAM_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1389,8 +1389,8 @@ local function NYFECC_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(NYFECC_fake_script)()
-local function DIKMQIB_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ARIVAM_fake_script)()
+local function DNYY_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1724,41 +1724,21 @@ local function DIKMQIB_fake_script() -- ScreenGui.LocalScript
 	-- Player and character
 	local player = Players.LocalPlayer
 	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local myHRP = character:WaitForChild("HumanoidRootPart")
 	
-	-- Variables (will be updated later)
-	local myHRP, humanoid
+	-- Boss setup
+	local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
+	local bossHRP = bossModel:WaitForChild("HumanoidRootPart")
 	
 	-- State
 	local isOn = false
-	local stickConnection
-	local attackLoop
-	
-	-- Button visuals
-	local function updateButtonVisual(state)
-		if state then
-			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
-			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-		else
-			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
-			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		end
-	end
-	
-	-- Safe character reload
-	local function getCharacterParts()
-		character = player.Character or player.CharacterAdded:Wait()
-		humanoid = character:WaitForChild("Humanoid")
-		myHRP = character:WaitForChild("HumanoidRootPart")
-	end
+	local stickConnection = nil
+	local attackLoop = nil
 	
 	-- Start logic
 	local function startAutoKill()
-		getCharacterParts()
-	
-		local bossModel = workspace:WaitForChild("Gameplay"):WaitForChild("Boss"):WaitForChild("BossHolder"):WaitForChild("Boss")
-		local bossHRP = bossModel:WaitForChild("HumanoidRootPart")
-	
-		-- Freeze movement
+		-- Freeze player
 		humanoid:ChangeState(Enum.HumanoidStateType.Physics)
 		humanoid.AutoRotate = false
 	
@@ -1771,7 +1751,7 @@ local function DIKMQIB_fake_script() -- ScreenGui.LocalScript
 			end
 		end)
 	
-		-- Auto attack loop
+		-- Attack loop
 		attackLoop = task.spawn(function()
 			while isOn do
 				local frost = character:FindFirstChild("Frost")
@@ -1796,29 +1776,30 @@ local function DIKMQIB_fake_script() -- ScreenGui.LocalScript
 	
 	-- Stop logic
 	local function stopAutoKill()
+		-- Restore control
 		if stickConnection then
 			stickConnection:Disconnect()
 			stickConnection = nil
 		end
-	
 		if attackLoop then
 			task.cancel(attackLoop)
 			attackLoop = nil
 		end
-	
-		getCharacterParts()
 		humanoid:ChangeState(Enum.HumanoidStateType.Running)
 		humanoid.AutoRotate = true
 	end
 	
-	-- Button toggle logic
+	-- Button toggle
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
-		updateButtonVisual(isOn)
 	
 		if isOn then
+			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 			startAutoKill()
 		else
+			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
+			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			stopAutoKill()
 		end
 	end)
@@ -2144,8 +2125,8 @@ local function DIKMQIB_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(DIKMQIB_fake_script)()
-local function FVKRCG_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(DNYY_fake_script)()
+local function PGMHC_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2224,4 +2205,4 @@ local function FVKRCG_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(FVKRCG_fake_script)()
+coroutine.wrap(PGMHC_fake_script)()
