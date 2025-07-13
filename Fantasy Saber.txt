@@ -138,7 +138,6 @@ local TextLabel_9 = Instance.new("TextLabel")
 local UICorner_55 = Instance.new("UICorner")
 local Abutton = Instance.new("ImageButton")
 local UICorner_56 = Instance.new("UICorner")
-local AnimFrame = Instance.new("Frame")
 local SlidingFrame = Instance.new("TextLabel")
 local SlidingFrame1 = Instance.new("TextLabel")
 local SlidingFrame2 = Instance.new("TextLabel")
@@ -159,7 +158,6 @@ Hold.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Hold.BorderSizePixel = 0
 Hold.Position = UDim2.new(0.279503107, 0, 0.294642895, 0)
 Hold.Size = UDim2.new(0, 498, 0, 286)
-Hold.Visible = false
 
 Frame.Parent = Hold
 Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -1147,116 +1145,115 @@ Abutton.Image = "rbxassetid://90028088616811"
 
 UICorner_56.Parent = Abutton
 
-AnimFrame.Name = "AnimFrame"
-AnimFrame.Parent = ScreenGui
-AnimFrame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-AnimFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AnimFrame.BorderSizePixel = 0
-AnimFrame.Position = UDim2.new(-0.103030302, 0, -0.100893997, 0)
-AnimFrame.Size = UDim2.new(0, 1737, 0, 905)
-
 SlidingFrame.Name = "SlidingFrame"
-SlidingFrame.Parent = AnimFrame
+SlidingFrame.Parent = ScreenGui
 SlidingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame.BackgroundTransparency = 1.000
 SlidingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame.BorderSizePixel = 0
-SlidingFrame.Position = UDim2.new(0.0541259982, 0, 0.387755096, 0)
-SlidingFrame.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame.Position = UDim2.new(0.0765784979, 0, 0.413169473, 0)
+SlidingFrame.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame.Visible = false
 SlidingFrame.Font = Enum.Font.Unknown
 SlidingFrame.Text = "F"
 SlidingFrame.TextColor3 = Color3.fromRGB(38, 150, 184)
-SlidingFrame.TextSize = 100.000
+SlidingFrame.TextSize = 90.000
 SlidingFrame.TextWrapped = true
 
 SlidingFrame1.Name = "SlidingFrame1"
-SlidingFrame1.Parent = AnimFrame
+SlidingFrame1.Parent = ScreenGui
 SlidingFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame1.BackgroundTransparency = 1.000
 SlidingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame1.BorderSizePixel = 0
-SlidingFrame1.Position = UDim2.new(0.173913047, 0, 0.387755096, 0)
-SlidingFrame1.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame1.Position = UDim2.new(0.117462307, 0, 0.413169473, 0)
+SlidingFrame1.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame1.Visible = false
 SlidingFrame1.Font = Enum.Font.Unknown
 SlidingFrame1.Text = "A"
 SlidingFrame1.TextColor3 = Color3.fromRGB(24, 74, 212)
-SlidingFrame1.TextSize = 100.000
+SlidingFrame1.TextSize = 90.000
 SlidingFrame1.TextWrapped = true
 
 SlidingFrame2.Name = "SlidingFrame2"
-SlidingFrame2.Parent = AnimFrame
+SlidingFrame2.Parent = ScreenGui
 SlidingFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame2.BackgroundTransparency = 1.000
 SlidingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame2.BorderSizePixel = 0
-SlidingFrame2.Position = UDim2.new(0.264418811, 0, 0.387755096, 0)
-SlidingFrame2.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame2.Position = UDim2.new(0.161209717, 0, 0.413169473, 0)
+SlidingFrame2.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame2.Visible = false
 SlidingFrame2.Font = Enum.Font.Unknown
 SlidingFrame2.Text = "N"
 SlidingFrame2.TextColor3 = Color3.fromRGB(184, 184, 184)
-SlidingFrame2.TextSize = 100.000
+SlidingFrame2.TextSize = 90.000
 SlidingFrame2.TextWrapped = true
 
 SlidingFrame3.Name = "SlidingFrame3"
-SlidingFrame3.Parent = AnimFrame
+SlidingFrame3.Parent = ScreenGui
 SlidingFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame3.BackgroundTransparency = 1.000
 SlidingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame3.BorderSizePixel = 0
-SlidingFrame3.Position = UDim2.new(0.348713398, 0, 0.387755096, 0)
-SlidingFrame3.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame3.Position = UDim2.new(0.198359549, 0, 0.413169473, 0)
+SlidingFrame3.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame3.Visible = false
 SlidingFrame3.Font = Enum.Font.Unknown
 SlidingFrame3.Text = "T"
 SlidingFrame3.TextColor3 = Color3.fromRGB(38, 150, 184)
-SlidingFrame3.TextSize = 100.000
+SlidingFrame3.TextSize = 90.000
 SlidingFrame3.TextWrapped = true
 
 SlidingFrame4.Name = "SlidingFrame4"
-SlidingFrame4.Parent = AnimFrame
+SlidingFrame4.Parent = ScreenGui
 SlidingFrame4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame4.BackgroundTransparency = 1.000
 SlidingFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame4.BorderSizePixel = 0
-SlidingFrame4.Position = UDim2.new(0.447204977, 0, 0.387755096, 0)
-SlidingFrame4.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame4.Position = UDim2.new(0.237348378, 0, 0.413169473, 0)
+SlidingFrame4.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame4.Visible = false
 SlidingFrame4.Font = Enum.Font.Unknown
 SlidingFrame4.Text = "A"
 SlidingFrame4.TextColor3 = Color3.fromRGB(24, 74, 212)
-SlidingFrame4.TextSize = 100.000
+SlidingFrame4.TextSize = 90.000
 SlidingFrame4.TextWrapped = true
 
 SlidingFrame5.Name = "SlidingFrame5"
-SlidingFrame5.Parent = AnimFrame
+SlidingFrame5.Parent = ScreenGui
 SlidingFrame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame5.BackgroundTransparency = 1.000
 SlidingFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame5.BorderSizePixel = 0
-SlidingFrame5.Position = UDim2.new(0.588287473, 0, 0.387755096, 0)
-SlidingFrame5.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame5.Position = UDim2.new(0.278400153, 0, 0.413169473, 0)
+SlidingFrame5.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame5.Visible = false
 SlidingFrame5.Font = Enum.Font.Unknown
 SlidingFrame5.Text = "S"
 SlidingFrame5.TextColor3 = Color3.fromRGB(184, 184, 184)
-SlidingFrame5.TextSize = 100.000
+SlidingFrame5.TextSize = 90.000
 SlidingFrame5.TextWrapped = true
 
 SlidingFrame6.Name = "SlidingFrame6"
-SlidingFrame6.Parent = AnimFrame
+SlidingFrame6.Parent = ScreenGui
 SlidingFrame6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SlidingFrame6.BackgroundTransparency = 1.000
 SlidingFrame6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SlidingFrame6.BorderSizePixel = 0
-SlidingFrame6.Position = UDim2.new(0.6903283, 0, 0.387755096, 0)
-SlidingFrame6.Size = UDim2.new(0, 218, 0, 175)
+SlidingFrame6.Position = UDim2.new(0.31482622, 0, 0.413169473, 0)
+SlidingFrame6.Size = UDim2.new(0, 89, 0, 115)
+SlidingFrame6.Visible = false
 SlidingFrame6.Font = Enum.Font.Unknown
 SlidingFrame6.LineHeight = 0.000
 SlidingFrame6.Text = "Y"
 SlidingFrame6.TextColor3 = Color3.fromRGB(38, 150, 184)
-SlidingFrame6.TextSize = 100.000
+SlidingFrame6.TextSize = 90.000
 SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function IDWS_fake_script() -- ScreenGui.LocalScript 
+local function EAGIEH_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1392,8 +1389,8 @@ local function IDWS_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(IDWS_fake_script)()
-local function NGYTF_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(EAGIEH_fake_script)()
+local function OPHZ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -2102,7 +2099,6 @@ local function NGYTF_fake_script() -- ScreenGui.LocalScript
 		teleport()
 	end)
 	
-	
 	-- UI PART
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
@@ -2121,13 +2117,13 @@ local function NGYTF_fake_script() -- ScreenGui.LocalScript
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		else
-			-- Move back to left and original Y
+			-- Move back to left
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	end)
 	
-	-- ATTACK / FOLLOW LOGIC
+	-- SERVICES
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local Workspace = game:GetService("Workspace")
@@ -2141,19 +2137,23 @@ local function NGYTF_fake_script() -- ScreenGui.LocalScript
 	
 	local currentTarget = nil
 	
-	-- 🔁 Cycle through all other players
+	-- 🔁 Player cycling (only runs when toggled ON)
 	task.spawn(function()
 		while true do
-			for _, player in ipairs(Players:GetPlayers()) do
-				if player ~= LocalPlayer then
-					currentTarget = player
-					task.wait(SWITCH_TIME)
+			if isOn then
+				for _, player in ipairs(Players:GetPlayers()) do
+					if player ~= LocalPlayer then
+						currentTarget = player
+						task.wait(SWITCH_TIME)
+					end
 				end
+			else
+				task.wait(0.5)
 			end
 		end
 	end)
 	
-	-- Disable non-player part collisions
+	-- 🚫 Disable collisions for non-player parts
 	local function disableIfNotPlayerPart(part)
 		if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
 			for _, player in ipairs(Players:GetPlayers()) do
@@ -2168,10 +2168,12 @@ local function NGYTF_fake_script() -- ScreenGui.LocalScript
 	for _, part in ipairs(Workspace:GetDescendants()) do
 		disableIfNotPlayerPart(part)
 	end
+	
 	Workspace.DescendantAdded:Connect(disableIfNotPlayerPart)
 	
 	-- 🌀 NoClip for your own character
 	RunService.Stepped:Connect(function()
+		if not isOn then return end
 		for _, part in ipairs(Character:GetDescendants()) do
 			if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
 				part.CanCollide = false
@@ -2217,7 +2219,7 @@ local function NGYTF_fake_script() -- ScreenGui.LocalScript
 				local remote = tool:FindFirstChild("RemoteClick")
 				if remote then
 					pcall(function()
-						remote:FireServer({}) -- You could also pass {targetChar} if needed
+						remote:FireServer({})
 					end)
 				end
 			end
@@ -2235,38 +2237,14 @@ local function NGYTF_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
-	
-	
 end
-coroutine.wrap(NGYTF_fake_script)()
-local function UVSVW_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(OPHZ_fake_script)()
+local function MATQC_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
 	local parent = script.Parent
-	local screenGui = parent
-	local animFrame = screenGui:WaitForChild("AnimFrame")
-	
-	-- 🌧️ Add Rain Effect to AnimFrame
-	local function addRainEffect(targetFrame)
-		local rain = Instance.new("ParticleEmitter")
-		rain.Name = "RainEmitter"
-		rain.Texture = "rbxassetid://6034291776" -- rain streak texture
-		rain.Size = NumberSequence.new(0.05)
-		rain.Transparency = NumberSequence.new(0.2)
-		rain.Color = ColorSequence.new(Color3.new(1, 1, 1))
-		rain.Lifetime = NumberRange.new(1.2)
-		rain.Rate = 300
-		rain.Speed = NumberRange.new(50, 70)
-		rain.VelocitySpread = 5
-		rain.EmissionDirection = Enum.NormalId.Top
-		rain.Acceleration = Vector3.new(0, -200, 0)
-		rain.LockedToPart = false
-		rain.SpreadAngle = Vector2.new(0, 5)
-		rain.Parent = targetFrame
-	end
-	
-	addRainEffect(animFrame)
+	local screenGui = parent -- Assuming parent is the ScreenGui
 	
 	-- Frame names in order of the word "FANTASY"
 	local frameNames = {
@@ -2288,52 +2266,37 @@ local function UVSVW_fake_script() -- ScreenGui.LocalScript
 	-- Animate sliding frames
 	local total = #frameNames
 	for i, name in ipairs(frameNames) do
-		local frame = animFrame:WaitForChild(name)
+		local frame = parent:WaitForChild(name)
 	
-		-- Set AnchorPoint and start off-screen
+		-- Set AnchorPoint to center of frame
 		frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	
+		-- Start off-screen to the right
 		frame.Position = UDim2.new(1.2, 0, 0.5, 0)
 	
-		-- 🔴 Add red glow stroke
-		local stroke = Instance.new("UIStroke")
-		stroke.Color = Color3.fromRGB(255, 0, 0)
-		stroke.Thickness = 2
-		stroke.Transparency = 0.2
-		stroke.Parent = frame
-	
-		local glowTween = TweenService:Create(stroke, TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true), {
-			Transparency = 0.7
-		})
-		glowTween:Play()
-	
-		-- Slide to final position
+		-- Evenly spaced X position
 		local spacing = i / (total + 1)
 		local goal = {
 			Position = UDim2.new(spacing, 0, 0.5, 0)
 		}
+	
 		local tween = TweenService:Create(frame, tweenInfo, goal)
 		tween:Play()
+	
+		-- Hide each frame after delay
+		task.delay(tweenInfo.Time + 3, function()
+			frame.Visible = false
+		end)
 	end
 	
-	-- After animation finishes + delay, hide sliding frames and AnimFrame
+	-- After all frames are hidden, show MainFrame and Abutton
 	task.delay(tweenInfo.Time + 3, function()
-		for _, name in ipairs(frameNames) do
-			local frame = animFrame:FindFirstChild(name)
-			if frame then
-				frame.Visible = false
-			end
-		end
+		local Hold = screenGui:WaitForChild("Hold")
+		local aButton = screenGui:WaitForChild("Abutton")
 	
-		animFrame.Visible = false
-	
-		-- Show main UI
-		local Hold = screenGui:FindFirstChild("Hold")
-		local aButton = screenGui:FindFirstChild("Abutton")
-	
-		if Hold then Hold.Visible = true end
-		if aButton then aButton.Visible = true end
+		Hold.Visible = true
+		aButton.Visible = true
 	end)
-	
 	
 	
 	
@@ -2355,4 +2318,4 @@ local function UVSVW_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(UVSVW_fake_script)()
+coroutine.wrap(MATQC_fake_script)()
