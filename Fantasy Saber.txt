@@ -1253,7 +1253,7 @@ SlidingFrame6.TextWrapped = true
 
 -- Scripts:
 
-local function RIUB_fake_script() -- ScreenGui.LocalScript 
+local function MSEP_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGui = script.Parent
@@ -1389,8 +1389,8 @@ local function RIUB_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(RIUB_fake_script)()
-local function WBOCJXJ_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(MSEP_fake_script)()
+local function UQPERA_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local SGUI = script.Parent
@@ -1438,6 +1438,7 @@ local function WBOCJXJ_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
+	-- 🎛️ UI Setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1451,15 +1452,51 @@ local function WBOCJXJ_fake_script() -- ScreenGui.LocalScript
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 		if isOn then
-			-- Move right and up
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		else
-			-- Move back to left and original Y
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	end)
+	
+	-- 🎓 Class List
+	local classes = {
+		"Noob", "Apprentice", "Soldier", "Paladin", "Assassin", "Warrior", "Warlord",
+		"Berserker", "Saber", "Cyborg", "Master", "Titan", "Phantom", "Shadow", "Ghoul",
+		"Tempest", "Elementalist", "Beast", "Dark Ninja", "Warlock", "Overlord",
+		"Demigod", "Archangel", "Wraith", "Deity", "Nemesis", "Executioner",
+		"Terminator", "Colossus", "Zeus", "Elf", "Santa", "Corruptor", "Prestige",
+		"Caster", "Cyclops", "King", "Hacker", "Angel", "Minotaur", "Cerberus", "Yeti",
+		"Samurai", "Baron", "Detective", "Red Baron", "Witch", "Gladiator",
+		"Purple Baron", "Guard", "Shadow Titan", "Superhuman", "Brain", "Shadow Guard",
+		"Shadow Gladiator", "Red Elf", "Gingerbread", "Ninja Warrior", "Snowman",
+		"Lord Of Death", "Demonic", "Alien", "Ghost", "Dracula", "Golem", "Dragon",
+		"Spirit", "Pharaoh", "Mummy", "Ape", "Robot", "Goblin", "Techno",
+		"Golden Warrior", "Golden Royalty", "Demonic Imp", "Anubis", "Illuminati",
+		"Hydra", "Skeleton", "Supervillain", "Dark Slayer", "Dark Spider", "Troll",
+		"Shark", "Pirate", "Kraken", "Genie", "Cobra", "Sphinx", "Dark Witch", "Knight",
+		"Chimera", "Kitsune", "Odin"
+	}
+	
+	-- 🔗 Remote Event
+	local event = game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("UIAction")
+	
+	-- 🔁 Class Purchase Loop
+	task.spawn(function()
+		while true do
+			if isOn then
+				for _, className in ipairs(classes) do
+					if not isOn then break end -- Stop early if toggled off
+					event:FireServer("BuyClass", className)
+					task.wait(1)
+				end
+			else
+				task.wait(0.5) -- Wait while off
+			end
+		end
+	end)
+	
 	
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
@@ -1684,6 +1721,7 @@ local function WBOCJXJ_fake_script() -- ScreenGui.LocalScript
 	
 	
 	
+	-- 🎛️ UI Setup
 	local SGUI = script.Parent
 	local hold = SGUI:WaitForChild("Hold")
 	local MainFrame = hold:WaitForChild("MainFrame")
@@ -1697,15 +1735,58 @@ local function WBOCJXJ_fake_script() -- ScreenGui.LocalScript
 	RollButton.MouseButton1Click:Connect(function()
 		isOn = not isOn
 		if isOn then
-			-- Move right and up
 			RollButton:TweenPosition(UDim2.new(1, -30, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
 		else
-			-- Move back to left and original Y
 			RollButton:TweenPosition(UDim2.new(0.108, 0, 0, 0), "Out", "Sine", 0.2, true)
 			RollButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	end)
+	
+	-- 👑 Crown Collector Setup
+	local player = game.Players.LocalPlayer
+	local char = player.Character or player.CharacterAdded:Wait()
+	local root = char:WaitForChild("HumanoidRootPart")
+	
+	local currencyHolder = workspace:WaitForChild("Gameplay")
+		:WaitForChild("CurrencyPickup")
+		:WaitForChild("CurrencyHolder")
+	
+	-- 🔁 Simulate touching the part
+	local function fireTouch(part)
+		firetouchinterest(root, part, 0)
+		task.wait(0.05)
+		firetouchinterest(root, part, 1)
+	end
+	
+	-- 💰 Function to collect a single crown
+	local function collectCrown(crown)
+		local part = crown:IsA("BasePart") and crown or crown:FindFirstChildWhichIsA("BasePart", true)
+		if part then
+			fireTouch(part)
+		end
+	end
+	
+	-- 🔄 Background loop to collect crowns if active
+	task.spawn(function()
+		while true do
+			if isOn then
+				for _, crown in ipairs(currencyHolder:GetChildren()) do
+					collectCrown(crown)
+				end
+			end
+			task.wait(0.5)
+		end
+	end)
+	
+	-- ⚡ React to newly added crowns if toggle is on
+	currencyHolder.ChildAdded:Connect(function(newCrown)
+		task.wait(0.2)
+		if isOn then
+			collectCrown(newCrown)
+		end
+	end)
+	
 	
 	-- UI Setup
 	local SGUI = script.Parent
@@ -2053,8 +2134,8 @@ local function WBOCJXJ_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(WBOCJXJ_fake_script)()
-local function QDJW_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(UQPERA_fake_script)()
+local function BGXEN_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2133,4 +2214,4 @@ local function QDJW_fake_script() -- ScreenGui.LocalScript
 	
 	
 end
-coroutine.wrap(QDJW_fake_script)()
+coroutine.wrap(BGXEN_fake_script)()
